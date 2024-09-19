@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-09-13 10:52:38 by Eclipse SUMO netedit Version 1.20.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="veh_passenger" vClass="passenger"/>
+
+    <trip id="trip" type="veh_passenger" depart="10" from="begin" to="ed_ru">
+        <param key="has.fcd.device" value="true"/>
+        <stop parkingArea="pa_ic" duration="100"/>
+    </trip>  
+
+
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="flow" begin="0.00" from="begin" to="ed_ru" end="100.00" number="10">
+        <param key="has.fcd.device" value="false"/>
+        <stop parkingArea="pa_ic" duration="100"/>
+    </flow> 
+
+</routes>
