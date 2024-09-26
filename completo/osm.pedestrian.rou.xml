@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-09-26 11:23:30.576298 by osmWebWizard.py UNKNOWN
+<configuration>
+    <net-file value="/home/renan/Sumo/2024-09-26-11-23-20/osm.net.xml.gz"/>
+    <additional-files value="/home/renan/Sumo/2024-09-26-11-23-20/osm_stops.add.xml,/home/renan/Sumo/2024-09-26-11-23-20/osm_pt.rou.xml"/>
+    <output-trip-file value="/home/renan/Sumo/2024-09-26-11-23-20/osm.pedestrian.trips.xml"/>
+    <route-file value="/home/renan/Sumo/2024-09-26-11-23-20/osm.pedestrian.rou.xml"/>
+    <persontrips value="True"/>
+    <persontrip.walk-opposite-factor value="0.8"/>
+    <prefix value="ped"/>
+    <trip-attributes value="modes=&quot;public&quot;"/>
+    <vehicle-class value="pedestrian"/>
+    <fringe-factor value="1"/>
+    <insertion-density value="10.0"/>
+    <duarouter-weights.tls-penalty value="20"/>
+</configuration>
+-->
+
+<!-- generated on 2024-09-26 11:23:30 by Eclipse SUMO duarouter Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/renan/Sumo/2024-09-26-11-23-20/osm.net.xml.gz"/>
+        <additional-files value="/home/renan/Sumo/2024-09-26-11-23-20/osm_stops.add.xml,/home/renan/Sumo/2024-09-26-11-23-20/osm_pt.rou.xml"/>
+        <route-files value="/home/renan/Sumo/2024-09-26-11-23-20/osm.pedestrian.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/renan/Sumo/2024-09-26-11-23-20/osm.pedestrian.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <processing>
+        <weights.tls-penalty value="20"/>
+        <persontrip.walk-opposite-factor value="0.8"/>
+    </processing>
+
+    <time>
+        <begin value="0.0"/>
+        <end value="3600.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="ped_pedestrian" vClass="pedestrian"/>
+    <person id="ped0" type="ped_pedestrian" depart="0">
+        <walk edges="841330477#1 -841330477#0 762314423#1 841330473#1 -841330473#2"/>
+    </person>
+    <person id="ped1" type="ped_pedestrian" depart="10">
+        <walk edges="834653992 537025691#0 537025691#1 537025691#2 537025691#3 537025691#5"/>
+    </person>
+    <person id="ped2" type="ped_pedestrian" depart="20">
+        <walk edges="841330472#0 -841330473#1 -841330471"/>
+    </person>
+    <person id="ped3" type="ped_pedestrian" depart="30">
+        <walk edges="-834865320#0 834865320#1 -834865326#2 -834865326#1 -834865325 834865321 -834865323#1"/>
+    </person>
+    <person id="ped4" type="ped_pedestrian" depart="40">
+        <walk edges="278132384#2 970567047"/>
+    </person>
+    <person id="ped5" type="ped_pedestrian" depart="50">
+        <walk edges="470718570#2 470718563#1 470718563#0 983088351"/>
+    </person>
+    <person id="ped6" type="ped_pedestrian" depart="60">
+        <walk edges="470718564#11 470718570#0 470718571#0 470718571#1 470718571#2 470718564#4"/>
+    </person>
+    <person id="ped7" type="ped_pedestrian" depart="70">
+        <walk edges="970642827#1 -1046248580#4 -1046248581 1046248582 -1247360485#0"/>
+    </person>
+    <person id="ped8" type="ped_pedestrian" depart="80">
+        <walk edges="566854865 -890763403"/>
+    </person>
+
+</routes>
