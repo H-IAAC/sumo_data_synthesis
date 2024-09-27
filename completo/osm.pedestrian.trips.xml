@@ -19,49 +19,10 @@
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <vType id="ped_pedestrian" vClass="pedestrian"/>
+
+    <!-- THIS FILE IS ONLY USED TO DEFINE WHERE AND TO A PEDESTRIAN SHOULD GO, THE DUAROUTER IS RESPONSIBLE FOR CREATING THE ROUTE AND THE ROUTES GENERATED GO TO osm.pedestrian.rou.xml -->
     <person id="ped0" depart="0.00" type="ped_pedestrian">
-        <personTrip from="537282073#1" to="-1069624742" modes="public"/>
+        <personTrip from="841330477#1" to="-841330473#2" modes="public"/>
     </person>
-    <person id="ped1" depart="3.49" type="ped_pedestrian">
-        <personTrip from="-889178260" to="-841330467" modes="public"/>
-    </person>
-    <person id="ped2" depart="6.98" type="ped_pedestrian">
-        <personTrip from="692055285#1" to="562047790#0" modes="public"/>
-    </person>
-    <person id="ped3" depart="10.48" type="ped_pedestrian">
-        <personTrip from="890763401#1" to="-537025695#0" modes="public"/>
-    </person>
-    <person id="ped4" depart="13.97" type="ped_pedestrian">
-        <personTrip from="1106471673#1" to="-118339225#0" modes="public"/>
-    </person>
-    <person id="ped5" depart="17.46" type="ped_pedestrian">
-        <personTrip from="-834865330" to="1294814183#0" modes="public"/>
-    </person>
-    <person id="ped6" depart="20.95" type="ped_pedestrian">
-        <personTrip from="-118339214" to="-759712188" modes="public"/>
-    </person>
-    <person id="ped7" depart="24.44" type="ped_pedestrian">
-        <personTrip from="562047733" to="258997530#1" modes="public"/>
-    </person>
-    <person id="ped8" depart="27.93" type="ped_pedestrian">
-        <personTrip from="-841169544" to="470718571#2" modes="public"/>
-    </person>
-    <person id="ped9" depart="31.43" type="ped_pedestrian">
-        <personTrip from="849764496#3" to="-1054468201#0" modes="public"/>
-    </person>
-    <person id="ped10" depart="34.92" type="ped_pedestrian">
-        <personTrip from="849764494" to="564166312#2" modes="public"/>
-    </person>
-    <person id="ped11" depart="38.41" type="ped_pedestrian">
-        <personTrip from="-970796641" to="-562096869#1" modes="public"/>
-    </person>
-    <person id="ped12" depart="41.90" type="ped_pedestrian">
-        <personTrip from="970796647" to="-970642827#2" modes="public"/>
-    </person>
-    <person id="ped13" depart="45.39" type="ped_pedestrian">
-        <personTrip from="-537026933" to="-537114949" modes="public"/>
-    </person>
-    <person id="ped14" depart="48.89" type="ped_pedestrian">
-        <personTrip from="887728296" to="537025691#0" modes="public"/>
-    </person>
+
 </routes>

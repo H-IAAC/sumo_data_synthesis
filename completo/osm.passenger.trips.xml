@@ -54,7 +54,7 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="veh_passenger" vClass="passenger"/>
+    <vType id="veh_passenger" vClass="passenger" maxSpeed = "100" desiredMaxSpeed = "12"/>
     <trip id="veh0" type="veh_passenger" depart="0.00" departLane="best" from="70200194#1" to="-147412866#0"/>
     <trip id="veh1" type="veh_passenger" depart="1.82" departLane="best" departSpeed="max" from="-85701987#4" to="-77948714#2"/>
     <trip id="veh2" type="veh_passenger" depart="3.65" departLane="best" from="75416306#10" to="72641085#2"/>
@@ -62,7 +62,7 @@
     <trip id="veh4" type="veh_passenger" depart="7.30" departLane="best" from="237036477#6" to="-147412875#1"/>
     <trip id="veh5" type="veh_passenger" depart="9.12" departLane="best" from="-147419852#2" to="-76845636#0"/>
     <trip id="veh6" type="veh_passenger" depart="10.95" departLane="best" from="70200195#9" to="563505769#6"/>
-    <trip id="veh7" type="veh_passenger" depart="12.77" departLane="best" from="-77781344" to="693637406#7"/>
+    <trip id="veh7" type="veh_passenger" depart="12.77" departLane="best" from="FEEC" to="IC"/>
     <trip id="veh8" type="veh_passenger" depart="14.59" departLane="best" from="77674945#7" to="1075116935#0"/>
     <trip id="veh9" type="veh_passenger" depart="16.42" departLane="best" from="77674942#3" to="75259400#7"/>
     <trip id="veh10" type="veh_passenger" depart="18.24" departLane="best" from="1054468192#1" to="-72644044#4"/>
