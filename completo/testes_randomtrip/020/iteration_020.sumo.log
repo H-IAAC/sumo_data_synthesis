@@ -1,0 +1,15 @@
+Loading net-file from '020/../../osm.net.xml' ... done (534ms).
+Loading additional-files from '020/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 229.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3523.08
+ UPS: 47492.307692
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+

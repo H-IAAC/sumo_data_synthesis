@@ -1,0 +1,288 @@
+> Executing step 0
+>> Running router on ../osm.passenger.trips.xml
+>>> Begin time: 2024-10-04 17:09:35.294689
+>>> End time: 2024-10-04 17:09:35.773711
+>>> Duration: 0:00:00.479022
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:35.773800
+>>> End time: 2024-10-04 17:09:36.591670
+>>> Duration: 0:00:00.817870
+<<
+< Step 0 ended (duration: 0:00:01.297152)
+------------------
+
+> Executing step 1
+>> Running router on 000/osm.passenger_000.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:36.604664
+>>> End time: 2024-10-04 17:09:37.117210
+>>> Duration: 0:00:00.512546
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:37.117311
+>>> End time: 2024-10-04 17:09:37.938149
+>>> Duration: 0:00:00.820838
+<<
+< Step 1 ended (duration: 0:00:01.333712)
+------------------
+
+> Executing step 2
+>> Running router on 001/osm.passenger_001.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:37.944013
+>>> End time: 2024-10-04 17:09:38.439727
+>>> Duration: 0:00:00.495714
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:38.439820
+>>> End time: 2024-10-04 17:09:39.258580
+>>> Duration: 0:00:00.818760
+<<
+< Step 2 ended (duration: 0:00:01.314701)
+------------------
+
+> Executing step 3
+>> Running router on 002/osm.passenger_002.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:39.274366
+>>> End time: 2024-10-04 17:09:39.776778
+>>> Duration: 0:00:00.502412
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:39.776872
+>>> End time: 2024-10-04 17:09:40.619801
+>>> Duration: 0:00:00.842929
+<<
+< Step 3 ended (duration: 0:00:01.345642)
+------------------
+
+> Executing step 4
+>> Running router on 003/osm.passenger_003.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:40.625403
+>>> End time: 2024-10-04 17:09:41.122413
+>>> Duration: 0:00:00.497010
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:41.122472
+>>> End time: 2024-10-04 17:09:41.939164
+>>> Duration: 0:00:00.816692
+<<
+< Step 4 ended (duration: 0:00:01.313918)
+------------------
+
+> Executing step 5
+>> Running router on 004/osm.passenger_004.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:41.944672
+>>> End time: 2024-10-04 17:09:42.433591
+>>> Duration: 0:00:00.488919
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:42.433705
+>>> End time: 2024-10-04 17:09:43.257151
+>>> Duration: 0:00:00.823446
+<<
+< Step 5 ended (duration: 0:00:01.312642)
+------------------
+
+> Executing step 6
+>> Running router on 005/osm.passenger_005.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:43.270255
+>>> End time: 2024-10-04 17:09:43.770435
+>>> Duration: 0:00:00.500180
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:43.770533
+>>> End time: 2024-10-04 17:09:44.601721
+>>> Duration: 0:00:00.831188
+<<
+< Step 6 ended (duration: 0:00:01.331646)
+------------------
+
+> Executing step 7
+>> Running router on 006/osm.passenger_006.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:44.614839
+>>> End time: 2024-10-04 17:09:45.141643
+>>> Duration: 0:00:00.526804
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:45.141753
+>>> End time: 2024-10-04 17:09:45.954511
+>>> Duration: 0:00:00.812758
+<<
+< Step 7 ended (duration: 0:00:01.339886)
+------------------
+
+> Executing step 8
+>> Running router on 007/osm.passenger_007.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:45.967451
+>>> End time: 2024-10-04 17:09:46.468643
+>>> Duration: 0:00:00.501192
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:46.468718
+>>> End time: 2024-10-04 17:09:47.291288
+>>> Duration: 0:00:00.822570
+<<
+< Step 8 ended (duration: 0:00:01.323974)
+------------------
+
+> Executing step 9
+>> Running router on 008/osm.passenger_008.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:47.303857
+>>> End time: 2024-10-04 17:09:47.797392
+>>> Duration: 0:00:00.493535
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:47.797501
+>>> End time: 2024-10-04 17:09:48.639686
+>>> Duration: 0:00:00.842185
+<<
+< Step 9 ended (duration: 0:00:01.335958)
+------------------
+
+> Executing step 10
+>> Running router on 009/osm.passenger_009.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:48.652420
+>>> End time: 2024-10-04 17:09:49.163225
+>>> Duration: 0:00:00.510805
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:49.163294
+>>> End time: 2024-10-04 17:09:50.034741
+>>> Duration: 0:00:00.871447
+<<
+< Step 10 ended (duration: 0:00:01.382490)
+------------------
+
+> Executing step 11
+>> Running router on 010/osm.passenger_010.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:50.047808
+>>> End time: 2024-10-04 17:09:50.551394
+>>> Duration: 0:00:00.503586
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:50.551496
+>>> End time: 2024-10-04 17:09:51.390196
+>>> Duration: 0:00:00.838700
+<<
+< Step 11 ended (duration: 0:00:01.342556)
+------------------
+
+> Executing step 12
+>> Running router on 011/osm.passenger_011.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:51.402914
+>>> End time: 2024-10-04 17:09:51.900993
+>>> Duration: 0:00:00.498079
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:51.901090
+>>> End time: 2024-10-04 17:09:52.731663
+>>> Duration: 0:00:00.830573
+<<
+< Step 12 ended (duration: 0:00:01.328940)
+------------------
+
+> Executing step 13
+>> Running router on 012/osm.passenger_012.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:52.744667
+>>> End time: 2024-10-04 17:09:53.270757
+>>> Duration: 0:00:00.526090
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:53.270837
+>>> End time: 2024-10-04 17:09:54.112516
+>>> Duration: 0:00:00.841679
+<<
+< Step 13 ended (duration: 0:00:01.368023)
+------------------
+
+> Executing step 14
+>> Running router on 013/osm.passenger_013.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:54.118150
+>>> End time: 2024-10-04 17:09:54.631341
+>>> Duration: 0:00:00.513191
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:54.631416
+>>> End time: 2024-10-04 17:09:55.463946
+>>> Duration: 0:00:00.832530
+<<
+< Step 14 ended (duration: 0:00:01.345950)
+------------------
+
+> Executing step 15
+>> Running router on 014/osm.passenger_014.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:55.476708
+>>> End time: 2024-10-04 17:09:55.994447
+>>> Duration: 0:00:00.517739
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:55.994575
+>>> End time: 2024-10-04 17:09:56.835221
+>>> Duration: 0:00:00.840646
+<<
+< Step 15 ended (duration: 0:00:01.358653)
+------------------
+
+> Executing step 16
+>> Running router on 015/osm.passenger_015.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:56.841298
+>>> End time: 2024-10-04 17:09:57.366805
+>>> Duration: 0:00:00.525507
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:57.366936
+>>> End time: 2024-10-04 17:09:58.220004
+>>> Duration: 0:00:00.853068
+<<
+< Step 16 ended (duration: 0:00:01.378850)
+------------------
+
+> Executing step 17
+>> Running router on 016/osm.passenger_016.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:58.232950
+>>> End time: 2024-10-04 17:09:58.732572
+>>> Duration: 0:00:00.499622
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:09:58.732684
+>>> End time: 2024-10-04 17:09:59.578699
+>>> Duration: 0:00:00.846015
+<<
+< Step 17 ended (duration: 0:00:01.345920)
+------------------
+
+> Executing step 18
+>> Running router on 017/osm.passenger_017.rou.alt.xml
+>>> Begin time: 2024-10-04 17:09:59.591713
+>>> End time: 2024-10-04 17:10:00.091435
+>>> Duration: 0:00:00.499722
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:10:00.091506
+>>> End time: 2024-10-04 17:10:00.936156
+>>> Duration: 0:00:00.844650
+<<
+< Step 18 ended (duration: 0:00:01.344568)
+------------------
+
+> Executing step 19
+>> Running router on 018/osm.passenger_018.rou.alt.xml
+>>> Begin time: 2024-10-04 17:10:00.949143
+>>> End time: 2024-10-04 17:10:01.459361
+>>> Duration: 0:00:00.510218
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:10:01.459515
+>>> End time: 2024-10-04 17:10:02.282766
+>>> Duration: 0:00:00.823251
+<<
+< Step 19 ended (duration: 0:00:01.333835)
+------------------
+
+> Executing step 20
+>> Running router on 019/osm.passenger_019.rou.alt.xml
+>>> Begin time: 2024-10-04 17:10:02.295668
+>>> End time: 2024-10-04 17:10:02.790947
+>>> Duration: 0:00:00.495279
+<<
+>> Running simulation
+>>> Begin time: 2024-10-04 17:10:02.791063

@@ -1,0 +1,425 @@
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '000/iteration_000_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
+Loading net-file from '000/../../osm.net.xml' ... done (536ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 242.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 4033.33
+ UPS: 51166.666667
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '001/iteration_001_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '001/iteration_001.sumocfg']
+Loading net-file from '001/../../osm.net.xml' ... done (532ms).
+Loading additional-files from '001/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Warning: Vehicle 'veh25' performs emergency braking on lane '890063336#5_1' with decel=9.00, wished=4.50, severity=1.00, time=111.00.
+Warning: Vehicle 'veh25' performs emergency stop at the end of lane '890063336#5_1' because of a red traffic light (decel=-12.13, offset=1.15), time=111.00.
+Simulation ended at time: 242.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3558.82
+ UPS: 45808.823529
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+ Emergency Stops: 1
+ Emergency Braking: 1
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '002/iteration_002_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '002/iteration_002.sumocfg']
+Loading net-file from '002/../../osm.net.xml' ... done (533ms).
+Loading additional-files from '002/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 240.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3692.31
+ UPS: 48030.769231
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '003/iteration_003_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '003/iteration_003.sumocfg']
+Loading net-file from '003/../../osm.net.xml' ... done (527ms).
+Loading additional-files from '003/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 242.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.08s
+ Real time factor: 3142.86
+ UPS: 40727.272727
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '004/iteration_004_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '004/iteration_004.sumocfg']
+Loading net-file from '004/../../osm.net.xml' ... done (532ms).
+Loading additional-files from '004/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 240.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3809.52
+ UPS: 49555.555556
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '005/iteration_005_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '005/iteration_005.sumocfg']
+Loading net-file from '005/../../osm.net.xml' ... done (528ms).
+Loading additional-files from '005/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 232.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3362.32
+ UPS: 45478.260870
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '006/iteration_006_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '006/iteration_006.sumocfg']
+Loading net-file from '006/../../osm.net.xml' ... done (531ms).
+Loading additional-files from '006/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 230.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3432.84
+ UPS: 46626.865672
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '007/iteration_007_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '007/iteration_007.sumocfg']
+Loading net-file from '007/../../osm.net.xml' ... done (534ms).
+Loading additional-files from '007/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 232.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 4000
+ UPS: 54362.068966
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '008/iteration_008_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '008/iteration_008.sumocfg']
+Loading net-file from '008/../../osm.net.xml' ... done (531ms).
+Loading additional-files from '008/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3328.57
+ UPS: 44828.571429
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '009/iteration_009_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '009/iteration_009.sumocfg']
+Loading net-file from '009/../../osm.net.xml' ... done (542ms).
+Loading additional-files from '009/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3640.62
+ UPS: 49031.250000
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '010/iteration_010_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '010/iteration_010.sumocfg']
+Loading net-file from '010/../../osm.net.xml' ... done (535ms).
+Loading additional-files from '010/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.08s
+ Real time factor: 2949.37
+ UPS: 39721.518987
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '011/iteration_011_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '011/iteration_011.sumocfg']
+Loading net-file from '011/../../osm.net.xml' ... done (542ms).
+Loading additional-files from '011/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 232.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3866.67
+ UPS: 51266.666667
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '012/iteration_012_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '012/iteration_012.sumocfg']
+Loading net-file from '012/../../osm.net.xml' ... done (536ms).
+Loading additional-files from '012/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3758.06
+ UPS: 50177.419355
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '013/iteration_013_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '013/iteration_013.sumocfg']
+Loading net-file from '013/../../osm.net.xml' ... done (535ms).
+Loading additional-files from '013/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3584.62
+ UPS: 47861.538462
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '014/iteration_014_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '014/iteration_014.sumocfg']
+Loading net-file from '014/../../osm.net.xml' ... done (536ms).
+Loading additional-files from '014/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3883.33
+ UPS: 51850.000000
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '015/iteration_015_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '015/iteration_015.sumocfg']
+Loading net-file from '015/../../osm.net.xml' ... done (535ms).
+Loading additional-files from '015/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 233.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 3883.33
+ UPS: 51850.000000
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '016/iteration_016_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '016/iteration_016.sumocfg']
+Loading net-file from '016/../../osm.net.xml' ... done (544ms).
+Loading additional-files from '016/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 240.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3692.31
+ UPS: 47953.846154
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '017/iteration_017_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '017/iteration_017.sumocfg']
+Loading net-file from '017/../../osm.net.xml' ... done (545ms).
+Loading additional-files from '017/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 237.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 4016.95
+ UPS: 52203.389831
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '018/iteration_018_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '018/iteration_018.sumocfg']
+Loading net-file from '018/../../osm.net.xml' ... done (530ms).
+Loading additional-files from '018/../edgedata.add.xml' ... done (5ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 232.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3515.15
+ UPS: 47272.727273
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '019/iteration_019_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '019/iteration_019.sumocfg']
+Loading net-file from '019/../../osm.net.xml' ... done (535ms).
+Loading additional-files from '019/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 232.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.06s
+ Real time factor: 4000
+ UPS: 54172.413793
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '020/iteration_020_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '020/iteration_020.sumocfg']
+Loading net-file from '020/../../osm.net.xml' ... done (534ms).
+Loading additional-files from '020/../edgedata.add.xml' ... done (4ms).
+Loading done.
+Simulation version 1.20.0 started with time: 0.00.
+Simulation ended at time: 229.00
+Reason: All vehicles have left the simulation.
+Performance: 
+ Duration: 0.07s
+ Real time factor: 3523.08
+ UPS: 47492.307692
+Vehicles: 
+ Inserted: 25
+ Running: 0
+ Waiting: 0
+
+Interrupt signal received, trying to exit gracefully.
