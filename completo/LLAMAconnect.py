@@ -70,3 +70,27 @@ def getResponse_trip(student_info):
 
 # student_info = "Biology student. He has most classes at FCM and IB and has luch at RU and dinner at RS. The student wakes up at 7 and is never late to classes. The student lives close to the university and likes to relax at home whenever possible. The student starts and ends his day at home"
 # print(getResponse_trip(student_info))
+
+def getResponse_coordinates(location):
+    instructions_content = (f"Give me the coordinates of the following location at UNICAMP: {location}"
+                            )
+    message = [
+        {
+            "role": "system",
+            "content": "You need to give me coordinates for given buildings inside the State University of Campinas at Cidade Universitária - Campinas. " +
+                        "Always answer using a JSON contaning 'latitude, longitude' and nothing more." +
+                        "Be as precise as possible. The building is located inside the campus.",
+        },
+        {
+            "role": "user",
+            "content": instructions_content,
+        }
+    ]
+
+    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=0.0, response_format={"type": "json_object"})
+
+    return chat_completion.choices[0].message.content
+
+# THIS RESPONSE IS NOT WORKING PROPERLY
+# response = getResponse_coordinates("Faculdade de Engenharia Elétrica e de Computação da Universidade Estadual de Campinas - FEEC/UNICAMP")
+# print(json.loads(response)['latitude'], ",", json.loads(response)['longitude'])
