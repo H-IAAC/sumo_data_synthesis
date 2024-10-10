@@ -54,7 +54,12 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="veh_passenger" vClass="passenger" maxSpeed = "100" desiredMaxSpeed = "50" speedFactor = "2.0" />
+    <vType id="veh_passenger" vClass = "passenger" accel="1.3" decel="3.0" sigma="0.5" length="12.0" minGap="3.0" maxSpeed="50" >
+        <param key="device.rerouting.probability" value="1.0"/>
+        <param key="device.rerouting.adaptation-steps" value="18"/>
+        <param key="device.rerouting.adaptation-interval" value="10"/>
+    </vType>
+
     <trip id="veh0" type="veh_passenger" depart="0.00" departLane="best" from="70200194#1" to="-147412866#0"/>
     <trip id="veh1" type="veh_passenger" depart="1.82" departLane="best" departSpeed="max" from="-85701987#4" to="-77948714#2"/>
     <trip id="veh2" type="veh_passenger" depart="3.65" departLane="best" from="75416306#10" to="72641085#2"/>
@@ -68,9 +73,9 @@
     <trip id="veh10" type="veh_passenger" depart="18.24" departLane="best" from="1054468192#1" to="-72644044#4"/>
     <trip id="veh11" type="veh_passenger" depart="20.07" departLane="best" from="539691353#8" to="147379116#4"/>
     
-    <!--<trip id="veh12" type="veh_passenger" depart="21.89" departLane="best" from="563505740#1" to="563505769#10">
+    <trip id="veh12" type="veh_passenger" depart="21.89" departLane="best" from="563505740#1" to="563505769#10">
         <stop parkingArea="pa75701374#0" duration="200" /> 
-    </trip> -->
+    </trip>
 
     <trip id="veh13" type="veh_passenger" depart="23.71" departLane="best" from="77790788#1" to="70056689#16"/>
     <trip id="veh14" type="veh_passenger" depart="25.54" departLane="best" from="77674945#2" to="75416306#5"/>

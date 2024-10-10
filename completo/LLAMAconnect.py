@@ -46,18 +46,32 @@ def getResponse_trip(student_info):
     message = [
         {
             "role": "system",
-            "content": "You have to plan the routine of a student that is going to be between important places inside UNICAMP, you can move between any of " + 
-                            "the following places: HOME, RU, RA, RS, BC, FEQ, IC, IFGW, IMECC, FEF, FCM, IB, IQ, IB, FCM, FCM, IMECC, IFGW, IC, FEEC. " +
-                            "The trip must make sense on the given context. For example, a Chemistry student would spend most of their time " +
+            "content": "You have to plan the routine of multiple students that are going to be between important places inside UNICAMP, you can move them between any of " + 
+                            "the following places: HOME, RU, RA, RS, BC, FEQ, IC, IFGW, IMECC, FEF, FCM, IB, IQ, IG, IB, FCM, IMECC, IFGW, IC, FEEC. FEE does not exist. " +
+                            "The trip must make sense on the given context. For example, a Chemistry student would spend most of their time. " +
                             "at IQ, while a Computer Science student would spend most of their time at IC. " +
-                            "RU, RA and RS are restaurants where students go to have breakfast, luch and dinner. " +
+                            "Chemistry students spend most of ther time at IQ and IB." +
+                            "Computer Science students spend most of their time at IC." +
+                            "Physics students spend most of their time at IFGW." +
+                            "Math students spend most of their time at IMECC." +
+                            "Physical Education students spend most of their time at FEF." +
+                            "Medicine students spend most of their time at FCM." +
+                            "Biology students spend most of their time at IB." +
+                            "Computer Engineering students spend most of their time at FEEC." +
+                            "RU, RA and RS are restaurants where students go to have breakfast, luch and dinner, or they can decide to go home. " +
                             "Every student must have lunch and dinner at some of the three restaurants and they take at most 1 hour eat. " +
-                            "Students don't relax at RU, RA and RS" +
-                            "Students are only having classes from 8 to 12 or from 14 to 18. Students DO NOT have classes at 13"
+                            "Students can only have lunch and dinner once per day." +
+                            "Students do not study, spend their free time or relax at RU, RA and RS. " +
+                            "Students pratice sports at FEF. " +
+                            "Students go to BC to study during their free time. " +
+                            "Students are only having classes from 8 to 12 or from 14 to 18. Students DO NOT have classes at 13." +
+                            "A few students do not have all the classes, so they can have free time during the day." +
+                            "All the engineering students have classes all day long." +
+                            "Do not do the same trip for all students, they have different routines." +
                             "Lunch time is from 12 to 14 and there are no classes and dinner time is from 18 to 20 and there are no classes. " +
                             "The student must start and end his day at home. You must create an entry for every 1 hour. The time format is 'hour'" + 
                             "Your response should be in a JSON format showing the current location and current activity, always start at time 7. Follow the example: " +
-                            "'7': {'location':'HOME', 'activity':'wake up'}" 
+                            "'student1': {7': {'location':'HOME', 'activity':'wake up'} }" 
         },
         {
             "role": "user",
@@ -68,7 +82,7 @@ def getResponse_trip(student_info):
 
     return chat_completion.choices[0].message.content
 
-# student_info = "Biology student. He has most classes at FCM and IB and has luch at RU and dinner at RS. The student wakes up at 7 and is never late to classes. The student lives close to the university and likes to relax at home whenever possible. The student starts and ends his day at home"
+# student_info = "A Computer Engineering student and a Computer Science student. They usually have lunch together at RU. The students are never late to classes."
 # print(getResponse_trip(student_info))
 
 def getResponse_coordinates(location):

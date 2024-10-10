@@ -1,6 +1,0 @@
-<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="veh_passenger" vClass="passenger"/>
-    <trip id="veh0" type="veh_passenger" depart="0.00" departLane="best" from="70200194#1" to="-147412866#0"/>
-    <trip id="veh1" type="veh_passenger" depart="1.82" departLane="best" departSpeed="max" from="-85701987#4" to="-77948714#2"/>
-    
-</routes>
