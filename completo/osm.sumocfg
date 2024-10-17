@@ -21,6 +21,10 @@
         <device.rerouting.adaptation-interval value="10"/>
     </routing>
 
+    <parameters>
+        <lateral-resolution value="0.8"/>
+    </parameters>
+
     <report>
         <verbose value="true"/>
         <duration-log.statistics value="true"/>
