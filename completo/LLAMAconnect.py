@@ -63,7 +63,7 @@ def getResponse_trip(student_info):
                             "Students can only have lunch and dinner once per day." +
                             "Students do not study, spend their free time or relax at RU, RA and RS. " +
                             "Students pratice sports at FEF. " +
-                            "Students go to BC to study during their free time. " +
+                            "Students go to BC or to any other institute to study during their free time. " +
                             "Students are only having classes from 8 to 12 or from 14 to 18. Students DO NOT have classes at 13." +
                             "A few students do not have all the classes, so they can have free time during the day." +
                             "All the engineering students have classes all day long." +
