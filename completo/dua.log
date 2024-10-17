@@ -3,191 +3,151 @@
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
-Loading net-file from '000/../osm.net.xml' ... done (781ms).
-Loading additional-files from '000/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '000/../osm_stops.add.xml' ... done (43ms).
+Loading net-file from '000/../osm.net.xml' ... done (775ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (6ms).
+Loading additional-files from '000/../osm_stops.add.xml' ... done (41ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh11'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1082.00.
-Warning: Vehicle 'veh11' ends teleporting on edge '72508815#14', time=1082.00.
-Warning: Teleporting vehicle 'veh17'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1489.00.
-Warning: Vehicle 'veh17' ends teleporting on edge '72508815#14', time=1489.00.
-Warning: Teleporting vehicle 'veh7'; waited too long (wrong lane), lane='77674920#0_0', time=2052.00.
-Warning: Vehicle 'veh7' skips stop on lane '77674920#0_0' time=2052.00.
-Warning: Vehicle 'veh7' ends teleporting on edge '77674920#1', time=2052.00.
-Warning: Teleporting vehicle 'veh9'; waited too long (jam), lane=':913720923_4_0', time=2072.00.
-Warning: Vehicle 'veh9' ends teleporting on edge '77674920#0', time=2072.00.
-Warning: Teleporting vehicle 'veh14'; waited too long (wrong lane), lane='77674920#0_0', time=2560.00.
-Warning: Vehicle 'veh14' skips stop on lane '77674920#0_0' time=2560.00.
-Warning: Vehicle 'veh14' ends teleporting on edge '77674920#1', time=2560.00.
-Warning: Teleporting vehicle 'veh19'; waited too long (jam), lane=':913720923_4_0', time=2566.00.
-Warning: Vehicle 'veh19' ends teleporting on edge '77674920#0', time=2566.00.
-Simulation ended at time: 3410.00.
+Warning: Teleporting vehicle 'veh1'; waited too long (wrong lane), lane='72508815#14_0', time=728.00.
+Warning: Vehicle 'veh1' skips stop on lane '72508815#14_0' time=728.00.
+Warning: Vehicle 'veh1' ends teleporting on edge '72508815#15', time=728.00.
+Warning: Teleporting vehicle 'veh15'; waited too long (wrong lane), lane='72508815#14_0', time=1542.00.
+Warning: Vehicle 'veh15' skips stop on lane '72508815#14_0' time=1542.00.
+Warning: Vehicle 'veh15' ends teleporting on edge '72508815#15', time=1542.00.
+Simulation ended at time: 2394.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.87s
- Real time factor: 3906.07
- UPS: 58373.424971
+ Duration: 0.67s
+ Real time factor: 3551.93
+ UPS: 51908.011869
 Vehicles:
  Inserted: 20
  Running: 0
  Waiting: 0
- Teleports: 6 (Jam: 4, Wrong Lane: 2)
-DijkstraRouter answered 100 queries and explored 428.99 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.40ms on average).
+ Teleports: 2 (Wrong Lane: 2)
+DijkstraRouter answered 80 queries and explored 417.69 edges on average.
+DijkstraRouter spent 0.04s answering queries (0.45ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '001/iteration_001_PATHGEN_000.duarcfg']
-Warning: No interval matches passed time=45.05 in edge '-75259400#3'.
+Warning: No interval matches passed time=45.10 in edge '-75259400#2'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '001/iteration_001.sumocfg']
-Loading net-file from '001/../osm.net.xml' ... done (765ms).
+Loading net-file from '001/../osm.net.xml' ... done (780ms).
 Loading additional-files from '001/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '001/../osm_stops.add.xml' ... done (41ms).
+Loading additional-files from '001/../osm_stops.add.xml' ... done (43ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh11'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1082.00.
-Warning: Vehicle 'veh11' ends teleporting on edge '72508815#14', time=1082.00.
-Warning: Teleporting vehicle 'veh17'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1489.00.
-Warning: Vehicle 'veh17' ends teleporting on edge '72508815#14', time=1489.00.
-Warning: Teleporting vehicle 'veh7'; waited too long (wrong lane), lane='77674920#0_0', time=2052.00.
-Warning: Vehicle 'veh7' skips stop on lane '77674920#0_0' time=2052.00.
-Warning: Vehicle 'veh7' ends teleporting on edge '77674920#1', time=2052.00.
-Warning: Teleporting vehicle 'veh9'; waited too long (jam), lane=':913720923_4_0', time=2072.00.
-Warning: Vehicle 'veh9' ends teleporting on edge '77674920#0', time=2072.00.
-Warning: Teleporting vehicle 'veh14'; waited too long (wrong lane), lane='77674920#0_0', time=2560.00.
-Warning: Vehicle 'veh14' skips stop on lane '77674920#0_0' time=2560.00.
-Warning: Vehicle 'veh14' ends teleporting on edge '77674920#1', time=2560.00.
-Warning: Teleporting vehicle 'veh19'; waited too long (jam), lane=':913720923_4_0', time=2566.00.
-Warning: Vehicle 'veh19' ends teleporting on edge '77674920#0', time=2566.00.
-Simulation ended at time: 3410.00.
+Warning: Teleporting vehicle 'veh1'; waited too long (wrong lane), lane='72508815#14_0', time=728.00.
+Warning: Vehicle 'veh1' skips stop on lane '72508815#14_0' time=728.00.
+Warning: Vehicle 'veh1' ends teleporting on edge '72508815#15', time=728.00.
+Warning: Teleporting vehicle 'veh15'; waited too long (wrong lane), lane='72508815#14_0', time=1542.00.
+Warning: Vehicle 'veh15' skips stop on lane '72508815#14_0' time=1542.00.
+Warning: Vehicle 'veh15' ends teleporting on edge '72508815#15', time=1542.00.
+Simulation ended at time: 2394.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.86s
- Real time factor: 3974.36
- UPS: 59393.939394
+ Duration: 0.64s
+ Real time factor: 3746.48
+ UPS: 54751.173709
 Vehicles:
  Inserted: 20
  Running: 0
  Waiting: 0
- Teleports: 6 (Jam: 4, Wrong Lane: 2)
-DijkstraRouter answered 100 queries and explored 428.99 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.37ms on average).
+ Teleports: 2 (Wrong Lane: 2)
+DijkstraRouter answered 80 queries and explored 417.69 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.42ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '002/iteration_002_PATHGEN_001.duarcfg']
-Warning: No interval matches passed time=45.05 in edge '-75259400#3'.
+Warning: No interval matches passed time=45.10 in edge '-75259400#2'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '002/iteration_002.sumocfg']
-Loading net-file from '002/../osm.net.xml' ... done (758ms).
+Loading net-file from '002/../osm.net.xml' ... done (781ms).
 Loading additional-files from '002/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '002/../osm_stops.add.xml' ... done (42ms).
+Loading additional-files from '002/../osm_stops.add.xml' ... done (45ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh11'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1082.00.
-Warning: Vehicle 'veh11' ends teleporting on edge '72508815#14', time=1082.00.
-Warning: Teleporting vehicle 'veh17'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1489.00.
-Warning: Vehicle 'veh17' ends teleporting on edge '72508815#14', time=1489.00.
-Warning: Teleporting vehicle 'veh7'; waited too long (wrong lane), lane='77674920#0_0', time=2052.00.
-Warning: Vehicle 'veh7' skips stop on lane '77674920#0_0' time=2052.00.
-Warning: Vehicle 'veh7' ends teleporting on edge '77674920#1', time=2052.00.
-Warning: Teleporting vehicle 'veh9'; waited too long (jam), lane=':913720923_4_0', time=2072.00.
-Warning: Vehicle 'veh9' ends teleporting on edge '77674920#0', time=2072.00.
-Warning: Teleporting vehicle 'veh14'; waited too long (wrong lane), lane='77674920#0_0', time=2560.00.
-Warning: Vehicle 'veh14' skips stop on lane '77674920#0_0' time=2560.00.
-Warning: Vehicle 'veh14' ends teleporting on edge '77674920#1', time=2560.00.
-Warning: Teleporting vehicle 'veh19'; waited too long (jam), lane=':913720923_4_0', time=2566.00.
-Warning: Vehicle 'veh19' ends teleporting on edge '77674920#0', time=2566.00.
-Simulation ended at time: 3410.00.
+Warning: Teleporting vehicle 'veh1'; waited too long (wrong lane), lane='72508815#14_0', time=728.00.
+Warning: Vehicle 'veh1' skips stop on lane '72508815#14_0' time=728.00.
+Warning: Vehicle 'veh1' ends teleporting on edge '72508815#15', time=728.00.
+Warning: Teleporting vehicle 'veh15'; waited too long (wrong lane), lane='72508815#14_0', time=1542.00.
+Warning: Vehicle 'veh15' skips stop on lane '72508815#14_0' time=1542.00.
+Warning: Vehicle 'veh15' ends teleporting on edge '72508815#15', time=1542.00.
+Simulation ended at time: 2394.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.84s
- Real time factor: 4054.7
- UPS: 60594.530321
+ Duration: 0.73s
+ Real time factor: 3283.95
+ UPS: 47991.769547
 Vehicles:
  Inserted: 20
  Running: 0
  Waiting: 0
- Teleports: 6 (Jam: 4, Wrong Lane: 2)
-DijkstraRouter answered 100 queries and explored 428.99 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.40ms on average).
+ Teleports: 2 (Wrong Lane: 2)
+DijkstraRouter answered 80 queries and explored 417.69 edges on average.
+DijkstraRouter spent 0.04s answering queries (0.46ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '003/iteration_003_PATHGEN_002.duarcfg']
-Warning: No interval matches passed time=45.05 in edge '-75259400#3'.
+Warning: No interval matches passed time=45.10 in edge '-75259400#2'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '003/iteration_003.sumocfg']
-Loading net-file from '003/../osm.net.xml' ... done (582ms).
-Loading additional-files from '003/../edgedata.add.xml' ... done (5ms).
+Loading net-file from '003/../osm.net.xml' ... done (540ms).
+Loading additional-files from '003/../edgedata.add.xml' ... done (4ms).
 Loading additional-files from '003/../osm_stops.add.xml' ... done (29ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh11'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1082.00.
-Warning: Vehicle 'veh11' ends teleporting on edge '72508815#14', time=1082.00.
-Warning: Teleporting vehicle 'veh17'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1489.00.
-Warning: Vehicle 'veh17' ends teleporting on edge '72508815#14', time=1489.00.
-Warning: Teleporting vehicle 'veh7'; waited too long (wrong lane), lane='77674920#0_0', time=2052.00.
-Warning: Vehicle 'veh7' skips stop on lane '77674920#0_0' time=2052.00.
-Warning: Vehicle 'veh7' ends teleporting on edge '77674920#1', time=2052.00.
-Warning: Teleporting vehicle 'veh9'; waited too long (jam), lane=':913720923_4_0', time=2072.00.
-Warning: Vehicle 'veh9' ends teleporting on edge '77674920#0', time=2072.00.
-Warning: Teleporting vehicle 'veh14'; waited too long (wrong lane), lane='77674920#0_0', time=2560.00.
-Warning: Vehicle 'veh14' skips stop on lane '77674920#0_0' time=2560.00.
-Warning: Vehicle 'veh14' ends teleporting on edge '77674920#1', time=2560.00.
-Warning: Teleporting vehicle 'veh19'; waited too long (jam), lane=':913720923_4_0', time=2566.00.
-Warning: Vehicle 'veh19' ends teleporting on edge '77674920#0', time=2566.00.
-Simulation ended at time: 3410.00.
+Warning: Teleporting vehicle 'veh1'; waited too long (wrong lane), lane='72508815#14_0', time=728.00.
+Warning: Vehicle 'veh1' skips stop on lane '72508815#14_0' time=728.00.
+Warning: Vehicle 'veh1' ends teleporting on edge '72508815#15', time=728.00.
+Warning: Teleporting vehicle 'veh15'; waited too long (wrong lane), lane='72508815#14_0', time=1542.00.
+Warning: Vehicle 'veh15' skips stop on lane '72508815#14_0' time=1542.00.
+Warning: Vehicle 'veh15' ends teleporting on edge '72508815#15', time=1542.00.
+Simulation ended at time: 2394.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.70s
- Real time factor: 4906.47
- UPS: 73323.741007
+ Duration: 0.56s
+ Real time factor: 4244.68
+ UPS: 62031.914894
 Vehicles:
  Inserted: 20
  Running: 0
  Waiting: 0
- Teleports: 6 (Jam: 4, Wrong Lane: 2)
-DijkstraRouter answered 100 queries and explored 428.99 edges on average.
-DijkstraRouter spent 0.03s answering queries (0.34ms on average).
+ Teleports: 2 (Wrong Lane: 2)
+DijkstraRouter answered 80 queries and explored 417.69 edges on average.
+DijkstraRouter spent 0.04s answering queries (0.49ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '004/iteration_004_PATHGEN_003.duarcfg']
-Warning: No interval matches passed time=45.05 in edge '-75259400#3'.
+Warning: No interval matches passed time=45.10 in edge '-75259400#2'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '004/iteration_004.sumocfg']
-Loading net-file from '004/../osm.net.xml' ... done (539ms).
+Loading net-file from '004/../osm.net.xml' ... done (547ms).
 Loading additional-files from '004/../edgedata.add.xml' ... done (4ms).
-Loading additional-files from '004/../osm_stops.add.xml' ... done (29ms).
+Loading additional-files from '004/../osm_stops.add.xml' ... done (28ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh11'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1082.00.
-Warning: Vehicle 'veh11' ends teleporting on edge '72508815#14', time=1082.00.
-Warning: Teleporting vehicle 'veh17'; waited too long (jam), lane=':cluster_10123108690_1102452333_0_0', time=1489.00.
-Warning: Vehicle 'veh17' ends teleporting on edge '72508815#14', time=1489.00.
-Warning: Teleporting vehicle 'veh7'; waited too long (wrong lane), lane='77674920#0_0', time=2052.00.
-Warning: Vehicle 'veh7' skips stop on lane '77674920#0_0' time=2052.00.
-Warning: Vehicle 'veh7' ends teleporting on edge '77674920#1', time=2052.00.
-Warning: Teleporting vehicle 'veh9'; waited too long (jam), lane=':913720923_4_0', time=2072.00.
-Warning: Vehicle 'veh9' ends teleporting on edge '77674920#0', time=2072.00.
-Warning: Teleporting vehicle 'veh14'; waited too long (wrong lane), lane='77674920#0_0', time=2560.00.
-Warning: Vehicle 'veh14' skips stop on lane '77674920#0_0' time=2560.00.
-Warning: Vehicle 'veh14' ends teleporting on edge '77674920#1', time=2560.00.
-Warning: Teleporting vehicle 'veh19'; waited too long (jam), lane=':913720923_4_0', time=2566.00.
-Warning: Vehicle 'veh19' ends teleporting on edge '77674920#0', time=2566.00.
-Simulation ended at time: 3410.00.
+Warning: Teleporting vehicle 'veh1'; waited too long (wrong lane), lane='72508815#14_0', time=728.00.
+Warning: Vehicle 'veh1' skips stop on lane '72508815#14_0' time=728.00.
+Warning: Vehicle 'veh1' ends teleporting on edge '72508815#15', time=728.00.
+Warning: Teleporting vehicle 'veh15'; waited too long (wrong lane), lane='72508815#14_0', time=1542.00.
+Warning: Vehicle 'veh15' skips stop on lane '72508815#14_0' time=1542.00.
+Warning: Vehicle 'veh15' ends teleporting on edge '72508815#15', time=1542.00.
+Simulation ended at time: 2394.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.68s
- Real time factor: 5000
- UPS: 74721.407625
+ Duration: 0.51s
+ Real time factor: 4694.12
+ UPS: 68600.000000
 Vehicles:
  Inserted: 20
  Running: 0
  Waiting: 0
- Teleports: 6 (Jam: 4, Wrong Lane: 2)
-DijkstraRouter answered 100 queries and explored 428.99 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.40ms on average).
+ Teleports: 2 (Wrong Lane: 2)
+DijkstraRouter answered 80 queries and explored 417.69 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.42ms on average).

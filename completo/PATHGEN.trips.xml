@@ -2,127 +2,110 @@
 
 <!-- Vehicles -->
 <vType id="veh_passenger" vClass="passenger" accel="2" decel="5" sigma="0.5" maxSpeed="50">
-	<param key="device.rerouting.probability" value="1.0"/>	<param key="device.rerouting.adaptation-steps" value="18"/>	<param key="device.rerouting.adaptation-interval" value="10"/></vType>
+	<param key="device.rerouting.probability" value="1.0"/>
+	<param key="device.rerouting.adaptation-steps" value="18"/>
+	<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
 
 <!-- Trips -->
 <trip id="veh1" type="veh_passenger" depart="0" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa72508815#1" duration="100"/>
+	<stop parkingArea="paIC" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh2" type="veh_passenger" depart="20" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa75701374#0" duration="100"/>
-	<stop parkingArea="pa72508815#14" duration="400"/>
-	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
-</trip>
-<trip id="veh3" type="veh_passenger" depart="40" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa72508815#4" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
-<trip id="veh4" type="veh_passenger" depart="60" from="563505734#2" to="563505734#2">
+<trip id="veh3" type="veh_passenger" depart="40" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa75679333#5" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
+</trip>
+<trip id="veh4" type="veh_passenger" depart="60" from="563505734#2" to="563505734#2">
+	<stop parkingArea="pa447326048#1" duration="100"/>
+	<stop parkingArea="pa72508815#14" duration="400"/>
+	<stop parkingArea="pa72508815#12" duration="100"/>
 </trip>
 <trip id="veh5" type="veh_passenger" depart="80" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa72508815#4" duration="100"/>
+	<stop parkingArea="pa72508816#2" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh6" type="veh_passenger" depart="100" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa693637406#7" duration="100"/>
+	<stop parkingArea="paFEEC" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh7" type="veh_passenger" depart="120" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa693637406#12" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh8" type="veh_passenger" depart="140" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa447326048#1" duration="100"/>
-	<stop parkingArea="pa72508815#14" duration="400"/>
-	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
-</trip>
-<trip id="veh9" type="veh_passenger" depart="160" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa72508815#4" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
-<trip id="veh10" type="veh_passenger" depart="180" from="563505734#2" to="563505734#2">
+<trip id="veh9" type="veh_passenger" depart="160" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa75679333#5" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
+</trip>
+<trip id="veh10" type="veh_passenger" depart="180" from="563505734#2" to="563505734#2">
+	<stop parkingArea="pa447326048#1" duration="100"/>
+	<stop parkingArea="pa72508815#14" duration="400"/>
+	<stop parkingArea="pa72508815#12" duration="100"/>
 </trip>
 <trip id="veh11" type="veh_passenger" depart="200" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa72508815#4" duration="100"/>
+	<stop parkingArea="pa72508816#2" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh12" type="veh_passenger" depart="220" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa693637406#7" duration="100"/>
+	<stop parkingArea="paFEEC" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh13" type="veh_passenger" depart="240" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa75701374#0" duration="100"/>
+	<stop parkingArea="pa693637406#12" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh14" type="veh_passenger" depart="260" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa72508815#4" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh15" type="veh_passenger" depart="280" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa693637406#7" duration="100"/>
+	<stop parkingArea="pa75679333#5" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh16" type="veh_passenger" depart="300" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa72508815#4" duration="100"/>
+	<stop parkingArea="pa447326048#1" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
 </trip>
 <trip id="veh17" type="veh_passenger" depart="320" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa693637406#7" duration="100"/>
+	<stop parkingArea="pa72508816#2" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh18" type="veh_passenger" depart="340" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa75701374#0" duration="100"/>
+	<stop parkingArea="paFEEC" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 <trip id="veh19" type="veh_passenger" depart="360" from="563505734#2" to="563505734#2">
+	<stop parkingArea="pa693637406#12" duration="100"/>
+	<stop parkingArea="pa72508815#14" duration="400"/>
+	<stop parkingArea="pa72508815#12" duration="100"/>
+</trip>
+<trip id="veh20" type="veh_passenger" depart="380" from="563505734#2" to="563505734#2">
 	<stop parkingArea="pa72508815#4" duration="100"/>
 	<stop parkingArea="pa72508815#14" duration="400"/>
 	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa77674920#0" duration="500"/>
-</trip>
-<trip id="veh20" type="veh_passenger" depart="380" from="563505734#2" to="563505734#2">
-	<stop parkingArea="pa693637406#7" duration="100"/>
-	<stop parkingArea="pa72508815#14" duration="400"/>
-	<stop parkingArea="pa72508815#12" duration="100"/>
-	<stop parkingArea="pa75701374#4" duration="500"/>
 </trip>
 </routes>

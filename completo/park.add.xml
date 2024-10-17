@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-09-26 11:36:01.695204 by generateParkingAreas.py UNKNOWN
+<!-- generated on 2024-10-17 10:40:54.737055 by generateParkingAreas.py UNKNOWN
 <configuration>
-    <net-file value="osm.net.xml.gz"/>
+    <net-file value="osm.net.xml"/>
     <output-file value="park.add.xml"/>
 </configuration>
 -->
@@ -239,14 +239,14 @@
     <parkingArea id="pa-72508571#1" lane="-72508571#1_0" roadsideCapacity="24" length="5"/>
     <parkingArea id="pa-72508571#2" lane="-72508571#2_0" roadsideCapacity="21" length="5"/>
     <parkingArea id="pa-72508572#0" lane="-72508572#0_0" roadsideCapacity="25" length="5"/>
-    <parkingArea id="pa-72508572#1" lane="-72508572#1_0" roadsideCapacity="24" length="5"/>
+    <parkingArea id="pa-72508572#1" lane="-72508572#1_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa-72508572#2" lane="-72508572#2_0" roadsideCapacity="11" length="5"/>
     <parkingArea id="pa-72508821#0" lane="-72508821#0_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-72508821#1" lane="-72508821#1_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-72508821#2" lane="-72508821#2_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-72508821#3" lane="-72508821#3_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-72508821#4" lane="-72508821#4_0" roadsideCapacity="10" length="5"/>
-    <parkingArea id="pa-72508821#5" lane="-72508821#5_0" roadsideCapacity="11" length="5"/>
+    <parkingArea id="pa-72508821#5" lane="-72508821#5_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-72631942#0" lane="-72631942#0_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa-72631942#1" lane="-72631942#1_0" roadsideCapacity="19" length="5"/>
     <parkingArea id="pa-72641085#0" lane="-72641085#0_0" roadsideCapacity="20" length="5"/>
@@ -331,7 +331,6 @@
     <parkingArea id="pa-75413343#1" lane="-75413343#1_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa-75413343#2" lane="-75413343#2_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa-75679328#1" lane="-75679328#1_0" roadsideCapacity="33" length="5"/>
-    <parkingArea id="pa-75679328#2" lane="-75679328#2_0" roadsideCapacity="21" length="5"/>
     <parkingArea id="pa-75701376#1" lane="-75701376#1_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa-75701376#2" lane="-75701376#2_0" roadsideCapacity="16" length="5"/>
     <parkingArea id="pa-75701376#3" lane="-75701376#3_0" roadsideCapacity="6" length="5"/>
@@ -394,7 +393,7 @@
     <parkingArea id="pa-78684178#3" lane="-78684178#3_0" roadsideCapacity="8" length="5"/>
     <parkingArea id="pa-85631060#0" lane="-85631060#0_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa-85631060#1" lane="-85631060#1_0" roadsideCapacity="18" length="5"/>
-    <parkingArea id="pa-85631061#0" lane="-85631061#0_0" roadsideCapacity="11" length="5"/>
+    <parkingArea id="pa-85631061#0" lane="-85631061#0_0" roadsideCapacity="12" length="5"/>
     <parkingArea id="pa-85631061#1" lane="-85631061#1_0" roadsideCapacity="107" length="5"/>
     <parkingArea id="pa-85631065#0" lane="-85631065#0_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa-85631065#1" lane="-85631065#1_0" roadsideCapacity="9" length="5"/>
@@ -932,7 +931,6 @@
     <parkingArea id="pa693637406#15" lane="693637406#15_0" roadsideCapacity="1" length="5"/>
     <parkingArea id="pa693637406#16" lane="693637406#16_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa693637406#3" lane="693637406#3_0" roadsideCapacity="8" length="5"/>
-    <parkingArea id="pa693637406#7" lane="693637406#7_0" roadsideCapacity="15" length="5"/>
     <parkingArea id="pa69416760#0" lane="69416760#0_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa69416760#1" lane="69416760#1_0" roadsideCapacity="24" length="5"/>
     <parkingArea id="pa69416760#2" lane="69416760#2_0" roadsideCapacity="16" length="5"/>
@@ -944,11 +942,11 @@
     <parkingArea id="pa69416763#1" lane="69416763#1_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa69416764#1" lane="69416764#1_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa69416764#2" lane="69416764#2_0" roadsideCapacity="8" length="5"/>
-    <parkingArea id="pa69830501#0" lane="69830501#0_0" roadsideCapacity="34" length="5"/>
+    <parkingArea id="pa69830501#0" lane="69830501#0_0" roadsideCapacity="35" length="5"/>
     <parkingArea id="pa69830501#1" lane="69830501#1_0" roadsideCapacity="26" length="5"/>
     <parkingArea id="pa69830501#2" lane="69830501#2_0" roadsideCapacity="4" length="5"/>
-    <parkingArea id="pa69830501#3" lane="69830501#3_0" roadsideCapacity="5" length="5"/>
-    <parkingArea id="pa69830501#4" lane="69830501#4_0" roadsideCapacity="6" length="5"/>
+    <parkingArea id="pa69830501#3" lane="69830501#3_0" roadsideCapacity="11" length="5"/>
+    <parkingArea id="pa69830501#4" lane="69830501#4_0" roadsideCapacity="8" length="5"/>
     <parkingArea id="pa69830501#5" lane="69830501#5_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa69830501#6" lane="69830501#6_0" roadsideCapacity="2" length="5"/>
     <parkingArea id="pa70056689#0" lane="70056689#0_0" roadsideCapacity="6" length="5"/>
@@ -994,6 +992,7 @@
     <parkingArea id="pa70080980#3" lane="70080980#3_0" roadsideCapacity="4" length="5"/>
     <parkingArea id="pa70080980#4" lane="70080980#4_0" roadsideCapacity="23" length="5"/>
     <parkingArea id="pa70080980#5" lane="70080980#5_0" roadsideCapacity="2" length="5"/>
+    <parkingArea id="pa70080980#6" lane="70080980#6_0" roadsideCapacity="1" length="5"/>
     <parkingArea id="pa70080981#0" lane="70080981#0_0" roadsideCapacity="24" length="5"/>
     <parkingArea id="pa70080981#1" lane="70080981#1_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa70080981#2" lane="70080981#2_0" roadsideCapacity="15" length="5"/>
@@ -1061,7 +1060,7 @@
     <parkingArea id="pa72508571#1" lane="72508571#1_0" roadsideCapacity="24" length="5"/>
     <parkingArea id="pa72508571#2" lane="72508571#2_0" roadsideCapacity="21" length="5"/>
     <parkingArea id="pa72508572#0" lane="72508572#0_0" roadsideCapacity="25" length="5"/>
-    <parkingArea id="pa72508572#1" lane="72508572#1_0" roadsideCapacity="24" length="5"/>
+    <parkingArea id="pa72508572#1" lane="72508572#1_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa72508572#2" lane="72508572#2_0" roadsideCapacity="11" length="5"/>
     <parkingArea id="pa72508573#0" lane="72508573#0_0" roadsideCapacity="14" length="5"/>
     <parkingArea id="pa72508573#1" lane="72508573#1_0" roadsideCapacity="1" length="5"/>
@@ -1101,7 +1100,7 @@
     <parkingArea id="pa72508821#2" lane="72508821#2_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa72508821#3" lane="72508821#3_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa72508821#4" lane="72508821#4_0" roadsideCapacity="10" length="5"/>
-    <parkingArea id="pa72508821#5" lane="72508821#5_0" roadsideCapacity="11" length="5"/>
+    <parkingArea id="pa72508821#5" lane="72508821#5_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa72631942#0" lane="72631942#0_0" roadsideCapacity="25" length="5"/>
     <parkingArea id="pa72631942#1" lane="72631942#1_0" roadsideCapacity="19" length="5"/>
     <parkingArea id="pa72641085#0" lane="72641085#0_0" roadsideCapacity="20" length="5"/>
@@ -1260,7 +1259,6 @@
     <parkingArea id="pa75701372#1" lane="75701372#1_0" roadsideCapacity="5" length="5"/>
     <parkingArea id="pa75701372#3" lane="75701372#3_0" roadsideCapacity="13" length="5"/>
     <parkingArea id="pa75701372#4" lane="75701372#4_0" roadsideCapacity="12" length="5"/>
-    <parkingArea id="pa75701374#0" lane="75701374#0_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa75701374#1" lane="75701374#1_0" roadsideCapacity="22" length="5"/>
     <parkingArea id="pa75701374#2" lane="75701374#2_0" roadsideCapacity="2" length="5"/>
     <parkingArea id="pa75701374#4" lane="75701374#4_0" roadsideCapacity="14" length="5"/>
@@ -1368,7 +1366,7 @@
     <parkingArea id="pa77712876#11" lane="77712876#11_0" roadsideCapacity="8" length="5"/>
     <parkingArea id="pa77712876#2" lane="77712876#2_0" roadsideCapacity="8" length="5"/>
     <parkingArea id="pa77712876#3" lane="77712876#3_0" roadsideCapacity="6" length="5"/>
-    <parkingArea id="pa77712876#4" lane="77712876#4_0" roadsideCapacity="3" length="5"/>
+    <parkingArea id="pa77712876#4" lane="77712876#4_0" roadsideCapacity="2" length="5"/>
     <parkingArea id="pa77712876#5" lane="77712876#5_0" roadsideCapacity="1" length="5"/>
     <parkingArea id="pa77712876#7" lane="77712876#7_0" roadsideCapacity="4" length="5"/>
     <parkingArea id="pa77712876#8" lane="77712876#8_0" roadsideCapacity="10" length="5"/>
@@ -1398,7 +1396,7 @@
     <parkingArea id="pa77790788#1" lane="77790788#1_0" roadsideCapacity="10" length="5"/>
     <parkingArea id="pa77790788#2" lane="77790788#2_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa77790788#3" lane="77790788#3_0" roadsideCapacity="11" length="5"/>
-    <parkingArea id="pa77790788#4" lane="77790788#4_0" roadsideCapacity="8" length="5"/>
+    <parkingArea id="pa77790788#4" lane="77790788#4_0" roadsideCapacity="6" length="5"/>
     <parkingArea id="pa77790788#5" lane="77790788#5_0" roadsideCapacity="44" length="5"/>
     <parkingArea id="pa77790788#6" lane="77790788#6_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa77790815#0" lane="77790815#0_0" roadsideCapacity="22" length="5"/>
@@ -1458,7 +1456,7 @@
     <parkingArea id="pa841305892" lane="841305892_0" roadsideCapacity="1" length="5"/>
     <parkingArea id="pa85631060#0" lane="85631060#0_0" roadsideCapacity="9" length="5"/>
     <parkingArea id="pa85631060#1" lane="85631060#1_0" roadsideCapacity="18" length="5"/>
-    <parkingArea id="pa85631061#0" lane="85631061#0_0" roadsideCapacity="11" length="5"/>
+    <parkingArea id="pa85631061#0" lane="85631061#0_0" roadsideCapacity="12" length="5"/>
     <parkingArea id="pa85631061#1" lane="85631061#1_0" roadsideCapacity="107" length="5"/>
     <parkingArea id="pa85631065#0" lane="85631065#0_0" roadsideCapacity="7" length="5"/>
     <parkingArea id="pa85631065#1" lane="85631065#1_0" roadsideCapacity="9" length="5"/>
@@ -1652,4 +1650,7 @@
     <parkingArea id="pa970642926" lane="970642926_0" roadsideCapacity="12" length="5"/>
     <parkingArea id="pa970808982" lane="970808982_0" roadsideCapacity="60" length="5"/>
     <parkingArea id="pa970808983" lane="970808983_0" roadsideCapacity="15" length="5"/>
+    <parkingArea id="paFEEC" lane="FEEC_0" roadsideCapacity="15" length="5"/>
+    <parkingArea id="paIC" lane="IC_0" roadsideCapacity="7" length="5"/>
+    <parkingArea id="pabegin" lane="begin_0" roadsideCapacity="21" length="5"/>
 </additional>

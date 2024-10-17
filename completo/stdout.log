@@ -1,71 +1,71 @@
 > Executing step 0
 >> Running router on PATHGEN.trips.xml
->>> Begin time: 2024-10-10 19:27:02.867391
->>> End time: 2024-10-10 19:27:03.634962
->>> Duration: 0:00:00.767571
+>>> Begin time: 2024-10-17 11:30:43.526495
+>>> End time: 2024-10-17 11:30:44.317603
+>>> Duration: 0:00:00.791108
 <<
 >> Running simulation
->>> Begin time: 2024-10-10 19:27:03.635058
->>> End time: 2024-10-10 19:27:05.594027
->>> Duration: 0:00:01.958969
+>>> Begin time: 2024-10-17 11:30:44.317673
+>>> End time: 2024-10-17 11:30:46.055810
+>>> Duration: 0:00:01.738137
 <<
-< Step 0 ended (duration: 0:00:02.727154)
+< Step 0 ended (duration: 0:00:02.529485)
 ------------------
 
 > Executing step 1
 >> Running router on 000/PATHGEN_000.rou.alt.xml
->>> Begin time: 2024-10-10 19:27:05.607175
->>> End time: 2024-10-10 19:27:06.403061
->>> Duration: 0:00:00.795886
+>>> Begin time: 2024-10-17 11:30:46.072294
+>>> End time: 2024-10-17 11:30:46.856759
+>>> Duration: 0:00:00.784465
 <<
 >> Running simulation
->>> Begin time: 2024-10-10 19:27:06.403187
->>> End time: 2024-10-10 19:27:08.311387
->>> Duration: 0:00:01.908200
+>>> Begin time: 2024-10-17 11:30:46.856862
+>>> End time: 2024-10-17 11:30:48.575452
+>>> Duration: 0:00:01.718590
 <<
-< Step 1 ended (duration: 0:00:02.704587)
+< Step 1 ended (duration: 0:00:02.503335)
 ------------------
 
 > Executing step 2
 >> Running router on 001/PATHGEN_001.rou.alt.xml
->>> Begin time: 2024-10-10 19:27:08.338488
->>> End time: 2024-10-10 19:27:09.123969
->>> Duration: 0:00:00.785481
+>>> Begin time: 2024-10-17 11:30:48.581821
+>>> End time: 2024-10-17 11:30:49.363844
+>>> Duration: 0:00:00.782023
 <<
 >> Running simulation
->>> Begin time: 2024-10-10 19:27:09.124055
->>> End time: 2024-10-10 19:27:11.021046
->>> Duration: 0:00:01.896991
+>>> Begin time: 2024-10-17 11:30:49.363943
+>>> End time: 2024-10-17 11:30:51.191239
+>>> Duration: 0:00:01.827296
 <<
-< Step 2 ended (duration: 0:00:02.682802)
+< Step 2 ended (duration: 0:00:02.609627)
 ------------------
 
 > Executing step 3
 >> Running router on 002/PATHGEN_002.rou.alt.xml
->>> Begin time: 2024-10-10 19:27:11.034070
->>> End time: 2024-10-10 19:27:11.796172
->>> Duration: 0:00:00.762102
+>>> Begin time: 2024-10-17 11:30:51.204504
+>>> End time: 2024-10-17 11:30:51.925341
+>>> Duration: 0:00:00.720837
 <<
 >> Running simulation
->>> Begin time: 2024-10-10 19:27:11.796300
->>> End time: 2024-10-10 19:27:13.336082
->>> Duration: 0:00:01.539782
+>>> Begin time: 2024-10-17 11:30:51.925427
+>>> End time: 2024-10-17 11:30:53.293532
+>>> Duration: 0:00:01.368105
 <<
-< Step 3 ended (duration: 0:00:02.302175)
+< Step 3 ended (duration: 0:00:02.089216)
 ------------------
 
 > Executing step 4
 >> Running router on 003/PATHGEN_003.rou.alt.xml
->>> Begin time: 2024-10-10 19:27:13.341652
->>> End time: 2024-10-10 19:27:13.894734
->>> Duration: 0:00:00.553082
+>>> Begin time: 2024-10-17 11:30:53.306064
+>>> End time: 2024-10-17 11:30:53.871010
+>>> Duration: 0:00:00.564946
 <<
 >> Running simulation
->>> Begin time: 2024-10-10 19:27:13.894843
->>> End time: 2024-10-10 19:27:15.357612
->>> Duration: 0:00:01.462769
+>>> Begin time: 2024-10-17 11:30:53.871122
+>>> End time: 2024-10-17 11:30:55.181342
+>>> Duration: 0:00:01.310220
 <<
-< Step 4 ended (duration: 0:00:02.016181)
+< Step 4 ended (duration: 0:00:01.875442)
 ------------------
 
-dua-iterate ended (duration: 0:00:12.498409)
+dua-iterate ended (duration: 0:00:11.660484)

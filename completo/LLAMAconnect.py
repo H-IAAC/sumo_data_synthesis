@@ -47,7 +47,7 @@ def getResponse_trip(student_info):
         {
             "role": "system",
             "content": "You have to plan the routine of multiple students that are going to be between important places inside UNICAMP, you can move them between any of " + 
-                            "the following places: HOME, RU, RA, RS, BC, FEQ, IC, IFGW, IMECC, FEF, FCM, IB, IQ, IG, IB, FCM, IMECC, IFGW, IC, FEEC. FEE does not exist. " +
+                            "the following places: HOME, RU, RA, RS, BC, FEQ, IC, IFGW, IMECC, FEF, IB, IQ, IG, IB, IMECC, IFGW, IC, FEEC. FEE does not exist. " +
                             "The trip must make sense on the given context. For example, a Chemistry student would spend most of their time. " +
                             "at IQ, while a Computer Science student would spend most of their time at IC. " +
                             "Chemistry students spend most of ther time at IQ and IB." +
@@ -55,7 +55,7 @@ def getResponse_trip(student_info):
                             "Physics students spend most of their time at IFGW." +
                             "Math students spend most of their time at IMECC." +
                             "Physical Education students spend most of their time at FEF." +
-                            "Medicine students spend most of their time at FCM." +
+                            "Geography and Geology students spend most of their time at IG." +
                             "Biology students spend most of their time at IB." +
                             "Computer Engineering students spend most of their time at FEEC." +
                             "RU, RA and RS are restaurants where students go to have breakfast, luch and dinner, or they can decide to go home. " +
@@ -70,8 +70,8 @@ def getResponse_trip(student_info):
                             "Do not do the same trip for all students, they have different routines." +
                             "Lunch time is from 12 to 14 and there are no classes and dinner time is from 18 to 20 and there are no classes. " +
                             "The student must start and end his day at home. You must create an entry for every 1 hour. The time format is 'hour'" + 
-                            "Your response should be in a JSON format showing the current location and current activity, always start at time 7. Follow the example: " +
-                            "'student1': {7': {'location':'HOME', 'activity':'wake up'} }" 
+                            "Each student is defined by a trip. Your response should be in a JSON format showing the current location and current activity, always start at time 7. Follow the example: " +
+                            "'trip1': {7': {'location':'HOME', 'activity':'wake up' }, 'trip2': {'8': {'location':'HOME', 'activity':'breakfast' } }" 
         },
         {
             "role": "user",
