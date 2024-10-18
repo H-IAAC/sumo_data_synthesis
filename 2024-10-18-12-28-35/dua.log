@@ -1,0 +1,135 @@
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '000/iteration_000_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
+Loading net-file from '000/../osm.net.xml' ... done (2741ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (20ms).
+Loading additional-files from '000/../park.add.xml' ... done (46ms).
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', actuated phase 7 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', linkIndex 10,11,12,13,31,32,33,34,35,36,37,39,40 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', linkIndex 9,10,11,20,21,22,23 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1519994621_1689194771_1689194797_1877674879_#9more', linkIndex 10,11 has no controlling detector.
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 576.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 2.83s
+ Real time factor: 203.75
+ UPS: 8585.426247
+Vehicles:
+ Inserted: 71
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 71 queries and explored 2887.68 edges on average.
+DijkstraRouter spent 0.35s answering queries (4.89ms on average).
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '001/iteration_001_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '001/iteration_001.sumocfg']
+Loading net-file from '001/../osm.net.xml' ... done (1928ms).
+Loading additional-files from '001/../edgedata.add.xml' ... done (16ms).
+Loading additional-files from '001/../park.add.xml' ... done (35ms).
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', actuated phase 7 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', linkIndex 10,11,12,13,31,32,33,34,35,36,37,39,40 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', linkIndex 9,10,11,20,21,22,23 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1519994621_1689194771_1689194797_1877674879_#9more', linkIndex 10,11 has no controlling detector.
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 576.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 2.25s
+ Real time factor: 256
+ UPS: 10787.111111
+Vehicles:
+ Inserted: 71
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 71 queries and explored 2887.68 edges on average.
+DijkstraRouter spent 0.27s answering queries (3.80ms on average).
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '002/iteration_002_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '002/iteration_002.sumocfg']
+Loading net-file from '002/../osm.net.xml' ... done (1900ms).
+Loading additional-files from '002/../edgedata.add.xml' ... done (18ms).
+Loading additional-files from '002/../park.add.xml' ... done (35ms).
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', actuated phase 7 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', linkIndex 10,11,12,13,31,32,33,34,35,36,37,39,40 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', linkIndex 9,10,11,20,21,22,23 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1519994621_1689194771_1689194797_1877674879_#9more', linkIndex 10,11 has no controlling detector.
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 576.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 1.73s
+ Real time factor: 332.756
+ UPS: 14021.374928
+Vehicles:
+ Inserted: 71
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 71 queries and explored 2887.68 edges on average.
+DijkstraRouter spent 0.27s answering queries (3.80ms on average).
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '003/iteration_003_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '003/iteration_003.sumocfg']
+Loading net-file from '003/../osm.net.xml' ... done (1875ms).
+Loading additional-files from '003/../edgedata.add.xml' ... done (13ms).
+Loading additional-files from '003/../park.add.xml' ... done (30ms).
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', actuated phase 7 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', linkIndex 10,11,12,13,31,32,33,34,35,36,37,39,40 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', linkIndex 9,10,11,20,21,22,23 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1519994621_1689194771_1689194797_1877674879_#9more', linkIndex 10,11 has no controlling detector.
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 576.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 1.67s
+ Real time factor: 345.738
+ UPS: 14568.427371
+Vehicles:
+ Inserted: 71
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 71 queries and explored 2887.68 edges on average.
+DijkstraRouter spent 0.27s answering queries (3.77ms on average).
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '004/iteration_004_osm.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '004/iteration_004.sumocfg']
+Loading net-file from '004/../osm.net.xml' ... done (1885ms).
+Loading additional-files from '004/../edgedata.add.xml' ... done (21ms).
+Loading additional-files from '004/../park.add.xml' ... done (29ms).
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', actuated phase 7 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11146996597_11146996598_11146996599_11146996600_#9more', linkIndex 10,11,12,13,31,32,33,34,35,36,37,39,40 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', actuated phase 3 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_11255009927_11255009930_11255009931_11255009932_#5more', linkIndex 9,10,11,20,21,22,23 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1519994621_1689194771_1689194797_1877674879_#9more', linkIndex 10,11 has no controlling detector.
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 576.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 1.69s
+ Real time factor: 341.84
+ UPS: 14404.154303
+Vehicles:
+ Inserted: 71
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 71 queries and explored 2887.68 edges on average.
+DijkstraRouter spent 0.27s answering queries (3.85ms on average).
