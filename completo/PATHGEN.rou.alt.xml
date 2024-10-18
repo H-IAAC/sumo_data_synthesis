@@ -46,7 +46,7 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="veh_passenger" maxSpeed="50.00" vClass="passenger" accel="2" decel="5" sigma="0.5" minGapLat="0.1">
+    <vType id="veh_passenger" maxSpeed="50.00" vClass="passenger" accel="2" decel="5" sigma="0.5" minGapLat="0.1" lcPushy="1">
         <param key="device.rerouting.adaptation-interval" value="10"/>
         <param key="device.rerouting.adaptation-steps" value="18"/>
         <param key="device.rerouting.probability" value="1.0"/>
