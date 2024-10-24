@@ -7,13 +7,14 @@
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="osm_pt.rou.xml,osm.bus.trips.xml,PATHGEN.rou.alt.xml,osm.pedestrian.rou.xml"/>
+        <route-files value="osm_pt.rou.xml,osm.bus.trips.xml, osm.passenger.trips.xml,osm.pedestrian.rou.xml"/>
         <additional-files value="osm_stops.add.xml, pa_rerouter.xml"/>
     </input>
 
     <processing>
         <ignore-route-errors value="true"/>
-        <tls.actuated.jam-threshold value="30"/>
+	<tls.actuated.jam-threshold value="30"/>
+	<time-to-teleport value="-1" />
     </processing>
 
     <routing>
