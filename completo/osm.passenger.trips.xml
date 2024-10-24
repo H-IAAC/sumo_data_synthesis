@@ -74,7 +74,7 @@
     <trip id="veh11" type="veh_passenger" depart="20.07" departLane="best" from="539691353#8" to="147379116#4"/>
     
     <trip id="veh12" type="veh_passenger" depart="21.89" departLane="best" from="563505740#1" to="563505769#10">
-        <stop parkingArea="pa75701374#0" duration="200" /> 
+        <stop parkingArea="pabegin" duration="200" /> 
     </trip>
 
     <trip id="veh13" type="veh_passenger" depart="23.71" departLane="best" from="77790788#1" to="70056689#16"/>
