@@ -118,5 +118,3 @@ def showGaussian(parameter, style):
     plt.plot(x, p, 'k', linewidth=2)
     plt.title(f'Gaussian Distribution with mean={m} and sd={s}')
     plt.show()
-
-parseVehiclesXML(generateVehicleTypes(["agg"], 10), ["agg"])
