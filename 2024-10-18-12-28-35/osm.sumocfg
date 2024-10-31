@@ -14,6 +14,8 @@
     <processing>
         <ignore-route-errors value="true"/>
         <tls.actuated.jam-threshold value="30"/>
+        <time-to-teleport value="-1" />
+        <lateral-resolution value="0.8"/>
     </processing>
 
     <routing>
@@ -22,7 +24,6 @@
     </routing>
 
     <parameters>
-        <lateral-resolution value="0.8"/>
     </parameters>
 
 

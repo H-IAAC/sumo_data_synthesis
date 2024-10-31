@@ -105,6 +105,22 @@ def getResponse_coordinates(location):
 
     return chat_completion.choices[0].message.content
 
+def getResponse(message):
+
+    instructions_content = (f"{message}"
+                            )
+    message = [
+        {
+            "role": "user",
+            "content": instructions_content,
+        }
+    ]
+
+    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192")
+
+    return chat_completion.choices[0].message.content
+
+
 # THIS RESPONSE IS NOT WORKING PROPERLY
 # response = getResponse_coordinates("Faculdade de Engenharia Elétrica e de Computação da Universidade Estadual de Campinas - FEEC/UNICAMP")
 # print(json.loads(response)['latitude'], ",", json.loads(response)['longitude'])
