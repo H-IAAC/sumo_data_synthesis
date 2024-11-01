@@ -1,5 +1,7 @@
 import requests
 
+
+
 # Your API key
 api_key = 'AIzaSyDawXekmQroEhqyajmBPqZQv7PpYYARn7c'
 
@@ -30,7 +32,7 @@ def geocode_address(address):
 
 import requests
 
-def find_nearby_building(latitude, longitude, build_type, radius):
+def find_nearby_building(latitude, longitude, build_type, radius, mode='driving', n=5):
     # URL for the Places API Nearby Search
     url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
     
@@ -55,7 +57,8 @@ def find_nearby_building(latitude, longitude, build_type, radius):
                     "name": place['name'],
                     "address": place.get('vicinity', 'No address available'),
                     "latitude": place['geometry']['location']['lat'],
-                    "longitude": place['geometry']['location']['lng']
+                    "longitude": place['geometry']['location']['lng'],
+                    "distance": get_distance(latitude, longitude, place['geometry']['location']['lat'], place['geometry']['location']['lng'], mode)
                 })
             return results
         else:
@@ -63,11 +66,44 @@ def find_nearby_building(latitude, longitude, build_type, radius):
     else:
         return f"Error: {response.status_code}"
 
+def get_distance(origin_lat, origin_lng, dest_lat, dest_lng, mode='driving'):
+    # URL for the Distance Matrix API
+    url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
+    
+    # Define the parameters
+    params = {
+        'origins': f'{origin_lat},{origin_lng}',
+        'destinations': f'{dest_lat},{dest_lng}',
+        'mode': mode,  # Mode of transportation (driving, walking, bicycling, transit)
+        'key': api_key
+    }
+    
+    # Make the request
+    response = requests.get(url, params=params)
+    
+    # Check if the request was successful
+    if response.status_code == 200:
+        data = response.json()
+        if data['status'] == 'OK':
+            element = data['rows'][0]['elements'][0]
+            if element['status'] == 'OK':
+                distance = element['distance']['text']
+                duration = element['duration']['text']
+                return {
+                    'distance': distance,
+                    'duration': duration
+                }
+            else:
+                return f"Error: {element['status']}"
+        else:
+            return f"Error: {data['status']}"
+    else:
+        return f"Error: {response.status_code}"
 
-result = geocode_address("IB, Barão Geraldo, Campinas, Brazil")
+result = geocode_address("FDUSP, Centro, São Paulo, Brazil")
 lat, lon = result[0]['latitude'], result[0]['longitude']
 print(lat, lon)
-buildings = find_nearby_building(lat, lon, 'restaurant', 500)
+buildings = find_nearby_building(lat, lon, 'cafe', 100, mode='driving')
 print(len(buildings))
 for building in buildings:
-    print(building['name'], building['address'])
+    print(building['name'], building['distance'])
