@@ -3,146 +3,116 @@
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
-Loading net-file from '000/../osm.net.xml' ... done (561ms).
-Loading additional-files from '000/../edgedata.add.xml' ... done (4ms).
-Loading additional-files from '000/../osm_stops.add.xml' ... done (30ms).
+Loading net-file from '000/../osm.net.xml' ... done (777ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (6ms).
+Loading additional-files from '000/../osm_stops.add.xml' ... done (44ms).
 Loading done.
-Warning: Value of tau=0.86 in vehicle type 'v_agg4' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.87 in vehicle type 'v_agg2' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.71 in vehicle type 'v_agg0' lower than simulation step size may cause collisions.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh1'; junction collision with vehicle 'veh3', lane=':cluster_10123108690_1102452333_0_0', gap=-0.21, time=994.00, stage=move.
-Warning: Vehicle 'veh1' ends teleporting on edge '72508815#14', time=994.00.
-Simulation ended at time: 2574.00.
+Simulation ended at time: 2889.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.65s
- Real time factor: 3960
- UPS: 30967.692308
+ Duration: 0.80s
+ Real time factor: 3624.84
+ UPS: 15154.328733
 Vehicles:
- Inserted: 10
+ Inserted: 5
  Running: 0
  Waiting: 0
- Teleports: 1 (Collisions: 1)
-DijkstraRouter answered 90 queries and explored 457.66 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.41ms on average).
+DijkstraRouter answered 49 queries and explored 584.18 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.57ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '001/iteration_001_PATHGEN_000.duarcfg']
-Warning: No interval matches passed time=44.75 in edge '147379108#2'.
+Warning: No interval matches passed time=17.54 in edge '-75259400#5'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '001/iteration_001.sumocfg']
-Loading net-file from '001/../osm.net.xml' ... done (548ms).
-Loading additional-files from '001/../edgedata.add.xml' ... done (6ms).
-Loading additional-files from '001/../osm_stops.add.xml' ... done (29ms).
+Loading net-file from '001/../osm.net.xml' ... done (776ms).
+Loading additional-files from '001/../edgedata.add.xml' ... done (5ms).
+Loading additional-files from '001/../osm_stops.add.xml' ... done (43ms).
 Loading done.
-Warning: Value of tau=0.86 in vehicle type 'v_agg4' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.87 in vehicle type 'v_agg2' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.71 in vehicle type 'v_agg0' lower than simulation step size may cause collisions.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh1'; junction collision with vehicle 'veh3', lane=':cluster_10123108690_1102452333_0_0', gap=-0.21, time=994.00, stage=move.
-Warning: Vehicle 'veh1' ends teleporting on edge '72508815#14', time=994.00.
-Simulation ended at time: 2574.00.
+Simulation ended at time: 2889.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.82s
- Real time factor: 3158.28
- UPS: 24698.159509
+ Duration: 0.73s
+ Real time factor: 3968.41
+ UPS: 16590.659341
 Vehicles:
- Inserted: 10
+ Inserted: 5
  Running: 0
  Waiting: 0
- Teleports: 1 (Collisions: 1)
-DijkstraRouter answered 90 queries and explored 457.66 edges on average.
-DijkstraRouter spent 0.06s answering queries (0.67ms on average).
+DijkstraRouter answered 49 queries and explored 584.18 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.59ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '002/iteration_002_PATHGEN_001.duarcfg']
-Warning: No interval matches passed time=44.75 in edge '147379108#2'.
+Warning: No interval matches passed time=17.54 in edge '-75259400#5'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '002/iteration_002.sumocfg']
-Loading net-file from '002/../osm.net.xml' ... done (533ms).
+Loading net-file from '002/../osm.net.xml' ... done (770ms).
 Loading additional-files from '002/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '002/../osm_stops.add.xml' ... done (29ms).
+Loading additional-files from '002/../osm_stops.add.xml' ... done (43ms).
 Loading done.
-Warning: Value of tau=0.86 in vehicle type 'v_agg4' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.87 in vehicle type 'v_agg2' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.71 in vehicle type 'v_agg0' lower than simulation step size may cause collisions.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh1'; junction collision with vehicle 'veh3', lane=':cluster_10123108690_1102452333_0_0', gap=-0.21, time=994.00, stage=move.
-Warning: Vehicle 'veh1' ends teleporting on edge '72508815#14', time=994.00.
-Simulation ended at time: 2574.00.
+Simulation ended at time: 2889.00.
 Reason: All vehicles have left the simulation.
 Performance:
  Duration: 0.71s
- Real time factor: 3645.89
- UPS: 28511.331445
+ Real time factor: 4046.22
+ UPS: 16915.966387
 Vehicles:
- Inserted: 10
+ Inserted: 5
  Running: 0
  Waiting: 0
- Teleports: 1 (Collisions: 1)
-DijkstraRouter answered 90 queries and explored 457.66 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.41ms on average).
+DijkstraRouter answered 49 queries and explored 584.18 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.59ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '003/iteration_003_PATHGEN_002.duarcfg']
-Warning: No interval matches passed time=44.75 in edge '147379108#2'.
+Warning: No interval matches passed time=17.54 in edge '-75259400#5'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '003/iteration_003.sumocfg']
-Loading net-file from '003/../osm.net.xml' ... done (546ms).
-Loading additional-files from '003/../edgedata.add.xml' ... done (5ms).
+Loading net-file from '003/../osm.net.xml' ... done (665ms).
+Loading additional-files from '003/../edgedata.add.xml' ... done (4ms).
 Loading additional-files from '003/../osm_stops.add.xml' ... done (31ms).
 Loading done.
-Warning: Value of tau=0.86 in vehicle type 'v_agg4' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.87 in vehicle type 'v_agg2' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.71 in vehicle type 'v_agg0' lower than simulation step size may cause collisions.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh1'; junction collision with vehicle 'veh3', lane=':cluster_10123108690_1102452333_0_0', gap=-0.21, time=994.00, stage=move.
-Warning: Vehicle 'veh1' ends teleporting on edge '72508815#14', time=994.00.
-Simulation ended at time: 2574.00.
+Simulation ended at time: 2889.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.75s
- Real time factor: 3450.4
- UPS: 26982.573727
+ Duration: 0.56s
+ Real time factor: 5149.73
+ UPS: 21529.411765
 Vehicles:
- Inserted: 10
+ Inserted: 5
  Running: 0
  Waiting: 0
- Teleports: 1 (Collisions: 1)
-DijkstraRouter answered 90 queries and explored 457.66 edges on average.
-DijkstraRouter spent 0.05s answering queries (0.50ms on average).
+DijkstraRouter answered 49 queries and explored 584.18 edges on average.
+DijkstraRouter spent 0.02s answering queries (0.49ms on average).
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/duarouter', '-c', '004/iteration_004_PATHGEN_003.duarcfg']
-Warning: No interval matches passed time=44.75 in edge '147379108#2'.
+Warning: No interval matches passed time=17.54 in edge '-75259400#5'.
  Using edge's length / max speed.
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '004/iteration_004.sumocfg']
-Loading net-file from '004/../osm.net.xml' ... done (548ms).
-Loading additional-files from '004/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '004/../osm_stops.add.xml' ... done (29ms).
+Loading net-file from '004/../osm.net.xml' ... done (541ms).
+Loading additional-files from '004/../edgedata.add.xml' ... done (4ms).
+Loading additional-files from '004/../osm_stops.add.xml' ... done (28ms).
 Loading done.
-Warning: Value of tau=0.86 in vehicle type 'v_agg4' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.87 in vehicle type 'v_agg2' lower than simulation step size may cause collisions.
-Warning: Value of tau=0.71 in vehicle type 'v_agg0' lower than simulation step size may cause collisions.
 Simulation version 1.21.0 started with time: 0.00.
-Warning: Teleporting vehicle 'veh1'; junction collision with vehicle 'veh3', lane=':cluster_10123108690_1102452333_0_0', gap=-0.21, time=994.00, stage=move.
-Warning: Vehicle 'veh1' ends teleporting on edge '72508815#14', time=994.00.
-Simulation ended at time: 2574.00.
+Simulation ended at time: 2889.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.70s
- Real time factor: 3698.28
- UPS: 28920.977011
+ Duration: 0.57s
+ Real time factor: 5059.54
+ UPS: 21152.364273
 Vehicles:
- Inserted: 10
+ Inserted: 5
  Running: 0
  Waiting: 0
- Teleports: 1 (Collisions: 1)
-DijkstraRouter answered 90 queries and explored 457.66 edges on average.
-DijkstraRouter spent 0.04s answering queries (0.41ms on average).
+DijkstraRouter answered 49 queries and explored 584.18 edges on average.
+DijkstraRouter spent 0.03s answering queries (0.51ms on average).

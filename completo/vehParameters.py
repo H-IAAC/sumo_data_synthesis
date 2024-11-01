@@ -10,7 +10,7 @@ parameters = {
     "decel": {"min": 0, "max": None, "agg_min": 2.0, "agg_max": 5.0, "norm_min": 1.0, "norm_max": 2.0},  # Deceleration ability of the vehicle type
     "startupDelay": {"min": 0, "max": None, "agg_min": 0, "agg_max": 0.5, "norm_min": 0.5, "norm_max": 1.0},  # Extra time before starting to drive after having to stop (not applied to scheduled stop)
     "sigma": {"min": 0, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 0.0, "norm_max": 0.3},  # Driver imperfection (0 for perfect)
-    "tau": {"min": 0, "max": None, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 1.5, "norm_max": 2.0},  # The driver's desired minimum time headway (how closely it's willing to follow the car ahead)
+    "tau": {"min": 1.0, "max": None, "agg_min": 1.0, "agg_max": 1.5, "norm_min": 1.5, "norm_max": 2.0},  # The driver's desired minimum time headway (how closely it's willing to follow the car ahead)
     "maxSpeed": {"min": 0, "max": None, "agg_min": 100, "agg_max": 130, "norm_min": 80, "norm_max": 100},  # Vehicle maximum velocity
     "speedFactor": {"min": 0, "max": None, "agg_min": 1.5, "agg_max": 2.0, "norm_min": 1.0, "norm_max": 1.5},  # Vehicle's expected multiplier for lane speed limits and desiredMaxSpeed
     "lcStrategic": {"min": 0, "max": None, "agg_min": 5.0, "agg_max": 10.0, "norm_min": 1.0, "norm_max": 3.0},  # The eagerness for performing strategic lane changing (higher values result in earlier lane-changing)
@@ -22,7 +22,7 @@ parameters = {
     "lcOvertakeDeltaSpeedFactor": {"min": -1, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": -0.5, "norm_max": 0.5},  # Speed difference factor for the eagerness of overtaking a neighbor vehicle before changing lanes.
     "lcPushy": {"min": 0, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 0.0, "norm_max": 0.2},  # Willingness to encroach laterally on other drivers. default: 0, range [0-1]
     "lcAssertive": {"min": 1, "max": None, "agg_min": 2.0, "agg_max": 5.0, "norm_min": 1.0, "norm_max": 1.5},  # Willingness to accept lower front and rear gaps on the target lane. The required gap is divided by this value. default: 1, range: positive reals
-    "lcImpatience": {"min": -1, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 0.0, "norm_max": 0.2},  # Dynamic factor for modifying lcAssertive and lcPushy. default: 0 (no effect). Impatience acts as a multiplier.
+    "lcImpatience": {"min": 0, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 0.0, "norm_max": 0.2},  # Dynamic factor for modifying lcAssertive and lcPushy. default: 0 (no effect). Impatience acts as a multiplier.
     "lcTimeToImpatience": {"min": 0, "max": None, "agg_min": 5.0, "agg_max": 10.0, "norm_min": 10.0, "norm_max": 20.0},  # Time to reach maximum impatience (of 1). Impatience grows whenever a lane-change maneuver is blocked. default: infinity (disables impatience growth)
     "lcLaneDiscipline": {"min": 0, "max": None, "agg_min": 1.0, "agg_max": 3.0, "norm_min": 0.0, "norm_max": 1.0},  # Reluctance to perform speedGain-changes that would place the vehicle across a lane boundary. default: 0.0
     "lcSigma": {"min": 0, "max": 1, "agg_min": 0.5, "agg_max": 1.0, "norm_min": 0.0, "norm_max": 0.2},  # Lateral positioning-imperfection. default: 0.0. Greater value means more imperfections
@@ -88,7 +88,7 @@ def getParamValue(parameter, style):
 
     # Checking for values out of the allowed range
     if value < parameters[parameter]["min"]:
-        value = parameters[parameter]["min"], 
+        value = parameters[parameter]["min"]
     elif parameters[parameter]["max"] != None and value > parameters[parameter]["max"]:
         value = parameters[parameter]["max"]
     
