@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-22 14:46:41.747899 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="osm.net.xml"/>
+    <additional-files value="osm_stops.add.xml"/>
+    <output-trip-file value="randtrips.trips.xml"/>
+    <vehicle-class value="passenger"/>
+    <validate value="True"/>
+    <end value="0.0"/>
+</configuration>
+-->
+
+<!-- generated on 2024-11-22 14:46:41 by Eclipse SUMO duarouter Version 1.21.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <additional-files value="osm_stops.add.xml"/>
+        <route-files value="randtrips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="routes.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="0.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd"/>

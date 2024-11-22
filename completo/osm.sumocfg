@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="osm_pt.rou.xml,osm.bus.trips.xml, PATHGEN.rou.alt.xml,osm.pedestrian.rou.xml"/>
+        <route-files value="merged.rou.alt.xml,osm.pedestrian.rou.xml"/>
         <additional-files value="osm_stops.add.xml, pa_rerouter.xml"/>
     </input>
 
