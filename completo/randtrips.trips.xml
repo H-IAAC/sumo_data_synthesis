@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-22 12:01:59.152899 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="osm.net.xml"/>
+    <additional-files value="osm_stops.add.xml"/>
+    <output-trip-file value="randtrips.trips.xml"/>
+    <vehicle-class value="passenger"/>
+    <end value="10.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="passenger" vClass="passenger"/>
+    <trip id="0" depart="0.00" from="70200198#5" to="-147419826#0" type="passenger"/>
+    <trip id="1" depart="1.00" from="-88141324#0" to="-77948759#0" type="passenger"/>
+    <trip id="2" depart="2.00" from="75416306#7" to="72644044#1" type="passenger"/>
+    <trip id="3" depart="3.00" from="85631065#2" to="-563505769#10" type="passenger"/>
+    <trip id="4" depart="4.00" from="386834059#5" to="-147419852#3" type="passenger"/>
+    <trip id="5" depart="5.00" from="-77781347#2" to="563505743#3" type="passenger"/>
+    <trip id="6" depart="6.00" from="-147419852#1" to="-75701376#4" type="passenger"/>
+    <trip id="7" depart="7.00" from="72508572#1" to="689691698#12" type="passenger"/>
+    <trip id="8" depart="8.00" from="-77783516#0" to="70056689#18" type="passenger"/>
+    <trip id="9" depart="9.00" from="77674942#2" to="-1130964472" type="passenger"/>
+</routes>

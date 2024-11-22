@@ -1,45 +1,16 @@
 import os
-from groq import Groq
 import json
+
+from groq import Groq
+from tqdm import tqdm
+
 os.environ["GROQ_API_KEY"] = "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"
 
 client = Groq(
     api_key = os.environ.get("GROQ_API_KEY"),
 )
 
-def getResponse_xml(path, veh_id, departure_time, parking_area_duration):
-    path_str = ""
-    path = ["FEEC", "pa75701374#0", "FEEC"]
-    path_str += f"from='{path[0]}'"
-    for i in range(1, len(path)):
-        if i == len(path) - 1:
-            path_str += f" to='{path[i]}'"
-        else:
-            path_str += f", {path[i]},"
-
-    instructions_content = ("Be concise, show only the code. " + 
-                    "Given the following trip example: <trip id='veh_id' type='veh_passenger' depart='21.89' departLane='best' from='begin_id' to='end_id'> <stop parkingArea='parkingArea_id' duration='200' /> </trip>. "
-                    f'Give me a trip that follows the ids {path_str}.' +
-                    "The from parameter of the trip is the first edge, the to paremeter is the last edge. " +
-                    f"The depart is going to be at {departure_time}. " +
-                    f"The veh_id is going to be {veh_id}. " +
-                    "A stop is going to be created for each edge that starts with 'pa'. " +
-                    f"The duration of the stop is {parking_area_duration}. " +
-                    "Create a trip that is in the same format as the example trip."
-                    "Aswer me using a JSON. "
-                    )
-    message = [
-        {
-            "role": "user",
-            "content": instructions_content,
-        }
-    ]
-
-    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=0.0)
-
-    return chat_completion.choices[0].message.content
-
-def getResponse_trip(student_info):
+def getResponse_trip_unicamp(student_info):
 
     instructions_content = (f"Plan the information of the following student: {student_info}. Students do not have classes during lunch and dinner time" 
                             )
@@ -82,31 +53,8 @@ def getResponse_trip(student_info):
 
     return chat_completion.choices[0].message.content
 
-# student_info = "A Computer Engineering student and a Computer Science student. They usually have lunch together at RU. The students are never late to classes."
-# print(getResponse_trip(student_info))
-
-def getResponse_coordinates(location):
-    instructions_content = (f"Give me the coordinates of the following location at UNICAMP: {location}"
-                            )
-    message = [
-        {
-            "role": "system",
-            "content": "You need to give me coordinates for given buildings inside the State University of Campinas at Cidade Universitária - Campinas. " +
-                        "Always answer using a JSON contaning 'latitude, longitude' and nothing more." +
-                        "Be as precise as possible. The building is located inside the campus.",
-        },
-        {
-            "role": "user",
-            "content": instructions_content,
-        }
-    ]
-
-    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=0.0, response_format={"type": "json_object"})
-
-    return chat_completion.choices[0].message.content
-
 def getResponse(message):
-
+    # Returns a regular LLAMA response
     instructions_content = (f"{message}"
                             )
     message = [
@@ -120,7 +68,77 @@ def getResponse(message):
 
     return chat_completion.choices[0].message.content
 
+def getResponse_trip(student_info, places):
 
-# THIS RESPONSE IS NOT WORKING PROPERLY
-# response = getResponse_coordinates("Faculdade de Engenharia Elétrica e de Computação da Universidade Estadual de Campinas - FEEC/UNICAMP")
-# print(json.loads(response)['latitude'], ",", json.loads(response)['longitude'])
+    institute = places['institute']
+    university = places['university'][0]
+    leisure = places['leisure']
+    eating = places['eating']
+    shopping = places['shopping']
+    sports = places['sports']
+
+    instructions_content = (f"Plan the information of the following student: {student_info}." 
+                            )
+    message = [
+        {
+            "role": "system",
+            "content": "You needo to plan the routine of a student. I want to know what they do during the day, including having lunch, studying, leisure, shopping and practicing sports. Whenever students are having classes or studying, they MUST be at one of the following places, according to what they are studying which are separated by OR: {institutes}. A biology student would most likely be at the Institute of Biology or at the Institute of Geociences, for example. Whenever students are having lunch, breakfast or dinner, they MUST be at one of the following places: {eating}. Whenever students are having leisure, they MUST be at one of the following places: {leisure}. Whenever students are shopping, they MUST be at one of the following places: {shopping}. Whenever students are praticing sports, they MUST be at the following places: {sports}. Do not use any location that has not been provided. Students have lunch between 12 and 14 and dinner between 18 and 21. Students do not go to any institute after 20. Students only go to the gym once every day. Some days, students go the gas_station. Do not name the places, just choose one of the options. Students spend most of their day having classes at an institute. Your response should be in a JSON format showing only the current location and current activity. Never include locations to activities. Always start the day at time 7 at home and end the day at time 23 at home, update every hour. Locations always have a single place, never two. Follow the example where the first number is the time: {{'7': {{'location':'home', 'activity':'wake up'}}, '8': {{'location':'{institute}', 'activity':'study'}}, '9':{{'location':'cafe', 'activity':'breakfast'}}}}.".format(
+                institutes=" or ".join(institute),
+                institute=institute[0],
+                university=", ".join(university),
+                leisure=", ".join(leisure),
+                shopping=", ".join(shopping),
+                sports=", ".join(sports),
+                eating=", ".join(eating)
+            )
+        },
+        {
+            "role": "user",
+            "content": instructions_content,
+        }
+    ]
+    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=1, response_format={"type": "json_object"})
+
+    return chat_completion.choices[0].message.content
+
+def responseCheck(response, total_locations):
+    # Checks if the response from the LLM makes sense
+    response = json.loads(response)
+    if len(response) < 17:
+        print("Error: The response is missing some hours")
+        return False
+    for item in response:
+        try:
+            local = response[item]['location']
+            if local not in total_locations or ',' in local:
+                print(f"Error: Invalid location generated '{local}'")
+                return False
+        except KeyError:
+            print("Error: The response is missing a key")
+            return False
+    return True
+
+def generate_response_trips(student_info, places, number_of_trips=5):
+    # Student_info with informations about the student
+    # Places with the places that the student can go, it is divided in categories: leisure, eating, shopping, sports, institutes, university
+
+    responses = []
+    i = 0
+    total_locations = sum(places.values(), []) + ['home']
+    with tqdm(total=number_of_trips) as pbar:
+        while i < number_of_trips:
+
+            try:
+                response = getResponse_trip(student_info, places)
+
+                if responseCheck(response, total_locations):
+                    responses.append(response)
+                    i += 1
+                    pbar.update(1)  # Update the progress bar
+                else:
+                    print("Invalid response. Generating a new one.")
+
+            except Exception as e:
+                print(f"Error generating response {e}. Trying a new one.")
+
+    return responses
