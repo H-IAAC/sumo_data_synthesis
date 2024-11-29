@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-29 15:29:34.736433 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="osm.net.xml"/>
+    <additional-files value="osm_stops.add.xml"/>
+    <output-trip-file value="randtrips.trips.xml"/>
+    <route-file value="randtrips.rou.xml"/>
+    <vehicle-class value="passenger"/>
+    <validate value="True"/>
+    <end value="10.0"/>
+</configuration>
+-->
+
+<!-- generated on 2024-11-29 15:29:34 by Eclipse SUMO duarouter Version 1.21.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <additional-files value="osm_stops.add.xml"/>
+        <route-files value="randtrips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="randtrips.trips.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="passenger" vClass="passenger"/>
+    <trip id="0" type="passenger" depart="0.00" from="70200198#5" to="-147419826#0"/>
+    <trip id="1" type="passenger" depart="1.00" from="-88141324#0" to="-77948759#0"/>
+    <trip id="2" type="passenger" depart="2.00" from="75416306#7" to="72644044#1"/>
+    <trip id="3" type="passenger" depart="3.00" from="85631065#2" to="-563505769#10"/>
+    <trip id="4" type="passenger" depart="4.00" from="386834059#5" to="-147419852#3"/>
+    <trip id="5" type="passenger" depart="5.00" from="-77781347#2" to="563505743#3"/>
+    <trip id="6" type="passenger" depart="6.00" from="-147419852#1" to="-75701376#4"/>
+    <trip id="7" type="passenger" depart="7.00" from="72508572#1" to="689691698#12"/>
+    <trip id="8" type="passenger" depart="8.00" from="-77783516#0" to="70056689#18"/>
+    <trip id="9" type="passenger" depart="9.00" from="77674942#2" to="-1130964472"/>
+</routes>
