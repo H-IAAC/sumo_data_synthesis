@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-09-13 10:52:38 by Eclipse SUMO sumo Version 1.20.0
+<!-- generated on 2024-09-26 11:23:30 by Eclipse SUMO sumo Version 1.20.0
 -->
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="osm.passenger.trips.xml"/>
-        <additional-files value="park.add.xml"/>
+        <route-files value="finaltrips.rou.xml,osm.pedestrian.rou.xml"/>
+        <additional-files value="osm_stops.add.xml, pa_rerouter.xml"/>
     </input>
-
-    <output>
-        <tripinfo-output value ="output/results.out.xml"/>
-        <amitran-output value ="output/amitran.out.xml"/>
-
-    </output>
 
     <processing>
         <ignore-route-errors value="true"/>
-        <tls.actuated.jam-threshold value="30"/>
+	    <tls.actuated.jam-threshold value="30"/>
+	    <time-to-teleport value="-1" />
     </processing>
 
     <routing>
         <device.rerouting.adaptation-steps value="18"/>
         <device.rerouting.adaptation-interval value="10"/>
     </routing>
+
+    <parameters>
+        <lateral-resolution value="0.8"/>
+    </parameters>
 
     <report>
         <verbose value="true"/>
