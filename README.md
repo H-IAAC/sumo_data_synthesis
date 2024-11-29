@@ -18,8 +18,9 @@ Note that each folder is a project on its own and does not depend on any other f
 
 Later versions of the repository will be better organized.
 
-- completo: folder containing the most updated version of the scripts.
-- testes: folder containing experiments on APIs.
+- scripts: folder containing scrips that are used for every map, such as calls to APIs.
+- unicamp: folder containing files related to the map of Unicamp.
+- testes: folder containing experiments, currently running mermaid to check for variability in trip generation.
 
 ## Dependencies / Requirements
 
