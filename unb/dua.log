@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '000/iteration_000_finaltrips.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
+Loading net-file from '000/../unb/osm.net.xml' ... done (2416ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (20ms).
+Loading additional-files from '000/../unb/park.add.xml' ... done (98ms).
+Loading done.
+Simulation version 1.21.0 started with time: 0.00.
+Simulation ended at time: 1490.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 1.87s
+ Real time factor: 796.791
+ UPS: 1363.636364
+Vehicles:
+ Inserted: 2
+ Running: 0
+ Waiting: 0
+DijkstraRouter answered 11 queries and explored 1951.64 edges on average.
+DijkstraRouter spent 0.02s answering queries (2.09ms on average).
