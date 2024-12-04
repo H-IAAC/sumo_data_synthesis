@@ -29,7 +29,7 @@ parameters = {
     "lcAccelLat": {"min": 0, "max": None, "agg_min": 1.0, "agg_max": 3.0, "norm_min": 0.5, "norm_max": 1.0},  # Maximum lateral acceleration per second. Together with maxSpeedLat this constrains lateral movement speed.
 }
 
-def parseVehiclesXML(vtypes_dist, styles):
+def parseVehiclesXML(vtypes_dist, styles, root_folder):
     xml = ""
     for style in styles:
         xml += f'<vTypeDistribution id=\"{style}\">\n'
@@ -47,7 +47,7 @@ def parseVehiclesXML(vtypes_dist, styles):
             xml += '\t</vType>\n'
 
         xml += "</vTypeDistribution>\n"
-    with open ("vTypesDistribution.xml", "w") as f:
+    with open (f"{root_folder}/vTypesDistribution.xml", "w") as f:
         f.write(xml)
     return xml
 
@@ -101,20 +101,25 @@ def getParamValue(parameter, style):
     return value, probability
 
 
-def showGaussian(parameter, style):
-    m = (parameters[parameter][f"{style}_max"] + parameters[parameter][f"{style}_min"])/2
-    s = (parameters[parameter][f"{style}_max"] - m) / stats.norm.ppf(0.975) # Finding the standard deviation for 95% of the data to be within the range
+def showGaussian(parameter, styles):
+    plt.figure(figsize=(10, 6))
+    
+    for style in styles:
+        m = (parameters[parameter][f"{style}_max"] + parameters[parameter][f"{style}_min"]) / 2
+        s = (parameters[parameter][f"{style}_max"] - m) / stats.norm.ppf(0.975)  # Finding the standard deviation for 95% of the data to be within the range
 
-    # Generate data
-    data = np.random.normal(m, s, 5000)
+        # Generate data
+        data = np.random.normal(m, s, 5000)
 
-    # Plot the data
-    plt.hist(data, bins=30, density=True, alpha=0.6, color='g')
+        # Plot the data
+        plt.hist(data, bins=30, density=True, alpha=0.6, label=f'{style} style')
 
-    # Plot the Gaussian distribution
-    xmin, xmax = plt.xlim()
-    x = np.linspace(xmin, xmax, 100)
-    p = np.exp(-0.5*((x - m) / s)**2) / (s * np.sqrt(2 * np.pi))
-    plt.plot(x, p, 'k', linewidth=2)
-    plt.title(f'Gaussian Distribution with mean={m} and sd={s}')
+        # Plot the Gaussian distribution
+        xmin, xmax = plt.xlim()
+        x = np.linspace(xmin, xmax, 100)
+        p = np.exp(-0.5 * ((x - m) / s) ** 2) / (s * np.sqrt(2 * np.pi))
+        plt.plot(x, p, linewidth=2)
+
+    plt.title(f'Gaussian Distribution for {parameter}')
+    plt.legend()
     plt.show()
