@@ -3,68 +3,20 @@
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
-Loading net-file from '000/../osm.net.xml' ... done (544ms).
-Loading additional-files from '000/../edgedata.add.xml' ... done (4ms).
-Loading additional-files from '000/../osm_stops.add.xml' ... done (29ms).
+Loading net-file from '000/../unicamp/osm.net.xml' ... done (547ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (5ms).
+Loading additional-files from '000/../unicamp/park.add.xml' ... done (31ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1497.00.
+Simulation ended at time: 1093.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.32s
- Real time factor: 4707.55
- UPS: 14738.993711
+ Duration: 0.26s
+ Real time factor: 4171.76
+ UPS: 8137.404580
 Vehicles:
- Inserted: 5
+ Inserted: 2
  Running: 0
  Waiting: 0
-DijkstraRouter answered 37 queries and explored 473.49 edges on average.
-DijkstraRouter spent 0.01s answering queries (0.30ms on average).
--------------------------------------------------------------------------------
-['/usr/share/sumo/bin/duarouter', '-c', '001/iteration_001_finaltrips_000.duarcfg']
-Warning: No interval matches passed time=17.25 in edge '72644726#2'.
- Using edge's length / max speed.
-Success.
--------------------------------------------------------------------------------
-['/usr/share/sumo/bin/sumo', '-c', '001/iteration_001.sumocfg']
-Loading net-file from '001/../osm.net.xml' ... done (540ms).
-Loading additional-files from '001/../edgedata.add.xml' ... done (4ms).
-Loading additional-files from '001/../osm_stops.add.xml' ... done (29ms).
-Loading done.
-Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1497.00.
-Reason: All vehicles have left the simulation.
-Performance:
- Duration: 0.34s
- Real time factor: 4468.66
- UPS: 13991.044776
-Vehicles:
- Inserted: 5
- Running: 0
- Waiting: 0
-DijkstraRouter answered 37 queries and explored 473.49 edges on average.
-DijkstraRouter spent 0.01s answering queries (0.35ms on average).
--------------------------------------------------------------------------------
-['/usr/share/sumo/bin/duarouter', '-c', '002/iteration_002_finaltrips_001.duarcfg']
-Warning: No interval matches passed time=17.25 in edge '72644726#2'.
- Using edge's length / max speed.
-Success.
--------------------------------------------------------------------------------
-['/usr/share/sumo/bin/sumo', '-c', '002/iteration_002.sumocfg']
-Loading net-file from '002/../osm.net.xml' ... done (565ms).
-Loading additional-files from '002/../edgedata.add.xml' ... done (5ms).
-Loading additional-files from '002/../osm_stops.add.xml' ... done (28ms).
-Loading done.
-Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1497.00.
-Reason: All vehicles have left the simulation.
-Performance:
- Duration: 0.35s
- Real time factor: 4339.13
- UPS: 13585.507246
-Vehicles:
- Inserted: 5
- Running: 0
- Waiting: 0
-DijkstraRouter answered 37 queries and explored 473.49 edges on average.
-DijkstraRouter spent 0.01s answering queries (0.35ms on average).
+DijkstraRouter answered 14 queries and explored 566.64 edges on average.
+DijkstraRouter spent 0.01s answering queries (0.86ms on average).

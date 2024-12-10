@@ -1,43 +1,15 @@
 > Executing step 0
->> Running router on finaltrips.rou.xml
->>> Begin time: 2024-12-02 15:26:41.029443
->>> End time: 2024-12-02 15:26:41.547549
->>> Duration: 0:00:00.518106
+>> Running router on unicamp/finaltrips.rou.xml
+>>> Begin time: 2024-12-09 16:30:05.392255
+>>> End time: 2024-12-09 16:30:05.902250
+>>> Duration: 0:00:00.509995
 <<
 >> Running simulation
->>> Begin time: 2024-12-02 15:26:41.547630
->>> End time: 2024-12-02 15:26:42.644758
->>> Duration: 0:00:01.097128
+>>> Begin time: 2024-12-09 16:30:05.902302
+>>> End time: 2024-12-09 16:30:06.974468
+>>> Duration: 0:00:01.072166
 <<
-< Step 0 ended (duration: 0:00:01.615449)
+< Step 0 ended (duration: 0:00:01.582323)
 ------------------
 
-> Executing step 1
->> Running router on 000/finaltrips_000.rou.alt.xml
->>> Begin time: 2024-12-02 15:26:42.650677
->>> End time: 2024-12-02 15:26:43.193023
->>> Duration: 0:00:00.542346
-<<
->> Running simulation
->>> Begin time: 2024-12-02 15:26:43.193123
->>> End time: 2024-12-02 15:26:44.294166
->>> Duration: 0:00:01.101043
-<<
-< Step 1 ended (duration: 0:00:01.643673)
-------------------
-
-> Executing step 2
->> Running router on 001/finaltrips_001.rou.alt.xml
->>> Begin time: 2024-12-02 15:26:44.301058
->>> End time: 2024-12-02 15:26:44.841560
->>> Duration: 0:00:00.540502
-<<
->> Running simulation
->>> Begin time: 2024-12-02 15:26:44.841659
->>> End time: 2024-12-02 15:26:45.982207
->>> Duration: 0:00:01.140548
-<<
-< Step 2 ended (duration: 0:00:01.681316)
-------------------
-
-dua-iterate ended (duration: 0:00:04.962086)
+dua-iterate ended (duration: 0:00:01.620371)
