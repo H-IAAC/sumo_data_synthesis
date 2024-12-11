@@ -19,7 +19,7 @@ Note that each folder is a project on its own and does not depend on any other f
 Later versions of the repository will be better organized.
 
 - scripts: folder containing scrips that are used for every map, such as calls to APIs.
-- unicamp: folder containing files related to the map of Unicamp.
+- unicamp/unv: folder containing files related to the university maps.
 - testes: folder containing experiments, currently running mermaid to check for variability in trip generation.
 
 ## Dependencies / Requirements
@@ -28,7 +28,9 @@ Later versions of the repository will be better organized.
 > ncessárias para execução do projeto antes de se clonar o repositório, assim como possíveis
 > requesitos mínimos para o projeto (processador, gpu, compilador, etc).
 
-The only requirement to use this repository is having SUMO installed. The documentation for the installation can be found at: https://sumo.dlr.de/docs/Installing/index.html.
+The only requirement to use this repository is having SUMO installed. The documentation for the installation can be found at: https://sumo.dlr.de/docs/Installing/index.html. In theory, the only command needed is:
+
+`pip install sumolib`
 
 PS: From my experience, osmWebWizard.py (a script that will be used to generate SUMO networks) only works on the .deb version of Firefox.
 
@@ -38,7 +40,17 @@ PS: From my experience, osmWebWizard.py (a script that will be used to generate 
 > aceitos (por exemplo, como trocar o caminho para o arquivo de entrada ou saída). No caso de 
 > bibliotecas/API fornecer o link para a documentação do mesmo se disponível.
 
-Currently, the process to generate routines from different places is too complicated, but this will be solved soon. To run the simulation on the `completo`folder, the instructions are the following:
+### Creating files for a new map
+
+To create a new map, the scripts `generateMap.sh` and `generateParkingAreas.sh` are used. Maybe execution permission is needed: `chmod +x generateMap.sh` and `chmod +x generateParkingAreas.sh`.
+
+
+
+`generateMap.sh` is going to ask for a folder name and then open a browser tab where it is possible to select the area of the map that is going to be generated. It is possible to select the area and generate the map straight away, however disabling Polygons, ignoring Aeroways, Railways and any sort of asset that is not necessary for the simulation will substantially speed up the process. More about this at https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html.
+
+*Because of the way SUMO works, this script is not going to exit on its own, you must kill it in the terminal using `Ctrl+C` after the map is generated and the SUMO GUI is opened*. After the GUI is opened, all the files have been generated and you may close the window.
+
+
 
 Use the command `sumo-gui osm.sumocfg` to start the simulation as it is using the SUMO GUI.
 
