@@ -1,8 +1,8 @@
 import requests
-import LLAMAconnect as llama
+import os
 
-# Your API key
-api_key = 'AIzaSyDawXekmQroEhqyajmBPqZQv7PpYYARn7c'
+# Get the API key from the environment variable
+api_key = os.getenv('GMAPS_KEY')
 
 def geocode_address(address):
     # URL for the Geocoding API

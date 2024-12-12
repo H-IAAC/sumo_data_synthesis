@@ -4,10 +4,8 @@ import json
 from groq import Groq
 from tqdm import tqdm
 
-os.environ["GROQ_API_KEY"] = "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"
-
 client = Groq(
-    api_key = os.environ.get("GROQ_API_KEY"),
+    api_key = os.getenv("GROQ_API_KEY"),
 )
 
 def getResponse_trip_unicamp(student_info):
