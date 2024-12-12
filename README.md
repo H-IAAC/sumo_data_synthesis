@@ -39,7 +39,7 @@ Always execute `generateMap.sh` and then `generateParkingAreas.sh`.
 
 `generateMap.sh` is going to ask for a folder name and then open a browser tab where it is possible to select the area of the map that is going to be generated. It is possible to select the area and generate the map straight away, however disabling Polygons, ignoring Aeroways, Railways and any sort of asset that is not necessary for the simulation will substantially speed up the process. More about this at https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html.
 
-*Because of the way SUMO works, this script is not going to exit on its own, you must kill it in the terminal using `Ctrl+C` after the map is generated and the SUMO GUI is opened*. After the GUI is opened, all the files have been generated and you may close the window.
+**Because of the way SUMO works, this script is not going to exit on its own, you must kill it in the terminal using `Ctrl+C` after the map is generated and the SUMO GUI is opened**. After the GUI is opened, all the files have been generated and you may close the window.
 
 Lastly, run `generateParkingAreas.sh`to generate parking areas and rerouters for the folder you created. After this, you are all set to start creating routines for the map.
 
@@ -49,7 +49,7 @@ Use the command `sumo-gui osm.sumocfg` inside the map folder to start the simula
 
 `pathGeneratorOSM.ipynb` is the main project notebook. It is used to generate routines for students using LLAMA (this is why you need a Groq key). Firstly, the `FOLDER_NAME` variable must be changed to the name of the desired map folder. Furthermore, to change the student information to generate the routines, it's necessary to change the `student_info` variable with the desired description. 
 
-The routine is going to be generated based on the `places` dictionary, which should contain the names of the university institutes and tags for the other activities, these tags must exist in the OSM tags for *amenities*, *leisure* or *shop* (more about this at https://wiki.openstreetmap.org/wiki). The LLM is going to generate a general routine with places like 'supermarket' or 'restaurant' and the OSM API is used to look for the closest places matching the tag.
+The routine is going to be generated based on the `places` dictionary, which should contain the names of the university institutes and tags for the other activities, these tags must exist in the OSM tags for **amenities**, **leisure** or **shop** (more about this at https://wiki.openstreetmap.org/wiki). The LLM is going to generate a general routine with places like 'supermarket' or 'restaurant' and the OSM API is used to look for the closest places matching the tag.
 
 Following this, random trips are going to be generated to fill the simulation. The `rand_trips` variable must be set to either 'None' or 'randtrips.trips.xml'. If set to None, the random trips generated will not get alternative routes (significantly faster). If set to 'randtrips.trips.xml', all the random trips will have their alternative routes calculated (significantly slower). The trips generated using the LLM are always going to have their alternative routes calculated.
 
