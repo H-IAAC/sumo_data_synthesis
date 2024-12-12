@@ -1,6 +1,6 @@
 
-# `Classificação de Comportamento de Motoristas a partir da Análise de Dados Inerciais`
-> Descrição do projeto, objetivos e intenções de uso
+# `Inertial Data Synthesis of Drivers with Mutiple Behavioral Patterns`
+# `Síntese de Dados Inerciais de Motoristas com Diferentes Padrões de Comportamento`
 
 This project was developed as part of the Cognitive Architectures research line from 
 the Hub for Artificial Intelligence and Cognitive Architectures (H.IAAC) of the State University of Campinas (UNICAMP).
@@ -49,7 +49,7 @@ Use the command `sumo-gui osm.sumocfg` inside the map folder to start the simula
 
 `pathGeneratorOSM.ipynb` is the main project notebook. It is used to generate routines for students using LLAMA (this is why you need a Groq key). Firstly, the `FOLDER_NAME` variable must be changed to the name of the desired map folder. Furthermore, to change the student information to generate the routines, it's necessary to change the `student_info` variable with the desired description. 
 
-The routine is going to be generated based on the `places` dictionary, which should contain the names of the university institutes and tags for the other activities, these tags must exist in the OSM tags for **amenities**, **leisure** or **shop** (more about this at https://wiki.openstreetmap.org/wiki). The LLM is going to generate a general routine with places like 'supermarket' or 'restaurant' and the OSM API is used to look for the closest places matching the tag.
+The routine is going to be generated based on the `places` dictionary, which should contain the names of the university institutes and tags for the other activities, these tags must exist in the OSM tags for **amenities**, **leisure** or **shop** (more about this at https://wiki.openstreetmap.org/wiki/Key:shop, https://wiki.openstreetmap.org/wiki/Category:Amenities and https://wiki.openstreetmap.org/wiki/Key:leisure). The LLM is going to generate a general routine with places like 'supermarket' or 'restaurant' and the OSM API is used to look for the closest places matching the tag.
 
 Following this, random trips are going to be generated to fill the simulation. The `rand_trips` variable must be set to either 'None' or 'randtrips.trips.xml'. If set to None, the random trips generated will not get alternative routes (significantly faster). If set to 'randtrips.trips.xml', all the random trips will have their alternative routes calculated (significantly slower). The trips generated using the LLM are always going to have their alternative routes calculated.
 
