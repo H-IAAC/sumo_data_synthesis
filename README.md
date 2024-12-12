@@ -31,10 +31,6 @@ PS: From my experience, osmWebWizard.py (a script that will be used to generate 
 
 ## Installation / Usage
 
-> Passo-a-passo para execução do projeto localmente, assim como parâmetros de configuração
-> aceitos (por exemplo, como trocar o caminho para o arquivo de entrada ou saída). No caso de 
-> bibliotecas/API fornecer o link para a documentação do mesmo se disponível.
-
 ### Creating files for a new map
 
 To create a new map, the scripts `generateMap.sh` and `generateParkingAreas.sh` are used. Maybe execution permission is needed: `chmod +x generateMap.sh` and `chmod +x generateParkingAreas.sh`.
