@@ -1,6 +1,5 @@
 
 # `Inertial Data Synthesis of Drivers with Mutiple Behavioral Patterns`
-# `Síntese de Dados Inerciais de Motoristas com Diferentes Padrões de Comportamento`
 
 This project was developed as part of the Cognitive Architectures research line from 
 the Hub for Artificial Intelligence and Cognitive Architectures (H.IAAC) of the State University of Campinas (UNICAMP).
