@@ -34,7 +34,7 @@ PS: From my experience, osmWebWizard.py (a script that will be used to generate 
 
 To create a new map, the scripts `generateMap.sh` and `generateParkingAreas.sh` are used. Maybe execution permission is needed: `chmod +x generateMap.sh` and `chmod +x generateParkingAreas.sh`.
 
-Always execute `generateMap.sh` and then `generateParkingAreas.sh`.
+Always execute `generateMap.sh` and then `generateParkingAreas.sh` using the same name folder.
 
 `generateMap.sh` is going to ask for a folder name and then open a browser tab where it is possible to select the area of the map that is going to be generated. It is possible to select the area and generate the map straight away, however disabling Polygons, ignoring Aeroways, Railways and any sort of asset that is not necessary for the simulation will substantially speed up the process. More about this at https://sumo.dlr.de/docs/Tutorials/OSMWebWizard.html.
 
