@@ -106,12 +106,3 @@ def find_nearby_building(latitude, longitude, build_type, radius):
         print(f"Error: {response.status_code}")
         return []
     
-
-# Example usage
-# latitude = -22.817359  # Latitude of a location (e.g., the White House)
-# longitude = -47.071652 # Longitude of a location
-# build_type = "general"  # Type of building (e.g., 'school', 'hospital', 'restaurant')
-# radius = 1500  # Search radius in meters
-
-# results = find_nearby_building(latitude, longitude, build_type, radius)
-# print(results)
