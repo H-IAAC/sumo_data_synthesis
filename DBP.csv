@@ -1,0 +1,23 @@
+Parameter,Range,Description
+minGap,>= 0,Minimum gap from another vehicle when standing
+accel,>= 0,Acceleration ability of the vehicle type
+decel,>= 0,Deceleration ability of the vehicle type
+startupDelay,>= 0,Extra time before starting to drive after having to stop (not applied to scheduled stop)
+sigma,"[0, 1]",Driver imperfection (0 for perfect)
+tau,>= 0,The driver's desired minimum time headaway (how closely its willing to follow the car ahead)
+maxSpeed,>= 0,Vehicle maximum velocity
+speedFactor,> 0,Vehicle's expected multiplier for lane speed limits and desiredMaxSpeed
+lcStrategic,[0-inf],The eagerness for performing strategic lane changing (higher values result in earlier lane-changing)
+lcCooperative,[0-1],The willingness for performing cooperative lane changing. Lower values result in reduced cooperation.
+lcSpeedGain,[0-inf],The eagerness for performing lane changing to gain speed. Higher values result in more lane-changing
+lcKeepRight,[0-inf],"The eagerness for following the obligation to keep right. Higher values result in earlier lane-changing. default: 1.0, range [0-inf) A value of 0 disables this type of changing."
+lcOvertakeRight,[0-1],"The probability for violating rules against overtaking on the right default: 0, range [0-1]"
+lcSpeedGainLookahead,[0-inf],"Time in seconds for antecipating slow down. By ""looking ahead,"" the driver can anticipate if the current lane or the adjacent lanes will slow down in the near future."
+lcOvertakeDeltaSpeedFactor,[-1-1],"Speed difference factor for the eagerness of overtaking a neighbor vehicle before changing lanes. If the actual speed difference between ego and neighbor is higher than factor*speedlimit, this vehicle will try to overtake the leading. 1 for vehicles that are more agressive to overtake and -1 for vehicles that are conservativevehicle on the neighboring lane before performing the lane change."
+lcPushy,[0-1],"Willingness to encroach laterally on other drivers. default: 0, range [0-1]"
+lcAssertive,[1-inf],"Willingness to accept lower front and rear gaps on the target lane. The required gap is divided by this value. default: 1, range: positive reals"
+lcImpatience,[-1-1],Dynamic factor for modifying lcAssertive and lcPushy. default: 0 (no effect). Impatience acts as a multiplier. At -1 the multiplier is 0.5 and at 1 the multiplier is 1.5.
+lcTimeToImpatience,[0-inf],Time to reach maximum impatience (of 1). Impatience grows whenever a lane-change manoeuvre is blocked.. default: infinity (disables impatience growth)
+lcLaneDiscipline,>= 0,Reluctance to perform speedGain-changes that would place the vehicle across a lane boundary. default: 0.0
+lcSigma,[0-1],Lateral positioning-imperfection. default: 0.0. Greater value means more imperfections
+lcAccelLat,>= 0,Maximum lateral acceleration per second. Together with maxSpeedLat this constrains lateral movement speed.
