@@ -94,12 +94,14 @@ def find_nearby_building(latitude, longitude, build_type, radius):
                 continue
             
             # Add the result
-            results.append({
-                "name": element.get("tags", {}).get("name", "Unknown"),
-                "latitude": lat,
-                "longitude": lon,
-                "type": element['type']
-            })
+            name = element.get("tags", {}).get("name")
+            if name:
+                results.append({
+                    "name": name,
+                    "latitude": lat,
+                    "longitude": lon,
+                    "type": element['type']
+                })
         return results
     
     else:
