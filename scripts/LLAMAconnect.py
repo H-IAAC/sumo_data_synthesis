@@ -108,7 +108,7 @@ def generate_range_parameters(parameters, styles):
     message = [
         {
             "role": "system",
-            "content": "You need to return range of values in JSON for parameters that represent how a driver behaves in traffic, give an explanation for why you picked each value. Following, there is a list of parameter, total possible range and description:\n {parameters}.\nThe more aggressive a driver is, the less they tend to cooperate in traffic and the more selfish they are. Do not go beyond the range restriction for the parameters. The response should be generated in the following format: {{'parameter': {{'style': {{'explanation': 'string', 'min': value, 'max': value}}}}}}. For example, if the styles are aggressive and normal: {{'lcCooperative': {{'aggressive': {{'explanation': 'aggresive drivers are not very cooperative', 'min': 0.2, 'max': 0.5}}, 'normal': {{'explanation': 'normal drivers are cooperative', 'min': 0.5, 'max': 0.8}}}}}}.".format(parameters=parameters)
+            "content": "You need to return range of values in JSON for every one of the parameters that represent how a driver behaves in traffic, give an explanation for why you picked each value. Following, there is a list of parameter, total possible range and description:\n {parameters}.\nThe more aggressive a driver is, the less they tend to cooperate in traffic and the more selfish they are. Do not go beyond the range restriction for the parameters. The response should be generated in the following format and should contain ALL THE PARAMETERS PROVIDED: {{'parameter': {{'style': {{'explanation': 'string', 'min': value, 'max': value}}}}}}. For example, if the styles are aggressive and normal: {{'lcCooperative': {{'aggressive': {{'explanation': 'aggresive drivers are not very cooperative', 'min': 0.2, 'max': 0.5}}, 'normal': {{'explanation': 'normal drivers are cooperative', 'min': 0.5, 'max': 0.8}}}}}}.".format(parameters=parameters)
         },
         {
             "role": "user",
@@ -117,6 +117,7 @@ def generate_range_parameters(parameters, styles):
     ]
     try:
         chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=0.5, response_format={"type": "json_object"})
+
     except Exception as e:
         print(f"Error generating response {e}. Trying a new one.")
         return generate_range_parameters(parameters, styles)
