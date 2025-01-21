@@ -41,7 +41,7 @@ def geocode_address(address):
                 })
             return results
         else:
-            return "No results found."
+            return []
         
     else:
         return f"Error: {response.status_code}"

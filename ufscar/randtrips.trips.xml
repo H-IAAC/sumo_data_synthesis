@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-01-21 17:02:02.921493 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="ufscar/osm.net.xml"/>
+    <additional-files value="ufscar/park.add.xml"/>
+    <output-trip-file value="ufscar/randtrips.trips.xml"/>
+    <route-file value="ufscar/randtrips.rou.xml"/>
+    <vehicle-class value="passenger"/>
+    <validate value="True"/>
+    <end value="10.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-01-21 17:02:02 by Eclipse SUMO duarouter Version 1.21.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="ufscar/osm.net.xml"/>
+        <additional-files value="ufscar/park.add.xml"/>
+        <route-files value="ufscar/randtrips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="ufscar/randtrips.trips.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="10.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="passenger" vClass="passenger"/>
+    <trip id="0" type="passenger" depart="0.00" from="41227410" to="-237532646"/>
+    <trip id="1" type="passenger" depart="1.00" from="-95827734#0" to="-848288494"/>
+    <trip id="2" type="passenger" depart="2.00" from="56063750#1" to="41438598"/>
+    <trip id="3" type="passenger" depart="3.00" from="87187527" to="-274062294"/>
+    <trip id="4" type="passenger" depart="4.00" from="238376121" to="-237532652#0"/>
+    <trip id="5" type="passenger" depart="5.00" from="-667058935" to="238376227"/>
+    <trip id="6" type="passenger" depart="6.00" from="-237532646" to="-656799560#3"/>
+    <trip id="7" type="passenger" depart="7.00" from="41227685#1" to="28828222#1"/>
+    <trip id="8" type="passenger" depart="8.00" from="-667572877#2" to="40587578"/>
+    <trip id="9" type="passenger" depart="9.00" from="656799557#1" to="-189422934#2"/>
+</routes>
