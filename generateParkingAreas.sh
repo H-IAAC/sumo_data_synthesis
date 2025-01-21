@@ -1,5 +1,5 @@
 # Generating parking area files and rerouters
-
+echo "This script will generate parking areas around the map and also rerouters for them"
 read -p "Enter the name of the map folder: " folder
 if [ ! -d "$folder" ]; then
     echo "The folder '$folder' does not exist."
