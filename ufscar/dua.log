@@ -3,20 +3,20 @@
 Success.
 -------------------------------------------------------------------------------
 ['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
-Loading net-file from '000/../ufscar/osm.net.xml' ... done (85ms).
+Loading net-file from '000/../ufscar/osm.net.xml' ... done (84ms).
 Loading additional-files from '000/../edgedata.add.xml' ... done (1ms).
 Loading additional-files from '000/../ufscar/park.add.xml' ... done (17ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1369.00.
+Simulation ended at time: 1932.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.09s
- Real time factor: 15556.8
- UPS: 48863.636364
+ Duration: 0.12s
+ Real time factor: 15836.1
+ UPS: 42467.213115
 Vehicles:
  Inserted: 4
  Running: 0
  Waiting: 0
-DijkstraRouter answered 33 queries and explored 272.52 edges on average.
-DijkstraRouter spent 0.00s answering queries (0.06ms on average).
+DijkstraRouter answered 38 queries and explored 300.34 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.05ms on average).

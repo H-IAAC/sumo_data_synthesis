@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-02-01 18:04:15.969006 by randomTrips.py UNKNOWN
+<configuration>
+    <net-file value="ufscar/osm.net.xml"/>
+    <additional-files value="ufscar/park.add.xml"/>
+    <route-file value="ufscar/randomTrips/v_super_aggressive0/randtrips.rou.xml"/>
+    <trip-attributes value="type=&quot;v_super_aggressive0&quot;"/>
+    <validate value="True"/>
+    <end value="2.0"/>
+</configuration>
+-->
+
+<!-- generated on 2025-02-01 18:04:15 by Eclipse SUMO duarouter Version 1.21.0
+<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="ufscar/osm.net.xml"/>
+        <additional-files value="ufscar/park.add.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="ufscar/randomTrips/v_super_aggressive0/randtrips.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="2.0"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</duarouterConfiguration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" type="v_super_aggressive0" depart="0.00">
+        <route edges="41227410 220031785 56063750#2 56063750#3 56063750#4 227493806 40587590#4 40587590#5 40587590#6 40587590#1 40587593 227493803#2 227493803#3 227493803#4 227493803#5 85587674 285274478#3 285274490 285274476 285274498 55936633#0 55936633#1 -237532646"/>
+    </vehicle>
+    <vehicle id="1" type="v_super_aggressive0" depart="1.00">
+        <route edges="-95827734#0 905782211#1 220031762#0 220031762#4 220031762#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 70461432#3 70461432#4 70461432#5 96722456 85587734 -848288494"/>
+    </vehicle>
+</routes>
