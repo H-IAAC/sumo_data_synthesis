@@ -76,6 +76,8 @@ def generateVehicleTypes(styles, n):
         for i in range(n):
             vtypes_dist[f'veh_{style}'][f'v_{style}{i}']["probability"] = softm[i] # Assigning the normalized probability to each vType
 
+        print(softm)
+
     return vtypes_dist
 
 def generateVehicleTypesLLM(param_dict, styles, n):
