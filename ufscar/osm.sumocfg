@@ -8,7 +8,7 @@
     <processing>
         <ignore-route-errors value="true" />
         <tls.actuated.jam-threshold value="30" />
-    <time-to-teleport value="-1" /></processing>
+    <time-to-teleport value="100" /></processing>
 
     <routing>
         <device.rerouting.adaptation-steps value="18" />
