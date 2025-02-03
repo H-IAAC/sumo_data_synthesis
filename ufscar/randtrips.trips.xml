@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-02-03 12:35:09.099986 by randomTrips.py UNKNOWN
+<!-- generated on 2025-02-03 12:37:30.208593 by randomTrips.py UNKNOWN
 <configuration>
     <net-file value="ufscar/osm.net.xml"/>
     <additional-files value="ufscar/park.add.xml"/>
@@ -12,7 +12,7 @@
 </configuration>
 -->
 
-<!-- generated on 2025-02-03 12:35:09 by Eclipse SUMO duarouter Version 1.21.0
+<!-- generated on 2025-02-03 12:37:30 by Eclipse SUMO duarouter Version 1.21.0
 <duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
     <input>
