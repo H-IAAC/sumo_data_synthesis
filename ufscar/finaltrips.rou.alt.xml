@@ -1,122 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- generated on 2025-02-01 18:01:43 by Eclipse SUMO duarouter Version 1.21.0
-<duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
-
-    <input>
-        <net-file value="000/../ufscar/osm.net.xml"/>
-        <additional-files value="000/../ufscar/park.add.xml"/>
-        <route-files value="000/../ufscar/finaltrips.rou.xml"/>
-    </input>
-
-    <output>
-        <output-file value="000/finaltrips_000.rou.xml"/>
-        <exit-times value="False"/>
-    </output>
-
-    <processing>
-        <max-alternatives value="5"/>
-        <with-taz value="False"/>
-        <routing-algorithm value="dijkstra"/>
-        <weights.expand value="true"/>
-        <gawron.beta value="0.9"/>
-        <gawron.a value="0.5"/>
-        <keep-all-routes value="False"/>
-        <logit.beta value="0.15"/>
-        <logit.gamma value="1.0"/>
-    </processing>
-
-    <time>
-        <begin value="0"/>
-    </time>
-
-    <report>
-        <verbose value="False"/>
-        <no-warnings value="False"/>
-        <ignore-errors value="False"/>
-        <no-step-log value="true"/>
-    </report>
-
-    <random_number>
-        <random value="False"/>
-    </random_number>
-
-</duarouterConfiguration>
--->
-
+<?xml version='1.0' encoding='utf-8'?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <vType id="v_aggressive3" minGap="0.56" maxSpeed="123.81" probability="0.06" speedFactor="1.26" lcStrategic="2.37" lcCooperative="0.07" lcSpeedGain="2.56" lcKeepRight="1.33" lcPushy="0.61" lcAssertive="2.38" lcImpatience="1.0" lcTimeToImpatience="1.56" lcAccelLat="2.57" lcSpeedGainLookahead="2.68" lcOvertakeRight="0.5" lcLaneDiscipline="0.5" lcSigma="0.56" lcOvertakeDeltaSpeedFactor="1.0" accel="2.28" decel="2.91" sigma="0.47" startupDelay="0.82" tau="1.29">
-        <param key="device.rerouting.adaptation-interval" value="10"/>
-        <param key="device.rerouting.adaptation-steps" value="18"/>
-        <param key="device.rerouting.probability" value="1.0"/>
+    <vType id="v_aggressive3" minGap="2.95" maxSpeed="133.81" probability="0.24" speedFactor="1.40" lcStrategic="9.1" lcCooperative="0.11" lcSpeedGain="6.68" lcKeepRight="4.18" lcPushy="0.5" lcAssertive="2.94" lcImpatience="1.0" lcTimeToImpatience="2.15" lcAccelLat="2.48" lcSpeedGainLookahead="5.05" lcOvertakeRight="0.61" lcLaneDiscipline="0.93" lcSigma="0.52" lcOvertakeDeltaSpeedFactor="1.0" accel="3.61" decel="3.62" sigma="0.52" startupDelay="0.7" tau="3.62">
+        <param key="device.rerouting.adaptation-interval" value="10" />
+        <param key="device.rerouting.adaptation-steps" value="18" />
+        <param key="device.rerouting.probability" value="1.0" />
     </vType>
     <vehicle id="veh1" type="v_aggressive3" depart="0.00">
         <routeDistribution last="0">
-            <route cost="1515.39" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 48530553#1 48530553#2 41227469#0 41227469#1 -220031794 -189422934#6 -189422934#5 -189422934#4 43159187 88512247#3 48530553#2 48530553#3 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 274062303 41438713 -667572877#2 238376212 238376148#0 238376148#1 238376148#2 238376148#3 238376179 -391465208 -264549807 40818143#0 264549779 430879927#0 430879927#1 238376207#1 -238376207#1 -430879927#1 -430879927#0 933870198 264549808 264549807 391465208 238376164 238376148#5 55936639 55936637#0 55936638 274062278#0 238376188 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 274062303 41438713 -667572877#2 238376212 238376148#0 238376148#1 238376148#2 238376148#3 238376179 -391465208 -264549807 40818143#0 264549779 430879927#0 430879927#1 238376207#1 -238376207#1 -430879927#1 -430879927#0 933870198 -238376114#0 -238376112 -238376111 -238376113 -40520969 40587577 227493803#5 227493803#6 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1"/>
+            <route cost="471.43" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376151#2 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1" />
         </routeDistribution>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa41227653#1" duration="10.00"/>
-        <stop parkingArea="pa41227469#1" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa-238376207#1" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa-238376207#1" duration="10.00"/>
-        <stop parkingArea="pa41227653#1" duration="30.00"/>
-        <stop parkingArea="pa238376227" duration="30.00"/>
+        <stop parkingArea="pa238376227" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="40.00" />
+        <stop parkingArea="pa55936634#2" duration="10.00" />
+        <stop parkingArea="pa238376227" duration="20.00" />
+        <stop parkingArea="pa55936634#2" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="20.00" />
+        <stop parkingArea="pa55936634#2" duration="10.00" />
     </vehicle>
-    <vType id="v_normal2" minGap="1.24" maxSpeed="107.03" probability="0.16" speedFactor="1.16" lcStrategic="1.84" lcCooperative="0.74" lcSpeedGain="2.73" lcKeepRight="0.86" lcPushy="0.1" lcAssertive="1.3" lcImpatience="1.0" lcTimeToImpatience="2.33" lcAccelLat="1.96" lcSpeedGainLookahead="2.32" lcOvertakeRight="0.16" lcLaneDiscipline="0.65" lcSigma="0.22" lcOvertakeDeltaSpeedFactor="0.69" accel="1.88" decel="2.27" sigma="0.17" startupDelay="1.28" tau="2.75">
-        <param key="device.rerouting.adaptation-interval" value="10"/>
-        <param key="device.rerouting.adaptation-steps" value="18"/>
-        <param key="device.rerouting.probability" value="1.0"/>
+    <vType id="v_normal2" minGap="8.19" maxSpeed="91.37" probability="0.47" speedFactor="1.07" lcStrategic="3.3" lcCooperative="0.79" lcSpeedGain="3.58" lcKeepRight="2.29" lcPushy="0.08" lcAssertive="2.4" lcImpatience="0.59" lcTimeToImpatience="4.0" lcAccelLat="2.37" lcSpeedGainLookahead="3.44" lcOvertakeRight="0.09" lcLaneDiscipline="1.47" lcSigma="0.34" lcOvertakeDeltaSpeedFactor="1.0" accel="1.92" decel="1.99" sigma="0.37" startupDelay="1.67" tau="6.43">
+        <param key="device.rerouting.adaptation-interval" value="10" />
+        <param key="device.rerouting.adaptation-steps" value="18" />
+        <param key="device.rerouting.probability" value="1.0" />
     </vType>
     <vehicle id="veh2" type="v_normal2" depart="0.00">
         <routeDistribution last="0">
-            <route cost="666.06" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1"/>
+            <route cost="392.34" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1" />
         </routeDistribution>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="40.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="20.00"/>
-        <stop parkingArea="pa55936634#0" duration="20.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="20.00"/>
+        <stop parkingArea="pa238376227" duration="10.00" />
     </vehicle>
-    <vType id="v_cautious0" minGap="1.72" maxSpeed="83.55" probability="0.36" speedFactor="0.90" lcStrategic="1.42" lcCooperative="0.93" lcSpeedGain="1.4" lcKeepRight="0.56" lcPushy="0.08" lcAssertive="1.01" lcImpatience="0.27" lcTimeToImpatience="3.48" lcAccelLat="1.38" lcSpeedGainLookahead="1.48" lcOvertakeRight="0.11" lcLaneDiscipline="0.85" lcSigma="0.0" lcOvertakeDeltaSpeedFactor="0.32" accel="1.24" decel="1.3" sigma="0.89" startupDelay="1.67" tau="3.33">
-        <param key="device.rerouting.adaptation-interval" value="10"/>
-        <param key="device.rerouting.adaptation-steps" value="18"/>
-        <param key="device.rerouting.probability" value="1.0"/>
+    <vType id="v_cautious0" minGap="11.42" maxSpeed="77.71" probability="0.45" speedFactor="0.88" lcStrategic="1.5" lcCooperative="0.87" lcSpeedGain="1.31" lcKeepRight="1.35" lcPushy="0.18" lcAssertive="1.0" lcImpatience="0.43" lcTimeToImpatience="6.0" lcAccelLat="1.2" lcSpeedGainLookahead="1.9" lcOvertakeRight="0.13" lcLaneDiscipline="1.27" lcSigma="0.19" lcOvertakeDeltaSpeedFactor="1.0" accel="0.91" decel="1.34" sigma="0.18" startupDelay="2.32" tau="12.56">
+        <param key="device.rerouting.adaptation-interval" value="10" />
+        <param key="device.rerouting.adaptation-steps" value="18" />
+        <param key="device.rerouting.probability" value="1.0" />
     </vType>
     <vehicle id="veh3" type="v_cautious0" depart="0.00">
         <routeDistribution last="0">
-            <route cost="871.92" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376151#2 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1"/>
+            <route cost="1060.63" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1" />
         </routeDistribution>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="40.00"/>
-        <stop parkingArea="pa55936634#2" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#2" duration="20.00"/>
-        <stop parkingArea="pa55936634#0" duration="20.00"/>
-        <stop parkingArea="pa55936634#2" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="10.00"/>
+        <stop parkingArea="pa238376227" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="40.00" />
+        <stop parkingArea="pa238376227" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="20.00" />
+        <stop parkingArea="pa41227653#1" duration="40.00" />
+        <stop parkingArea="pa238376227" duration="10.00" />
     </vehicle>
-    <vType id="v_super_aggressive2" minGap="0.26" maxSpeed="171.45" probability="0.23" speedFactor="1.93" lcStrategic="4.08" lcCooperative="0.18" lcSpeedGain="4.29" lcKeepRight="1.67" lcPushy="0.91" lcAssertive="3.08" lcImpatience="1.0" lcTimeToImpatience="0.54" lcAccelLat="4.47" lcSpeedGainLookahead="4.63" lcOvertakeRight="0.74" lcLaneDiscipline="0.63" lcSigma="0.78" lcOvertakeDeltaSpeedFactor="1.0" accel="4.28" decel="4.03" sigma="0.84" startupDelay="0.26" tau="1.0">
-        <param key="device.rerouting.adaptation-interval" value="10"/>
-        <param key="device.rerouting.adaptation-steps" value="18"/>
-        <param key="device.rerouting.probability" value="1.0"/>
+    <vType id="v_super_aggressive2" minGap="2.05" maxSpeed="169.87" probability="0.41" speedFactor="1.70" lcStrategic="10.01" lcCooperative="0.03" lcSpeedGain="12.56" lcKeepRight="6.18" lcPushy="0.91" lcAssertive="6.13" lcImpatience="0.1" lcTimeToImpatience="2.16" lcAccelLat="5.63" lcSpeedGainLookahead="7.05" lcOvertakeRight="0.91" lcLaneDiscipline="0.7" lcSigma="0.78" lcOvertakeDeltaSpeedFactor="1.0" accel="4.83" decel="4.4" sigma="0.82" startupDelay="0.08" tau="2.11">
+        <param key="device.rerouting.adaptation-interval" value="10" />
+        <param key="device.rerouting.adaptation-steps" value="18" />
+        <param key="device.rerouting.probability" value="1.0" />
     </vType>
     <vehicle id="veh4" type="v_super_aggressive2" depart="0.00">
         <routeDistribution last="0">
-            <route cost="450.08" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 667454101 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1"/>
+            <route cost="404.95" probability="1.00000000" edges="41227653#1 41227653#2 41227653#3 264549770#5 48530553#4 48530553#5 48530553#0 40818502#0 40818502#0-AddedOffRampEdge 40818502#1 -41227410 -56063744 -227493793 -227493792 -227493794 238376118#0 238376118#0-AddedOffRampEdge 40818359 70461432#2 85587732 -237847888 237847883 838525359 40818005#2 85587733 -237862570 40818071 40818007#1 237862579 -238376172 238376201 40818012#1 40818012#2 40818012#3 41438576#0 41438576#1 41438576#2 41438576#3 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 238376225 41438576#4 238376151#1 238376109#0 238376109#1 41438483#5 41438540 41438475#5 41438475#6 238376227 41438467#5 41438467#1 41438467#2 41438467#3 41438546 41438475#1 41438475#2 41438475#3 41438575 41438483#2 41438483#3 85956361#0 238376151#3 55936634#0 55936634#1 55936634#2 55936634#3 55936634#4 40818012#5 40818012#6 40818012#1 40818035 -274062278#1 -274062294 -41438721 41438738 41438727#3 238376110 -40818003 85587669 285274478#1 838535589 227493803#7 227493803#0 40587597 40587590#3 40587590#4 40600114 227493796#0 227493796#1 41227685#0 41227685#1 41227653#0 41227653#1" />
         </routeDistribution>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="40.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="20.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
-        <stop parkingArea="pa55936634#0" duration="20.00"/>
-        <stop parkingArea="pa55936634#2" duration="10.00"/>
-        <stop parkingArea="pa238376227" duration="10.00"/>
+        <stop parkingArea="pa238376227" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="40.00" />
+        <stop parkingArea="pa238376227" duration="10.00" />
+        <stop parkingArea="pa55936634#0" duration="10.00" />
+        <stop parkingArea="pa238376227" duration="20.00" />
+        <stop parkingArea="pa55936634#0" duration="20.00" />
     </vehicle>
+<vType id="v_aggressive0" minGap="0.65" accel="2.61" decel="2.01" startupDelay="0.77" sigma="0.55" tau="1.52" maxSpeed="131.53" speedFactor="1.53" lcStrategic="2.58" lcCooperative="0.16" lcSpeedGain="2.61" lcKeepRight="1.23" lcOvertakeRight="0.51" lcSpeedGainLookahead="2.66" lcOvertakeDeltaSpeedFactor="0.91" lcPushy="0.73" lcAssertive="1.75" lcImpatience="1.0" lcTimeToImpatience="1.66" lcLaneDiscipline="0.3" lcSigma="0.5" lcAccelLat="2.52" probability="0.18088338553108196">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_aggressive1" minGap="0.82" accel="2.57" decel="1.93" startupDelay="0.76" sigma="0.34" tau="1.42" maxSpeed="125.57" speedFactor="1.36" lcStrategic="2.56" lcCooperative="0.16" lcSpeedGain="2.47" lcKeepRight="1.2" lcOvertakeRight="0.51" lcSpeedGainLookahead="2.48" lcOvertakeDeltaSpeedFactor="0.72" lcPushy="0.7" lcAssertive="2.04" lcImpatience="1.0" lcTimeToImpatience="1.69" lcLaneDiscipline="0.37" lcSigma="0.49" lcAccelLat="2.75" probability="0.31481984899716786">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_aggressive2" minGap="0.79" accel="2.69" decel="2.56" startupDelay="0.73" sigma="0.49" tau="1.56" maxSpeed="138.91" speedFactor="1.47" lcStrategic="2.5" lcCooperative="0.07" lcSpeedGain="2.41" lcKeepRight="1.25" lcOvertakeRight="0.59" lcSpeedGainLookahead="2.08" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.77" lcAssertive="1.97" lcImpatience="1.0" lcTimeToImpatience="1.63" lcLaneDiscipline="0.35" lcSigma="0.5" lcAccelLat="2.89" probability="0.3520683669878516">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_aggressive4" minGap="0.9" accel="2.52" decel="2.46" startupDelay="0.66" sigma="0.42" tau="1.0" maxSpeed="135.99" speedFactor="1.29" lcStrategic="2.71" lcCooperative="0.16" lcSpeedGain="2.66" lcKeepRight="1.35" lcOvertakeRight="0.48" lcSpeedGainLookahead="2.0" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.67" lcAssertive="1.79" lcImpatience="1.0" lcTimeToImpatience="1.84" lcLaneDiscipline="0.39" lcSigma="0.48" lcAccelLat="2.88" probability="0.0884121954113558">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_normal0" minGap="1.27" accel="2.17" decel="2.23" startupDelay="1.41" sigma="0.25" tau="2.59" maxSpeed="111.02" speedFactor="1.05" lcStrategic="1.86" lcCooperative="0.71" lcSpeedGain="2.19" lcKeepRight="0.85" lcOvertakeRight="0.1" lcSpeedGainLookahead="1.68" lcOvertakeDeltaSpeedFactor="0.75" lcPushy="0.1" lcAssertive="1.2" lcImpatience="0.98" lcTimeToImpatience="2.47" lcLaneDiscipline="0.7" lcSigma="0.34" lcAccelLat="2.03" probability="0.2203972082154149">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_normal1" minGap="1.25" accel="1.82" decel="2.24" startupDelay="1.17" sigma="0.2" tau="2.48" maxSpeed="105.62" speedFactor="1.06" lcStrategic="1.49" lcCooperative="0.74" lcSpeedGain="1.88" lcKeepRight="1.04" lcOvertakeRight="0.05" lcSpeedGainLookahead="1.99" lcOvertakeDeltaSpeedFactor="0.54" lcPushy="0.12" lcAssertive="1.44" lcImpatience="1.0" lcTimeToImpatience="2.33" lcLaneDiscipline="0.71" lcSigma="0.28" lcAccelLat="1.89" probability="0.34552161995391706">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_normal3" minGap="1.21" accel="1.9" decel="2.26" startupDelay="1.3" sigma="0.16" tau="2.39" maxSpeed="110.11" speedFactor="1.06" lcStrategic="1.92" lcCooperative="0.64" lcSpeedGain="2.49" lcKeepRight="1.06" lcOvertakeRight="0.15" lcSpeedGainLookahead="2.07" lcOvertakeDeltaSpeedFactor="0.71" lcPushy="0.15" lcAssertive="1.47" lcImpatience="0.9" lcTimeToImpatience="2.35" lcLaneDiscipline="0.62" lcSigma="0.36" lcAccelLat="1.54" probability="0.180170076086627">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_normal4" minGap="1.03" accel="2.08" decel="2.2" startupDelay="1.34" sigma="0.17" tau="2.38" maxSpeed="105.53" speedFactor="1.25" lcStrategic="1.86" lcCooperative="0.65" lcSpeedGain="1.8" lcKeepRight="0.93" lcOvertakeRight="0.03" lcSpeedGainLookahead="2.28" lcOvertakeDeltaSpeedFactor="0.65" lcPushy="0.12" lcAssertive="1.66" lcImpatience="1.0" lcTimeToImpatience="2.28" lcLaneDiscipline="0.73" lcSigma="0.34" lcAccelLat="1.61" probability="0.09419090370154308">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_cautious1" minGap="1.86" accel="1.1" decel="1.32" startupDelay="1.89" sigma="0.74" tau="4.09" maxSpeed="93.39" speedFactor="0.91" lcStrategic="1.34" lcCooperative="0.95" lcSpeedGain="1.53" lcKeepRight="0.74" lcOvertakeRight="0.1" lcSpeedGainLookahead="1.56" lcOvertakeDeltaSpeedFactor="0.32" lcPushy="0.08" lcAssertive="1.0" lcImpatience="0.16" lcTimeToImpatience="4.02" lcLaneDiscipline="0.83" lcSigma="0.01" lcAccelLat="1.22" probability="0.07807152442306863">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_cautious2" minGap="1.78" accel="1.18" decel="1.46" startupDelay="1.84" sigma="0.72" tau="3.63" maxSpeed="97.39" speedFactor="0.89" lcStrategic="1.56" lcCooperative="0.87" lcSpeedGain="1.28" lcKeepRight="0.75" lcOvertakeRight="0.11" lcSpeedGainLookahead="1.39" lcOvertakeDeltaSpeedFactor="0.37" lcPushy="0.21" lcAssertive="1.0" lcImpatience="0.61" lcTimeToImpatience="3.48" lcLaneDiscipline="0.94" lcSigma="0.07" lcAccelLat="1.15" probability="0.270902848824137">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_cautious3" minGap="1.87" accel="1.37" decel="1.33" startupDelay="1.75" sigma="0.86" tau="3.47" maxSpeed="96.11" speedFactor="0.85" lcStrategic="1.34" lcCooperative="0.87" lcSpeedGain="1.24" lcKeepRight="0.67" lcOvertakeRight="0.09" lcSpeedGainLookahead="1.29" lcOvertakeDeltaSpeedFactor="0.29" lcPushy="0.14" lcAssertive="1.0" lcImpatience="0.27" lcTimeToImpatience="3.39" lcLaneDiscipline="0.94" lcSigma="0.19" lcAccelLat="1.12" probability="0.18899240746280213">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_cautious4" minGap="1.66" accel="1.44" decel="1.27" startupDelay="1.88" sigma="0.66" tau="3.96" maxSpeed="96.08" speedFactor="0.91" lcStrategic="1.26" lcCooperative="0.87" lcSpeedGain="1.68" lcKeepRight="0.74" lcOvertakeRight="0.1" lcSpeedGainLookahead="1.4" lcOvertakeDeltaSpeedFactor="0.27" lcPushy="0.07" lcAssertive="1.0" lcImpatience="0.35" lcTimeToImpatience="3.21" lcLaneDiscipline="0.93" lcSigma="0.07" lcAccelLat="1.11" probability="0.10367400624068725">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_super_aggressive0" minGap="0.32" accel="3.95" decel="4.15" startupDelay="0.28" sigma="0.93" tau="1.0" maxSpeed="166.9" speedFactor="1.95" lcStrategic="4.57" lcCooperative="0.0" lcSpeedGain="4.55" lcKeepRight="1.75" lcOvertakeRight="0.64" lcSpeedGainLookahead="2.73" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.96" lcAssertive="2.85" lcImpatience="1.0" lcTimeToImpatience="0.85" lcLaneDiscipline="0.69" lcSigma="0.68" lcAccelLat="4.38" probability="0.17273180637438293">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_super_aggressive1" minGap="0.49" accel="4.18" decel="3.89" startupDelay="0.36" sigma="0.86" tau="1.0" maxSpeed="167.58" speedFactor="1.93" lcStrategic="3.47" lcCooperative="0.1" lcSpeedGain="3.84" lcKeepRight="1.83" lcOvertakeRight="0.78" lcSpeedGainLookahead="4.11" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.88" lcAssertive="3.2" lcImpatience="1.0" lcTimeToImpatience="0.93" lcLaneDiscipline="0.69" lcSigma="0.66" lcAccelLat="4.8" probability="0.16055681099913507">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_super_aggressive3" minGap="0.21" accel="4.34" decel="3.92" startupDelay="0.37" sigma="0.84" tau="1.0" maxSpeed="171.0" speedFactor="1.92" lcStrategic="4.52" lcCooperative="0.13" lcSpeedGain="4.04" lcKeepRight="1.55" lcOvertakeRight="0.73" lcSpeedGainLookahead="3.98" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.85" lcAssertive="3.11" lcImpatience="1.0" lcTimeToImpatience="0.64" lcLaneDiscipline="0.57" lcSigma="0.68" lcAccelLat="4.37" probability="0.23894607136493415">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
+<vType id="v_super_aggressive4" minGap="0.44" accel="4.96" decel="4.17" startupDelay="0.39" sigma="0.84" tau="1.0" maxSpeed="169.32" speedFactor="1.93" lcStrategic="4.65" lcCooperative="0.12" lcSpeedGain="4.47" lcKeepRight="1.8" lcOvertakeRight="0.69" lcSpeedGainLookahead="3.85" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.91" lcAssertive="3.4" lcImpatience="1.0" lcTimeToImpatience="0.55" lcLaneDiscipline="0.66" lcSigma="0.65" lcAccelLat="4.74" probability="0.19358066244445568">
+<param key="device.rerouting.probability" value="1.0" />
+<param key="device.rerouting.adaptation-steps" value="18" />
+<param key="device.rerouting.adaptation-interval" value="10" />
+</vType>
 </routes>

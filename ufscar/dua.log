@@ -8,15 +8,15 @@ Loading additional-files from '000/../edgedata.add.xml' ... done (1ms).
 Loading additional-files from '000/../ufscar/park.add.xml' ... done (17ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1932.00.
+Simulation ended at time: 1468.00.
 Reason: All vehicles have left the simulation.
 Performance:
- Duration: 0.12s
- Real time factor: 15836.1
- UPS: 42467.213115
+ Duration: 0.10s
+ Real time factor: 15134
+ UPS: 35958.762887
 Vehicles:
  Inserted: 4
  Running: 0
  Waiting: 0
-DijkstraRouter answered 38 queries and explored 300.34 edges on average.
-DijkstraRouter spent 0.00s answering queries (0.05ms on average).
+DijkstraRouter answered 24 queries and explored 312.46 edges on average.
+DijkstraRouter spent 0.00s answering queries (0.08ms on average).
