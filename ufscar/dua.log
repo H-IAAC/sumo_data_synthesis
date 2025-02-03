@@ -5,15 +5,15 @@ Success.
 ['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
 Loading net-file from '000/../ufscar/osm.net.xml' ... done (84ms).
 Loading additional-files from '000/../edgedata.add.xml' ... done (1ms).
-Loading additional-files from '000/../ufscar/park.add.xml' ... done (17ms).
+Loading additional-files from '000/../ufscar/park.add.xml' ... done (18ms).
 Loading done.
 Simulation version 1.21.0 started with time: 0.00.
-Simulation ended at time: 1468.00.
+Simulation ended at time: 1393.00.
 Reason: All vehicles have left the simulation.
 Performance:
  Duration: 0.10s
- Real time factor: 15134
- UPS: 35958.762887
+ Real time factor: 14360.8
+ UPS: 36154.639175
 Vehicles:
  Inserted: 4
  Running: 0
