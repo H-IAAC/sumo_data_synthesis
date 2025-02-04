@@ -1,15 +1,15 @@
 > Executing step 0
 >> Running router on ufscar/finaltrips.rou.xml
->>> Begin time: 2025-02-03 12:46:59.540305
->>> End time: 2025-02-03 12:46:59.780014
->>> Duration: 0:00:00.239709
+>>> Begin time: 2025-02-04 15:12:09.393696
+>>> End time: 2025-02-04 15:12:09.541300
+>>> Duration: 0:00:00.147604
 <<
 >> Running simulation
->>> Begin time: 2025-02-03 12:46:59.780070
->>> End time: 2025-02-03 12:47:00.024448
->>> Duration: 0:00:00.244378
+>>> Begin time: 2025-02-04 15:12:09.541413
+>>> End time: 2025-02-04 15:12:09.793334
+>>> Duration: 0:00:00.251921
 <<
-< Step 0 ended (duration: 0:00:00.484337)
+< Step 0 ended (duration: 0:00:00.399741)
 ------------------
 
-dua-iterate ended (duration: 0:00:00.488416)
+dua-iterate ended (duration: 0:00:00.404249)
