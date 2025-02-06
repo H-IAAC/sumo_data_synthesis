@@ -1,15 +1,15 @@
 > Executing step 0
 >> Running router on unicamp/finaltrips.rou.xml
->>> Begin time: 2024-12-12 15:56:07.591606
->>> End time: 2024-12-12 15:56:08.408363
->>> Duration: 0:00:00.816757
+>>> Begin time: 2025-02-06 17:00:38.660533
+>>> End time: 2025-02-06 17:00:39.020766
+>>> Duration: 0:00:00.360233
 <<
 >> Running simulation
->>> Begin time: 2024-12-12 15:56:08.408469
->>> End time: 2024-12-12 15:56:09.887703
->>> Duration: 0:00:01.479234
+>>> Begin time: 2025-02-06 17:00:39.020814
+>>> End time: 2025-02-06 17:00:39.777421
+>>> Duration: 0:00:00.756607
 <<
-< Step 0 ended (duration: 0:00:02.296353)
+< Step 0 ended (duration: 0:00:01.116959)
 ------------------
 
-dua-iterate ended (duration: 0:00:02.307929)
+dua-iterate ended (duration: 0:00:01.121156)
