@@ -4,3 +4,5 @@ distance_matrix/
 dbdataset/
 data_simple/
 **/data_simple
+**/data_dirty/
+data_dirty/
