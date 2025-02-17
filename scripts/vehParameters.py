@@ -134,10 +134,13 @@ def getParamValueLLM(param_dict, parameter, style):
     s = (param_dict[parameter][style]['max'] - m) / stats.norm.ppf(0.975) # Finding the standard deviation for 95% of the data to be within the range
     value = np.round(np.random.normal(m, s), 2)
     
+    if s <= 0:
+        print(f"Error: The standard deviation for {parameter} is {s}")
 
     # Checking for values out of the allowed range
     if value < parameters_groundtruth[parameter]["min"]:
         value = parameters_groundtruth[parameter]["min"]
+
     elif parameters_groundtruth[parameter]["max"] != None and value > parameters_groundtruth[parameter]["max"]:
         value = parameters_groundtruth[parameter]["max"]
 
@@ -150,28 +153,29 @@ def getParamValueLLM(param_dict, parameter, style):
     return value, probability
 
 
-def showGaussian(parameter, styles):
+def showGaussian(param_dict, styles):
     plt.figure(figsize=(10, 6))
     
     for style in styles:
-        m = (parameters_groundtruth[parameter][f"{style}_max"] + parameters_groundtruth[parameter][f"{style}_min"]) / 2
-        s = (parameters_groundtruth[parameter][f"{style}_max"] - m) / stats.norm.ppf(0.975)  # Finding the standard deviation for 95% of the data to be within the range
+        for parameter in param_dict:
+            m = (param_dict[parameter][f"{style}"]['max'] + param_dict[parameter][f"{style}"]['max']) / 2
+            s = (param_dict[parameter][f"{style}"]['max'] - m) / stats.norm.ppf(0.975)  # Finding the standard deviation for 95% of the data to be within the range
 
-        # Generate data
-        data = np.random.normal(m, s, 5000)
+            # Generate data
+            data = np.random.normal(m, s, 5000)
 
-        # Plot the data
-        plt.hist(data, bins=30, density=True, alpha=0.6, label=f'{style} style')
+            # Plot the data
+            plt.hist(data, bins=30, density=True, alpha=0.6, label=f'{style} style')
 
-        # Plot the Gaussian distribution
-        xmin, xmax = plt.xlim()
-        x = np.linspace(xmin, xmax, 100)
-        p = np.exp(-0.5 * ((x - m) / s) ** 2) / (s * np.sqrt(2 * np.pi))
-        plt.plot(x, p, linewidth=2)
+            # Plot the Gaussian distribution
+            xmin, xmax = plt.xlim()
+            x = np.linspace(xmin, xmax, 100)
+            p = np.exp(-0.5 * ((x - m) / s) ** 2) / (s * np.sqrt(2 * np.pi))
+            plt.plot(x, p, linewidth=2)
 
-    plt.title(f'Gaussian Distribution for {parameter}')
-    plt.legend()
-    plt.show()
+        plt.title(f'Gaussian Distribution for {parameter}')
+        plt.legend()
+        plt.show()
 
 def showGaussianLLM(param_dict, parameters, styles):
     num_params = len(parameters)
