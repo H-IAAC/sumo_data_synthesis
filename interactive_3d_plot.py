@@ -11,8 +11,15 @@ if y_name == '1':
 elif y_name == '2':
     y_name = 'y_kmeans.txt'
     print("Showing y_kmeans.txt")
+elif y_name == '3':
+    y_name = 'y_gmm.txt'
+    print("Showing y_gmm.txt")
 else:
-    print("Invalid value")
+    if not y_name:
+        y_name = 'y_sliding.txt'
+        print("Showing y_sliding.txt")
+    else:
+        y_name = y_name
 
 
 X = np.loadtxt(X_name)
