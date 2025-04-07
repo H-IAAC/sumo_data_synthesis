@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-07 14:28:03.609742 by generateParkingAreas.py UNKNOWN
+<configuration>
+    <net-file value="town04/osm.net.xml"/>
+    <output-file value="town04/park.add.xml"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+</additional>

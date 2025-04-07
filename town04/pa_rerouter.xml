@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-04-07 14:28:04.208807 by generateParkingAreaRerouters.py UNKNOWN
+<configuration>
+    <parking-areas value="town04/park.add.xml"/>
+    <sumo-net value="town04/osm.net.xml"/>
+    <max-number-alternatives value="4"/>
+    <max-distance-alternatives value="100.0"/>
+    <output value="town04/pa_rerouter.xml"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+</additional>
