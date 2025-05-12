@@ -1,15 +1,12 @@
-Time,location,latitude,longitude
-7,home,-22.821710155813086,-47.07402914943809
-8,Instituto de Biologia,-22.8199818,-47.070042
-9,cafe,-22.8223765,-47.0701695
-10,Instituto de Biologia,-22.8199818,-47.070042
-12,restaurant,-22.8186151,-47.0734722
-13,Instituto de Biologia,-22.8199818,-47.070042
-14,mall,-22.8197689,-47.0737977
-15,Instituto de Biologia,-22.8199818,-47.070042
-17,fitness_centre,-22.8197689,-47.0737977
-18,cafe,-22.8223765,-47.0701695
-19,supermarket,-22.8197689,-47.0737977
-20,Instituto de Biologia,-22.8199818,-47.070042
-21,park,-22.821959,-47.069703
-22,home,-22.821710155813086,-47.07402914943809
+Time,location,name,latitude,longitude
+7,home,home,-22.821710155813086,-47.07402914943809
+8,Instituto de Computação,Instituto de Computação,-22.8155457,-47.0672998
+9,cafe,Cantina do IB,-22.818675,-47.0695984
+10,Instituto de Computação,Instituto de Computação,-22.8155457,-47.0672998
+12,cafe,Cantina do IB,-22.818675,-47.0695984
+13,library,Biblioteca Octávio Ianni,-22.8154449,-47.0686864
+14,Instituto de Computação,Instituto de Computação,-22.8155457,-47.0672998
+18,restaurant,Restaurante e Lanchonete,-22.8161681,-47.0656821
+19,mall,Pirâmide,-22.8197689,-47.0737977
+20,Instituto de Computação,Instituto de Computação,-22.8155457,-47.0672998
+21,home,home,-22.821710155813086,-47.07402914943809

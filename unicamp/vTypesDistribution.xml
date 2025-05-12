@@ -1,52 +1,52 @@
 <vTypeDistribution id="normal">
-	<vType id="v_normal0" minGap="2.23" accel="1.63" decel="2.12" startupDelay="1.16" sigma="0.01" tau="1.78" maxSpeed="48.93" speedFactor="0.98" lcStrategic="1.27" lcCooperative="0.78" lcSpeedGain="0.53" lcKeepRight="1.2" lcOvertakeRight="0.02" lcSpeedGainLookahead="1.51" lcOvertakeDeltaSpeedFactor="-0.23" lcPushy="0.08" lcAssertive="1.36" lcImpatience="0.0" lcTimeToImpatience="7.81" lcLaneDiscipline="1.25" lcSigma="0.04" lcAccelLat="1.03" probability="0.14300308441280976">
+	<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.33" accel="1.53" decel="1.53" startupDelay="1.69" sigma="0.18" tau="2.19" maxSpeed="62.3" speedFactor="0.89" lcStrategic="0.14" lcCooperative="0.68" lcSpeedGain="0.06" lcKeepRight="1.25" lcOvertakeRight="0.16" lcSpeedGainLookahead="0.36" lcOvertakeDeltaSpeedFactor="0.12" lcPushy="0.09" lcAssertive="1.17" lcImpatience="0.0" lcTimeToImpatience="14.17" lcLaneDiscipline="1.06" lcSigma="0.09" lcAccelLat="0.31" probability="0.3234163170608908">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_normal1" minGap="2.29" accel="1.74" decel="2.2" startupDelay="1.5" sigma="0.08" tau="1.76" maxSpeed="54.05" speedFactor="0.86" lcStrategic="0.83" lcCooperative="0.75" lcSpeedGain="0.42" lcKeepRight="0.95" lcOvertakeRight="0.07" lcSpeedGainLookahead="2.03" lcOvertakeDeltaSpeedFactor="-0.16" lcPushy="0.11" lcAssertive="1.09" lcImpatience="0.0" lcTimeToImpatience="6.16" lcLaneDiscipline="1.22" lcSigma="0.07" lcAccelLat="1.24" probability="0.07310954005493066">
+	<vType id="v_normal1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.97" accel="1.66" decel="1.3" startupDelay="1.95" sigma="0.08" tau="2.76" maxSpeed="50.72" speedFactor="0.86" lcStrategic="0.08" lcCooperative="0.65" lcSpeedGain="0.06" lcKeepRight="1.35" lcOvertakeRight="0.03" lcSpeedGainLookahead="0.99" lcOvertakeDeltaSpeedFactor="0.1" lcPushy="0.08" lcAssertive="1.0" lcImpatience="0.0" lcTimeToImpatience="13.89" lcLaneDiscipline="1.5" lcSigma="0.1" lcAccelLat="0.23" probability="0.3609523773297511">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_normal2" minGap="2.18" accel="1.74" decel="2.02" startupDelay="0.96" sigma="0.02" tau="1.67" maxSpeed="70.18" speedFactor="0.87" lcStrategic="1.19" lcCooperative="0.83" lcSpeedGain="0.58" lcKeepRight="0.82" lcOvertakeRight="0.06" lcSpeedGainLookahead="1.45" lcOvertakeDeltaSpeedFactor="0.13" lcPushy="0.11" lcAssertive="1.26" lcImpatience="0.0" lcTimeToImpatience="9.56" lcLaneDiscipline="1.26" lcSigma="0.07" lcAccelLat="1.25" probability="0.30053969812370346">
+	<vType id="v_normal2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.27" accel="1.52" decel="1.06" startupDelay="1.16" sigma="0.04" tau="3.17" maxSpeed="60.63" speedFactor="0.92" lcStrategic="0.02" lcCooperative="0.76" lcSpeedGain="0.02" lcKeepRight="1.35" lcOvertakeRight="0.18" lcSpeedGainLookahead="0.33" lcOvertakeDeltaSpeedFactor="-0.34" lcPushy="0.14" lcAssertive="1.33" lcImpatience="0.0" lcTimeToImpatience="16.21" lcLaneDiscipline="1.79" lcSigma="0.14" lcAccelLat="0.22" probability="0.050395505195409106">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_normal3" minGap="2.14" accel="1.4" decel="1.83" startupDelay="1.16" sigma="0.09" tau="1.43" maxSpeed="46.52" speedFactor="0.82" lcStrategic="0.99" lcCooperative="0.76" lcSpeedGain="0.54" lcKeepRight="0.97" lcOvertakeRight="0.02" lcSpeedGainLookahead="1.4" lcOvertakeDeltaSpeedFactor="-0.49" lcPushy="0.12" lcAssertive="1.4" lcImpatience="0.01" lcTimeToImpatience="8.85" lcLaneDiscipline="1.08" lcSigma="0.04" lcAccelLat="1.04" probability="0.10759356366344752">
+	<vType id="v_normal3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.93" accel="1.42" decel="1.25" startupDelay="1.78" sigma="0.14" tau="2.11" maxSpeed="53.62" speedFactor="0.83" lcStrategic="0.17" lcCooperative="0.7" lcSpeedGain="0.12" lcKeepRight="1.31" lcOvertakeRight="0.12" lcSpeedGainLookahead="0.77" lcOvertakeDeltaSpeedFactor="-0.02" lcPushy="0.09" lcAssertive="1.13" lcImpatience="0.0" lcTimeToImpatience="17.77" lcLaneDiscipline="1.39" lcSigma="0.11" lcAccelLat="0.21" probability="0.2325029656219175">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_normal4" minGap="1.74" accel="1.6" decel="2.18" startupDelay="0.94" sigma="0.04" tau="1.6" maxSpeed="62.87" speedFactor="0.88" lcStrategic="1.38" lcCooperative="0.81" lcSpeedGain="0.33" lcKeepRight="1.15" lcOvertakeRight="0.05" lcSpeedGainLookahead="1.71" lcOvertakeDeltaSpeedFactor="-0.08" lcPushy="0.15" lcAssertive="1.16" lcImpatience="0.02" lcTimeToImpatience="7.56" lcLaneDiscipline="1.27" lcSigma="0.05" lcAccelLat="0.86" probability="0.37575411374510853">
+	<vType id="v_normal4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.49" accel="1.14" decel="1.63" startupDelay="1.39" sigma="0.14" tau="3.47" maxSpeed="53.44" speedFactor="0.82" lcStrategic="0.0" lcCooperative="0.59" lcSpeedGain="0.17" lcKeepRight="1.22" lcOvertakeRight="0.0" lcSpeedGainLookahead="0.22" lcOvertakeDeltaSpeedFactor="0.03" lcPushy="0.12" lcAssertive="1.45" lcImpatience="0.0" lcTimeToImpatience="20.55" lcLaneDiscipline="1.28" lcSigma="0.32" lcAccelLat="0.08" probability="0.0327328347920316">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
 </vTypeDistribution>
 <vTypeDistribution id="aggressive">
-	<vType id="v_aggressive0" minGap="1.15" accel="4.43" decel="3.82" startupDelay="0.2" sigma="0.34" tau="1.0" maxSpeed="80.98" speedFactor="0.9" lcStrategic="1.7" lcCooperative="0.25" lcSpeedGain="1.4" lcKeepRight="0.44" lcOvertakeRight="0.36" lcSpeedGainLookahead="1.37" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.67" lcAssertive="1.68" lcImpatience="0.65" lcTimeToImpatience="3.74" lcLaneDiscipline="0.86" lcSigma="0.25" lcAccelLat="1.71" probability="0.09695709183146592">
+	<vType id="v_aggressive0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="0.89" accel="3.09" decel="3.76" startupDelay="1.28" sigma="0.46" tau="1.0" maxSpeed="91.19" speedFactor="0.96" lcStrategic="0.98" lcCooperative="0.29" lcSpeedGain="0.91" lcKeepRight="0.86" lcOvertakeRight="0.88" lcSpeedGainLookahead="2.45" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.91" lcAssertive="2.94" lcImpatience="1.0" lcTimeToImpatience="3.53" lcLaneDiscipline="0.8" lcSigma="0.53" lcAccelLat="1.52" probability="0.3204308724019693">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_aggressive1" minGap="1.25" accel="2.94" decel="3.51" startupDelay="0.33" sigma="0.34" tau="1.25" maxSpeed="85.29" speedFactor="0.91" lcStrategic="2.04" lcCooperative="0.21" lcSpeedGain="1.16" lcKeepRight="0.58" lcOvertakeRight="0.38" lcSpeedGainLookahead="0.83" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.42" lcAssertive="2.13" lcImpatience="1.0" lcTimeToImpatience="2.19" lcLaneDiscipline="1.06" lcSigma="0.29" lcAccelLat="1.93" probability="0.19193108920181545">
+	<vType id="v_aggressive1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.83" accel="2.92" decel="2.09" startupDelay="1.18" sigma="0.43" tau="1.0" maxSpeed="84.32" speedFactor="0.9" lcStrategic="1.22" lcCooperative="0.4" lcSpeedGain="0.98" lcKeepRight="0.72" lcOvertakeRight="0.92" lcSpeedGainLookahead="2.5" lcOvertakeDeltaSpeedFactor="0.3" lcPushy="0.89" lcAssertive="2.3" lcImpatience="0.61" lcTimeToImpatience="1.91" lcLaneDiscipline="0.79" lcSigma="0.4" lcAccelLat="1.55" probability="0.06366294916795709">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_aggressive2" minGap="1.03" accel="2.93" decel="3.63" startupDelay="0.24" sigma="0.33" tau="1.0" maxSpeed="78.61" speedFactor="0.88" lcStrategic="1.71" lcCooperative="0.21" lcSpeedGain="0.88" lcKeepRight="0.3" lcOvertakeRight="0.47" lcSpeedGainLookahead="1.12" lcOvertakeDeltaSpeedFactor="0.97" lcPushy="0.72" lcAssertive="1.98" lcImpatience="1.0" lcTimeToImpatience="3.87" lcLaneDiscipline="0.79" lcSigma="0.3" lcAccelLat="1.66" probability="0.5608180419566621">
+	<vType id="v_aggressive2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="0.92" accel="2.75" decel="3.5" startupDelay="0.84" sigma="0.53" tau="1.13" maxSpeed="89.43" speedFactor="0.93" lcStrategic="0.84" lcCooperative="0.22" lcSpeedGain="1.21" lcKeepRight="0.6" lcOvertakeRight="0.86" lcSpeedGainLookahead="2.61" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.94" lcAssertive="2.85" lcImpatience="1.0" lcTimeToImpatience="3.8" lcLaneDiscipline="1.01" lcSigma="0.48" lcAccelLat="1.74" probability="0.0628634935502737">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_aggressive3" minGap="1.08" accel="3.97" decel="4.58" startupDelay="0.5" sigma="0.22" tau="1.23" maxSpeed="74.27" speedFactor="0.9" lcStrategic="1.55" lcCooperative="0.23" lcSpeedGain="1.02" lcKeepRight="0.45" lcOvertakeRight="0.44" lcSpeedGainLookahead="0.72" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.68" lcAssertive="2.34" lcImpatience="1.0" lcTimeToImpatience="2.27" lcLaneDiscipline="0.82" lcSigma="0.31" lcAccelLat="1.66" probability="0.08716843827855754">
+	<vType id="v_aggressive3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="0.93" accel="3.32" decel="2.93" startupDelay="0.76" sigma="0.46" tau="1.16" maxSpeed="94.47" speedFactor="0.91" lcStrategic="1.09" lcCooperative="0.36" lcSpeedGain="0.97" lcKeepRight="0.72" lcOvertakeRight="0.78" lcSpeedGainLookahead="2.51" lcOvertakeDeltaSpeedFactor="0.87" lcPushy="0.9" lcAssertive="2.63" lcImpatience="1.0" lcTimeToImpatience="3.13" lcLaneDiscipline="0.87" lcSigma="0.48" lcAccelLat="1.51" probability="0.38197844542610676">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
 	</vType>
-	<vType id="v_aggressive4" minGap="0.79" accel="2.86" decel="3.38" startupDelay="0.29" sigma="0.42" tau="1.41" maxSpeed="79.62" speedFactor="0.88" lcStrategic="1.89" lcCooperative="0.18" lcSpeedGain="1.09" lcKeepRight="0.32" lcOvertakeRight="0.49" lcSpeedGainLookahead="0.65" lcOvertakeDeltaSpeedFactor="0.88" lcPushy="0.67" lcAssertive="2.07" lcImpatience="0.54" lcTimeToImpatience="4.71" lcLaneDiscipline="0.58" lcSigma="0.35" lcAccelLat="1.82" probability="0.06312533873149902">
+	<vType id="v_aggressive4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="0.93" accel="2.8" decel="2.57" startupDelay="0.99" sigma="0.48" tau="1.0" maxSpeed="93.42" speedFactor="0.92" lcStrategic="1.04" lcCooperative="0.33" lcSpeedGain="0.9" lcKeepRight="0.76" lcOvertakeRight="0.94" lcSpeedGainLookahead="2.9" lcOvertakeDeltaSpeedFactor="1.0" lcPushy="0.88" lcAssertive="2.84" lcImpatience="0.76" lcTimeToImpatience="3.41" lcLaneDiscipline="0.62" lcSigma="0.58" lcAccelLat="1.2" probability="0.17106423945369315">
 		<param key="device.rerouting.probability" value="1.0"/>
 		<param key="device.rerouting.adaptation-steps" value="18"/>
 		<param key="device.rerouting.adaptation-interval" value="10"/>
