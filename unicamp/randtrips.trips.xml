@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-05-13 12:33:05.991247 by randomTrips.py UNKNOWN
+<!-- generated on 2025-05-13 20:06:44.595773 by randomTrips.py UNKNOWN
 <configuration>
     <net-file value="unicamp/osm.net.xml"/>
     <additional-files value="unicamp/park.add.xml"/>
@@ -12,7 +12,7 @@
 </configuration>
 -->
 
-<!-- generated on 2025-05-13 12:33:05 by Eclipse SUMO duarouter Version 1.22.0
+<!-- generated on 2025-05-13 20:06:44 by Eclipse SUMO duarouter Version 1.22.0
 <duarouterConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
 
     <input>
