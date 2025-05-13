@@ -1,0 +1,19 @@
+{
+   "7": {"location":"home", "activity":"wake up"},
+   "8": {"location":"Ciclo Básico I", "activity":"study"},
+   "9": {"location": "Ciclo Básico I", "activity": "study"},
+   "10": {"location": "Instituto de Filosofia e Ciências Humanas", "activity": "study"},
+   "11": {"location": "Instituto de Filosofia e Ciências Humanas", "activity": "study"},
+   "12": {"location":"home", "activity":"lunch"},
+   "13": {"location":"home", "activity":"rest"},
+   "14": {"location":"home", "activity":"rest"},
+   "15": {"location":"home", "activity":"rest"},
+   "16": {"location":"home", "activity":"rest"},
+   "17": {"location":"home", "activity":"dinner"},
+   "18": {"location":"home", "activity":"rest"},
+   "19": {"location":"home", "activity":"rest"},
+   "20": {"location":"home", "activity":"rest"},
+   "21": {"location":"home", "activity":"rest"},
+   "22": {"location":"home", "activity":"rest"},
+   "23": {"location":"home", "activity":"sleep"}
+}

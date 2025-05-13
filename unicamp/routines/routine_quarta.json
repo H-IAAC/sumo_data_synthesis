@@ -1,0 +1,19 @@
+{
+   "7": {"location":"home", "activity":"wake up"},
+   "8": {"location":"Ciclo Básico I", "activity":"study"},
+   "9": {"location":"Ciclo Básico I", "activity":"study"},
+   "10": {"location":"Ciclo Básico I", "activity":"study"},
+   "11": {"location":"Ciclo Básico I", "activity":"study"},
+   "12": {"location":"Restaurante Universitário", "activity":"lunch"},
+   "13": {"location":"Restaurante Universitário", "activity":"lunch"},
+   "14": {"location":"Restaurante Universitário", "activity":"lunch"},
+   "15": {"location":"Faculdade de Engenharia Elétrica e de Computação", "activity":"study"},
+   "16": {"location":"Faculdade de Engenharia Elétrica e de Computação", "activity":"study"},
+   "17": {"location":"Instituto de Computação", "activity":"study"},
+   "18": {"location":"home", "activity":"back home"},
+   "19": {"location":"home", "activity":"rest"},
+   "20": {"location":"home", "activity":"rest"},
+   "21": {"location":"home", "activity":"rest"},
+   "22": {"location":"home", "activity":"rest"},
+   "23": {"location":"home", "activity":"sleep"}
+}

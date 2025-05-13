@@ -1,0 +1,1 @@
+O estudante tem aula das 8 às 12 aula no Ciclo Básico I. Das 12 às 13 o estudante almoça no Restaurante Universitário. Das 14 às 16 tem aula na Faculdade de Engenharia Elétrica e de Computação. Das 16 às 18 tem aula no Instituto de Computação, vai para casa às 18.

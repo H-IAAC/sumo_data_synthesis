@@ -1,8 +1,6 @@
 import numpy as np
 import scipy.stats as stats
 import matplotlib.pyplot as plt
-import LLAMAconnect as llama
-import json
 from pprint import pprint
 
 # The range of values for aggressive and normal driving styles where given by GPT-3
@@ -31,15 +29,15 @@ parameters_groundtruth = {
     "lcAccelLat": {"min": 0, "max": None, "agg_min": 1.0, "agg_max": 3.0, "norm_min": 0.5, "norm_max": 1.0},  # Maximum lateral acceleration per second. Together with maxSpeedLat this constrains lateral movement speed.
 }
 
-def parseVehiclesXML(vtypes_dist, styles, root_folder):
+def parseVehiclesXML(param_dict, vtypes_dist, styles, root_folder, car_follow_model="IDM", lc_model="SL2015"):
     xml = ""
     for style in styles:
         xml += f'<vTypeDistribution id=\"{style}\">\n'
 
         for vtype in vtypes_dist[f'veh_{style}']:
-            xml += f'\t<vType id=\"{vtype}\" '
+            xml += f'\t<vType id=\"{vtype}\" carFollowModel=\"{car_follow_model}\" laneChangeModel=\"{lc_model}\" '
 
-            for parameter in parameters_groundtruth:
+            for parameter in param_dict.keys():
                 xml += f"{parameter}=\"{vtypes_dist['veh_{}'.format(style)][vtype][parameter]}\" "
 
             xml += f"probability=\"{vtypes_dist['veh_{}'.format(style)][vtype]['probability']}\">\n"
@@ -49,36 +47,13 @@ def parseVehiclesXML(vtypes_dist, styles, root_folder):
             xml += '\t</vType>\n'
 
         xml += "</vTypeDistribution>\n"
+
+    xml += '<vType id="veh_passenger" vClass="passenger" carFollowModel="IDM"/>'
+
+    
     with open (f"{root_folder}/vTypesDistribution.xml", "w") as f:
         f.write(xml)
     return xml
-
-def generateVehicleTypes(styles, n):
-    # This function generates n vehicle types for each style in the styles list based on the given distribution and assigns a probability to each vType based on how likely it is to be real
-    # n is the number of vTypes for each vTypeDistribution
-    # styles is the list of styles to be generated (agg, norm, for example)
-    vtypes_dist = {}
-    param_probs = np.zeros(n) # Keeps the probability score for each of the generated vTypes
-    for style in styles:
-        vtypes_dist[f'veh_{style}'] = {}
-        for i in range(n):
-            vtypes_dist[f'veh_{style}'][f'v_{style}{i}'] = {}
-            prob = 0
-            for parameter in parameters_groundtruth:
-                value, probability = getParamValue(parameter, style) # Gets value for parameter and the probability of getting that value
-                vtypes_dist[f'veh_{style}'][f'v_{style}{i}'][parameter] = float(value)
-                prob += probability # Sum of probabilities for each parameter
-    
-            param_probs[i] = prob
-
-        softm = np.exp(param_probs) / np.sum(np.exp(param_probs)) # Softmax function to normalize the probabilities
-
-        for i in range(n):
-            vtypes_dist[f'veh_{style}'][f'v_{style}{i}']["probability"] = softm[i] # Assigning the normalized probability to each vType
-
-        print(softm)
-
-    return vtypes_dist
 
 def generateVehicleTypesLLM(param_dict, styles, n):
     # This function generates n vehicle types for each style in the styles list based on the given distribution and assigns a probability to each vType based on how likely it is to be real
@@ -105,29 +80,6 @@ def generateVehicleTypesLLM(param_dict, styles, n):
 
     return vtypes_dist
 
-def getParamValue(parameter, style):
-    # Currently supported styles are "agg" for aggressive and "norm" for normal
-    if style not in ["agg", "norm"]:
-        raise ValueError("Style must be either 'agg' or 'norm'")
-    
-    m = (parameters_groundtruth[parameter][f"{style}_max"] + parameters_groundtruth[parameter][f"{style}_min"])/2
-    s = (parameters_groundtruth[parameter][f"{style}_max"] - m) / stats.norm.ppf(0.975) # Finding the standard deviation for 95% of the data to be within the range
-    value = np.round(np.random.normal(m, s), 2)
-
-    # Checking for values out of the allowed range
-    if value < parameters_groundtruth[parameter]["min"]:
-        value = parameters_groundtruth[parameter]["min"]
-    elif parameters_groundtruth[parameter]["max"] != None and value > parameters_groundtruth[parameter]["max"]:
-        value = parameters_groundtruth[parameter]["max"]
-    
-    cdf = stats.norm.cdf(value, loc=m, scale=s)
-    if value > m:
-        probability = 1 - cdf
-    else:
-        probability = cdf
-
-    return value, probability
-
 def getParamValueLLM(param_dict, parameter, style):
     
     m = (param_dict[parameter][style]['min'] + param_dict[parameter][style]['max'])/2
@@ -137,13 +89,6 @@ def getParamValueLLM(param_dict, parameter, style):
     if s <= 0:
         print(f"Error: The standard deviation for {parameter} is {s}")
 
-    # Checking for values out of the allowed range
-    if value < parameters_groundtruth[parameter]["min"]:
-        value = parameters_groundtruth[parameter]["min"]
-
-    elif parameters_groundtruth[parameter]["max"] != None and value > parameters_groundtruth[parameter]["max"]:
-        value = parameters_groundtruth[parameter]["max"]
-
     cdf = stats.norm.cdf(value, loc=m, scale=s)
     if value > m:
         probability = 1 - cdf
@@ -152,30 +97,6 @@ def getParamValueLLM(param_dict, parameter, style):
         
     return value, probability
 
-
-def showGaussian(param_dict, styles):
-    plt.figure(figsize=(10, 6))
-    
-    for style in styles:
-        for parameter in param_dict:
-            m = (param_dict[parameter][f"{style}"]['max'] + param_dict[parameter][f"{style}"]['max']) / 2
-            s = (param_dict[parameter][f"{style}"]['max'] - m) / stats.norm.ppf(0.975)  # Finding the standard deviation for 95% of the data to be within the range
-
-            # Generate data
-            data = np.random.normal(m, s, 5000)
-
-            # Plot the data
-            plt.hist(data, bins=30, density=True, alpha=0.6, label=f'{style} style')
-
-            # Plot the Gaussian distribution
-            xmin, xmax = plt.xlim()
-            x = np.linspace(xmin, xmax, 100)
-            p = np.exp(-0.5 * ((x - m) / s) ** 2) / (s * np.sqrt(2 * np.pi))
-            plt.plot(x, p, linewidth=2)
-
-        plt.title(f'Gaussian Distribution for {parameter}')
-        plt.legend()
-        plt.show()
 
 def showGaussianLLM(param_dict, parameters, styles):
     num_params = len(parameters)

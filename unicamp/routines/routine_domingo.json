@@ -1,0 +1,19 @@
+{
+   "7": {"location":"home", "activity":"wake up"},
+   "8": {"location":"home", "activity":"study"},
+   "9": {"location":"home", "activity":"study"},
+   "10": {"location":"home", "activity":"study"},
+   "11": {"location":"home", "activity":"study"},
+   "12": {"location":"home", "activity":"lunch"},
+   "13": {"location":"home", "activity":"leisure"},
+   "14": {"location":"home", "activity":"leisure"},
+   "15": {"location":"home", "activity":"leisure"},
+   "16": {"location":"Ginásio Multidisciplinar", "activity":"study"},
+   "17": {"location":"Museu Exploratório de Ciências", "activity":"leisure"},
+   "18": {"location":"home", "activity":"dinner"},
+   "19": {"location":"home", "activity":"leisure"},
+   "20": {"location":"home", "activity":"leisure"},
+   "21": {"location":"home", "activity":"leisure"},
+   "22": {"location":"home", "activity":"leisure"},
+   "23": {"location":"home", "activity":"sleep"}
+}

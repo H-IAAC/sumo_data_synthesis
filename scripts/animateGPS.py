@@ -33,6 +33,9 @@ def animate_gps(ids, folder_path, time_window=[], frame_step=10, save_path=None)
     ax.set_xlim(df["x_pos"].min() - 50, df["x_pos"].max() + 50)
     ax.set_ylim(df["y_pos"].min() - 50, df["y_pos"].max() + 50)
 
+    # Add a text caption for the description
+    caption = ax.text(0.5, 1.1, '', transform=ax.transAxes, ha='center', va='top', fontsize=12, color='blue')
+
     # Animation function
     def update(frame):
         current_df = df[df["time"] <= frame]
@@ -40,7 +43,14 @@ def animate_gps(ids, folder_path, time_window=[], frame_step=10, save_path=None)
         scatter.set_array(current_df["time"].values)
         scatter.set_sizes(current_df["time"].values * 0.001)  # Update point size
         scatter.set_clim(df["time"].min(), df["time"].max())  # Update color limits
-        return scatter,
+
+        # Show the latest description at this frame, if available
+        desc = ""
+        if not current_df.empty and "desc" in current_df.columns:
+            desc = str(current_df.iloc[-1]["desc"])
+        caption.set_text(desc)
+
+        return scatter, caption
 
     # Create the animation
     ani = FuncAnimation(
@@ -57,6 +67,7 @@ def animate_gps(ids, folder_path, time_window=[], frame_step=10, save_path=None)
         print("Saved.")
     else:
         plt.show()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Animate GPS data.")
