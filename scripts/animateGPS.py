@@ -9,62 +9,56 @@ import os
 def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=None, start_time=7):
     fig, ax = plt.subplots(figsize=(10, 6))
 
-    # Prepare the plot
-    scatter = ax.scatter([], [], c=[], cmap='viridis', label="Position (colored by time)")
-    cbar = fig.colorbar(scatter, ax=ax)
-    cbar.set_label("Time")
+    # Load data
+    csv_path = os.path.join(folder_path, f'{veh_id}.csv')
+    df = pd.read_csv(csv_path)
+
+    # Normalize time
+    df["time"] -= df["time"].min()
+
+    # Filter by time window
+    if time_window:
+        df = df[(df["time"] >= time_window[0]) & (df["time"] <= time_window[1])]
+    df.reset_index(drop=True, inplace=True)
+
+    # Precompute all frames
+    frames = list(range(0, int(df["time"].max()) + 1, frame_step))
+    coords = df[["x_pos", "y_pos"]].values
+    times = df["time"].values
+    descs = df["desc"].values if "desc" in df.columns else [""] * len(df)
+
+    # Plot limits
+    ax.set_xlim(coords[:, 0].min() - 50, coords[:, 0].max() + 50)
+    ax.set_ylim(coords[:, 1].min() - 50, coords[:, 1].max() + 50)
     ax.set_title("Vehicle Path Over Time")
     ax.set_xlabel("X Position")
     ax.set_ylabel("Y Position")
 
-    # Load data for the first vehicle (assuming one vehicle for simplicity)
-    csv_path = os.path.join(folder_path, f'{veh_id}.csv')
-    df = pd.read_csv(csv_path)
-
-    # Shift the time so that it starts at zero
-    df["time"] = df["time"] - df["time"].min()
-
-    # Limit the time window if specified
-    if time_window:
-        df = df[(df["time"] >= time_window[0]) & (df["time"] <= time_window[1])]
-
-    # Initialize the plot limits
-    ax.set_xlim(df["x_pos"].min() - 50, df["x_pos"].max() + 50)
-    ax.set_ylim(df["y_pos"].min() - 50, df["y_pos"].max() + 50)
-
-    # Add a text caption for the description
+    # Plot object
+    scatter = ax.scatter([], [], c=[], cmap='viridis')
     caption = ax.text(0.5, 1.1, '', transform=ax.transAxes, ha='center', va='top', fontsize=12, color='blue')
+    time_text = ax.text(0.02, 0.98, '', transform=ax.transAxes, ha='left', va='top', fontsize=12)
 
-    # Add a text annotation for the time
-    time_text = ax.text(0.02, 0.98, '', transform=ax.transAxes, ha='left', va='top', fontsize=12, color='black')
-
-    # Animation function
     def update(frame):
-        current_df = df[df["time"] <= frame]
-        scatter.set_offsets(current_df[["x_pos", "y_pos"]].values)
-        scatter.set_array(current_df["time"].values)
-        scatter.set_sizes(current_df["time"].values * 0.001)  # Update point size
-        scatter.set_clim(df["time"].min(), df["time"].max())  # Update color limits
+        idx = times <= frame
+        current_coords = coords[idx]
+        current_times = times[idx]
+        scatter.set_offsets(current_coords)
+        scatter.set_array(current_times)
 
-        # Show the latest description at this frame, if available
-        desc = ""
-        if not current_df.empty and "desc" in current_df.columns:
-            desc = str(current_df.iloc[-1]["desc"])
-        caption.set_text(desc)
-
-        # Update the time display
-        time_text.set_text(f"Time: {(frame/3600) + start_time:.2f}")
+        # Description and time
+        if current_coords.shape[0] > 0:
+            caption.set_text(descs[idx][-1])
+        else:
+            caption.set_text("")
+        h, m = divmod(frame, 3600)
+        m //= 60
+        time_text.set_text(f"Time: {start_time + h}:{m:02d} h")
 
         return scatter, caption, time_text
 
-    # Create the animation
-    ani = FuncAnimation(
-        fig, update, 
-        frames=range(0, int(df["time"].max()) + 1, frame_step), 
-        interval=5, blit=True
-    )
+    ani = FuncAnimation(fig, update, frames=frames, interval=5, blit=True)
 
-    # Save or show
     if save_path:
         print(f"Saving animation to {save_path}...")
         writer = FFMpegWriter(fps=30)
@@ -72,6 +66,8 @@ def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=No
         print("Saved.")
     else:
         plt.show()
+
+    plt.close(fig)
 
 
 def animate_gps_2(veh_id, folder_path, time_window=[], frame_step=60, save_path=None, start_time=7):
@@ -123,8 +119,9 @@ def animate_gps_2(veh_id, folder_path, time_window=[], frame_step=60, save_path=
         caption.set_text(desc)
 
         # Time display (in hours)
-        sim_time_hours = (current_df.iloc[-1]["time"] / 3600) + start_time
-        time_text.set_text(f"Time: {sim_time_hours:.2f} h")
+        sim_time_hours = (current_df.iloc[-1]["time"] // 3600) + start_time
+        sim_time_minutes = (current_df.iloc[-1]["time"] % 3600) // 60
+        time_text.set_text(f"Time: {sim_time_hours}:{sim_time_minutes:2} h")
 
         return scatter, caption, time_text
 
@@ -160,7 +157,7 @@ if __name__ == "__main__":
     parser.add_argument('--save', type=str, default=None,
                         help='If set, path to save the animation as .mp4')
     parser.add_argument('--start_time', type=int, default=7,
-                    help='Time at which the simulation starts in hours. Offsets the time display (default: 7).')
+                    help='Time at which the simulation starts in hours. Offsetsets the start time (default: 7)')
 
     args = parser.parse_args()
 
