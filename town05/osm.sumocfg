@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml" />
+        <route-files value="carlavtypes.rou.xml,osm.rou.xml" />
+    <additional-files value="park.add.xml, pa_rerouter.xml" /></input>
+
+    <gui_only>
+        <gui-settings-file value="viewsettings.xml" />
+    </gui_only>
+
+<processing><time-to-teleport value="100" /></processing><parameters><lateral-resolution value="0.8" /></parameters><time><step-length value="1" /><end value="86400.0" /></time></configuration>

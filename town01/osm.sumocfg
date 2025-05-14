@@ -4,7 +4,7 @@
     <input>
         <net-file value="teste.xml" />
         <route-files value="vtypes.xml, merged.rou.xml" />
-        <additional-files value="park.add.xml" />
+        <additional-files value="park.add.xml, pa_rerouter.xml" />
     </input>
 
     <processing>
@@ -32,4 +32,4 @@
         <gui-settings-file value="viewsettings.xml" />
     </gui_only>
 
-</configuration>
+<time><step-length value="1" /><end value="86400.0" /></time></configuration>
