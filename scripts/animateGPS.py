@@ -6,7 +6,7 @@ from matplotlib.animation import FuncAnimation, FFMpegWriter
 import pandas as pd
 import os
 
-def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=None, start_time=7):
+def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=None, start_time=7, show_desc=True):
     fig, ax = plt.subplots(figsize=(10, 6))
 
     # Load data
@@ -25,7 +25,8 @@ def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=No
     frames = list(range(0, int(df["time"].max()) + 1, frame_step))
     coords = df[["x_pos", "y_pos"]].values
     times = df["time"].values
-    descs = df["desc"].values if "desc" in df.columns else [""] * len(df)
+    if show_desc:
+        descs = df["desc"].values if "desc" in df.columns else [""] * len(df)
 
     # Plot limits
     ax.set_xlim(coords[:, 0].min() - 50, coords[:, 0].max() + 50)
@@ -47,10 +48,11 @@ def animate_gps(veh_id, folder_path, time_window=[], frame_step=10, save_path=No
         scatter.set_array(current_times)
 
         # Description and time
-        if current_coords.shape[0] > 0:
+        if current_coords.shape[0] > 0 and show_desc:
             caption.set_text(descs[idx][-1])
         else:
             caption.set_text("")
+        
         h, m = divmod(frame, 3600)
         m //= 60
         time_text.set_text(f"Time: {start_time + h}:{m:02d} h")

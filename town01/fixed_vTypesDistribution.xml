@@ -1,0 +1,30 @@
+<root>
+<vTypeDistribution id="normal">
+<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.9" accel="1.94" decel="1.98" emergencyDecel="3.93" startupDelay="1.68" tau="2.26" maxSpeed="62.48" speedFactor="0.89" ccoolness="0.38" sigmaleader="0.08" sigmagap="0.06" sigmaerror="0.1" jerkmax="2.63" epsilonacc="0.84" taccmax="1.7" lcStrategic="0.64" lcCooperative="0.68" lcSpeedGain="0.47" lcKeepRight="0.8" lcOvertakeRight="0.21" lcSpeedGainLookahead="2.72" lcOvertakeDeltaSpeedFactor="0.36" lcPushy="0.34" lcAssertive="1.99" lcImpatience="0.4" lcTimeToImpatience="12.04" lcLaneDiscipline="0.63" lcSigma="0.07" lcAccelLat="0.57" probability="0.2172944133120956">
+<param key="device.rerouting.probability" value="1.0"/>
+<param key="device.rerouting.adaptation-steps" value="18"/>
+<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+<vType id="v_normal1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.47" accel="1.99" decel="1.98" emergencyDecel="4.42" startupDelay="1.52" tau="1.75" maxSpeed="58.01" speedFactor="0.86" ccoolness="0.36" sigmaleader="0.07" sigmagap="0.07" sigmaerror="0.07" jerkmax="2.54" epsilonacc="0.86" taccmax="1.74" lcStrategic="0.93" lcCooperative="0.65" lcSpeedGain="0.8" lcKeepRight="0.86" lcOvertakeRight="0.19" lcSpeedGainLookahead="2.73" lcOvertakeDeltaSpeedFactor="0.15" lcPushy="0.22" lcAssertive="2.57" lcImpatience="0.31" lcTimeToImpatience="10.64" lcLaneDiscipline="0.62" lcSigma="0.07" lcAccelLat="0.88" probability="0.1277677879583716">
+<param key="device.rerouting.probability" value="1.0"/>
+<param key="device.rerouting.adaptation-steps" value="18"/>
+<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+<vType id="v_normal2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.15" accel="1.8" decel="1.94" emergencyDecel="3.46" startupDelay="1.4" tau="1.87" maxSpeed="55.62" speedFactor="0.88" ccoolness="0.43" sigmaleader="0.08" sigmagap="0.07" sigmaerror="0.07" jerkmax="2.47" epsilonacc="0.78" taccmax="1.73" lcStrategic="0.7" lcCooperative="0.69" lcSpeedGain="0.8" lcKeepRight="0.87" lcOvertakeRight="0.2" lcSpeedGainLookahead="3.68" lcOvertakeDeltaSpeedFactor="0.47" lcPushy="0.31" lcAssertive="2.04" lcImpatience="0.33" lcTimeToImpatience="26.2" lcLaneDiscipline="0.69" lcSigma="0.09" lcAccelLat="0.74" probability="0.41071439544273275">
+<param key="device.rerouting.probability" value="1.0"/>
+<param key="device.rerouting.adaptation-steps" value="18"/>
+<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+<vType id="v_normal3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.29" accel="1.81" decel="2.04" emergencyDecel="3.99" startupDelay="1.72" tau="2.31" maxSpeed="54.39" speedFactor="0.84" ccoolness="0.51" sigmaleader="0.04" sigmagap="0.09" sigmaerror="0.07" jerkmax="2.59" epsilonacc="0.52" taccmax="1.77" lcStrategic="0.71" lcCooperative="0.72" lcSpeedGain="0.71" lcKeepRight="0.89" lcOvertakeRight="0.13" lcSpeedGainLookahead="4.22" lcOvertakeDeltaSpeedFactor="0.27" lcPushy="0.39" lcAssertive="1.91" lcImpatience="0.37" lcTimeToImpatience="25.22" lcLaneDiscipline="0.58" lcSigma="0.07" lcAccelLat="0.7" probability="0.08818004066753432">
+<param key="device.rerouting.probability" value="1.0"/>
+<param key="device.rerouting.adaptation-steps" value="18"/>
+<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+<vType id="v_normal4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.91" accel="1.81" decel="2.25" emergencyDecel="4.81" startupDelay="1.23" tau="2.1" maxSpeed="54.69" speedFactor="0.83" ccoolness="0.59" sigmaleader="0.09" sigmagap="0.07" sigmaerror="0.09" jerkmax="2.64" epsilonacc="0.7" taccmax="1.16" lcStrategic="0.74" lcCooperative="0.65" lcSpeedGain="0.82" lcKeepRight="0.89" lcOvertakeRight="0.23" lcSpeedGainLookahead="2.87" lcOvertakeDeltaSpeedFactor="0.4" lcPushy="0.39" lcAssertive="2.26" lcImpatience="0.28" lcTimeToImpatience="22.56" lcLaneDiscipline="0.62" lcSigma="0.08" lcAccelLat="0.76" probability="0.15604336261926582">
+<param key="device.rerouting.probability" value="1.0"/>
+<param key="device.rerouting.adaptation-steps" value="18"/>
+<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+</vTypeDistribution>
+<vType id="veh_passenger" vClass="passenger" carFollowModel="IDM"/>
+</root>
