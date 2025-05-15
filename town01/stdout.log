@@ -1,0 +1,15 @@
+> Executing step 0
+>> Running router on town01/finaltrips.rou.xml
+>>> Begin time: 2025-05-15 12:41:44.063046
+>>> End time: 2025-05-15 12:41:44.171996
+>>> Duration: 0:00:00.108950
+<<
+>> Running simulation
+>>> Begin time: 2025-05-15 12:41:44.172078
+>>> End time: 2025-05-15 12:41:44.323246
+>>> Duration: 0:00:00.151168
+<<
+< Step 0 ended (duration: 0:00:00.260362)
+------------------
+
+dua-iterate ended (duration: 0:00:00.263006)

@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/duarouter', '-c', '000/iteration_000_finaltrips.duarcfg']
+Success.
+-------------------------------------------------------------------------------
+['/usr/share/sumo/bin/sumo', '-c', '000/iteration_000.sumocfg']
+Loading net-file from '000/../town01/osm.net.xml' ... done (12ms).
+Loading additional-files from '000/../edgedata.add.xml' ... done (1ms).
+Loading additional-files from '000/../town01/park.add.xml' ... done (18ms).
+Loading route-files incrementally from '000/finaltrips_000.rou.xml'
+Loading done.
+Simulation version 1.23.1 started with time: 0.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '6.0.00_2' because there is no connection to the next edge (decel=-0.75, offset=0.00), time=151.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '-12.0.00_2' because there is no connection to the next edge (decel=-0.80, offset=0.00), time=192.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '4.0.00_2' because there is no connection to the next edge (decel=-0.74, offset=0.00), time=231.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '10.0.00_2' because there is no connection to the next edge (decel=-0.77, offset=0.00), time=294.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '6.0.00_2' because there is no connection to the next edge (decel=-0.74, offset=0.00), time=373.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '10.0.00_2' because there is no connection to the next edge (decel=-0.78, offset=0.00), time=446.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '25.0.00_2' because there is no connection to the next edge (decel=-0.74, offset=0.00), time=581.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '1.0.00_2' because there is no connection to the next edge (decel=-0.74, offset=0.00), time=606.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '-19.0.00_2' because there is no connection to the next edge (decel=-0.73, offset=0.00), time=641.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '1.0.00_2' because there is no connection to the next edge (decel=-0.73, offset=0.00), time=717.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '-19.0.00_2' because there is no connection to the next edge (decel=-0.73, offset=0.00), time=752.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '1.0.00_2' because there is no connection to the next edge (decel=-0.73, offset=0.00), time=828.00.
+Warning: Vehicle 'veh_carla' performs emergency stop at the end of lane '-19.0.00_2' because there is no connection to the next edge (decel=-0.73, offset=0.00), time=863.00.
+Simulation ended at time: 922.00.
+Reason: All vehicles have left the simulation.
+Performance:
+ Duration: 0.06s
+ Real time factor: 15114.8
+ UPS: 15098.360656
+Vehicles:
+ Inserted: 1
+ Running: 0
+ Waiting: 0
+ Emergency Stops: 13
