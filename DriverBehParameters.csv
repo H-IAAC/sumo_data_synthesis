@@ -18,7 +18,7 @@ lcStrategic,1.0,[0-inf],The eagerness for performing strategic lane changing (hi
 lcCooperative,1.0,[0-1.0],The willingness for performing cooperative lane changing. Lower values result in reduced cooperation.
 lcSpeedGain,1.0,[0-inf],The eagerness for performing lane changing to gain speed. Higher values result in more lane-changing
 lcKeepRight,1.0,[0-inf],"The eagerness for following the obligation to keep right. Higher values result in earlier lane-changing. default: 1.0, range [0-inf) A value of 0 disables this type of changing."
-lcOvertakeRight,0,[0-1],"The probability for violating rules against overtaking on the right default: 0, range [0-1]"
+lcOvertakeRight,0,[0.1-0.9],"The probability for violating rules against overtaking on the right default: 0, range [0-1]"
 lcSpeedGainLookahead,5,[0-inf],"Time in seconds for antecipating slow down. By ""looking ahead,"" the driver can anticipate if the current lane or the adjacent lanes will slow down in the near future."
 lcOvertakeDeltaSpeedFactor,0,[-0.9-0.9],"Speed difference factor for the eagerness of overtaking a neighbor vehicle before changing lanes. If the actual speed difference between ego and neighbor is higher than factor*speedlimit, this vehicle will try to overtake the leading. 1 for vehicles that are more agressive to overtake and -1 for vehicles that are conservativevehicle on the neighboring lane before performing the lane change."
 lcPushy,0,[0-1],"Willingness to encroach laterally on other drivers. default: 0, range [0-1]"
