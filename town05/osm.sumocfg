@@ -3,11 +3,24 @@
 
     <input>
         <net-file value="osm.net.xml" />
-        <route-files value="carlavtypes.rou.xml,osm.rou.xml" />
+        <route-files value="experiment1/finaltrips_0.rou.xml" />
     <additional-files value="park.add.xml, pa_rerouter.xml" /></input>
 
     <gui_only>
         <gui-settings-file value="viewsettings.xml" />
     </gui_only>
 
-<processing><time-to-teleport value="100" /></processing><parameters><lateral-resolution value="0.8" /></parameters><time><step-length value="1" /><end value="86400.0" /></time></configuration>
+    <processing>
+        <time-to-teleport value="100" />
+    </processing>
+
+    <parameters>
+        <lateral-resolution value="0.8" />
+    </parameters>
+
+    <time>
+        <step-length value="1" />
+        <end value="86400.0" />
+    </time>
+
+</configuration>
