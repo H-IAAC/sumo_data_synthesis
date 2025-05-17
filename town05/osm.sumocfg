@@ -19,8 +19,8 @@
     </parameters>
 
     <time>
-        <step-length value="1" />
-        <end value="86400.0" />
+        <step-length value="0.1" />
+        <end value="1728000.0" />
     </time>
 
 </configuration>

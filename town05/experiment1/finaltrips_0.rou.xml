@@ -29,20 +29,20 @@
 <param key="device.rerouting.adaptation-interval" value="10" />
 </vType>
 <trip id="veh_carla0" type="veh_passenger" depart="0" from="25.0.00" to="25.0.00">
-	<stop edge="-7.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="-52.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="51.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
-	<stop edge="-7.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
-	<stop edge="35.0.00" duration="10" />
-	<stop edge="51.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
+	<stop edge="-7.0.00" duration="0" />
+	<stop edge="-43.0.00" duration="0" />
+	<stop edge="-52.0.00" duration="0" />
+	<stop edge="-30.0.00" duration="0" />
+	<stop edge="25.0.00" duration="0" />
+	<stop edge="51.0.00" duration="0" />
+	<stop edge="-43.0.00" duration="0" />
+	<stop edge="-30.0.00" duration="0" />
+	<stop edge="-7.0.00" duration="0" />
+	<stop edge="-44.0.00" duration="0" />
+	<stop edge="35.0.00" duration="0" />
+	<stop edge="51.0.00" duration="0" />
+	<stop edge="-43.0.00" duration="0" />
+	<stop edge="25.0.00" duration="0" />
+	<stop edge="-30.0.00" duration="0" />
 </trip>
 </routes>
