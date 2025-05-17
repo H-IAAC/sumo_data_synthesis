@@ -3,8 +3,8 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 from pprint import pprint
 
-def parseVehiclesXML(param_dict, vtypes_dist, styles, root_folder, car_follow_model="IDM", lc_model="SL2015"):
-    xml = ""
+def parseVehicleDistributionsXML(param_dict, vtypes_dist, styles, root_folder, car_follow_model="IDM", lc_model="SL2015"):
+    xml = "<root>\n"
     for style in styles:
         xml += f'<vTypeDistribution id=\"{style}\">\n'
 
@@ -21,10 +21,27 @@ def parseVehiclesXML(param_dict, vtypes_dist, styles, root_folder, car_follow_mo
             xml += '\t</vType>\n'
 
         xml += "</vTypeDistribution>\n"
-
-    xml += '<vType id="veh_passenger" vClass="passenger" carFollowModel="IDM"/>'
-
     
+    xml += "</root>\n"
+
+    with open (f"{root_folder}/vTypesDistribution.xml", "w") as f:
+        f.write(xml)
+    return xml
+
+def parseVehicleTypesXML(param_dict, styles, root_folder, car_follow_model="IDM", lc_model="SL2015"):
+    xml = "<root>\n"
+    for style in styles:
+
+        xml += f'<vType id=\"{style}\" carFollowModel=\"{car_follow_model}\" laneChangeModel=\"{lc_model}\" '
+        for parameter, value in param_dict.items():
+            xml += f"{parameter}='{value[style]}' "
+        xml += ">\n"
+        xml += '\t<param key="device.rerouting.probability" value="1.0"/>\n'
+        xml += '\t<param key="device.rerouting.adaptation-steps" value="18"/>\n'
+        xml += '\t<param key="device.rerouting.adaptation-interval" value="10"/>\n'
+        xml += '</vType>\n'
+
+    xml += "</root>\n"
     with open (f"{root_folder}/vTypesDistribution.xml", "w") as f:
         f.write(xml)
     return xml
