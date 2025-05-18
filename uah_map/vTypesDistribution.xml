@@ -1,0 +1,12 @@
+<root>
+<vType id="normal" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed='13.88888888888889' accel='2.5' decel='4.5' speedFactor='1.0' emergencyDecel='9.0' vClass='passenger' >
+	<param key="device.rerouting.probability" value="1.0"/>
+	<param key="device.rerouting.adaptation-steps" value="18"/>
+	<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+<vType id="aggressive" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed='19.444444444444443' accel='3.0' decel='5.0' speedFactor='1.2' emergencyDecel='10.0' vClass='passenger' >
+	<param key="device.rerouting.probability" value="1.0"/>
+	<param key="device.rerouting.adaptation-steps" value="18"/>
+	<param key="device.rerouting.adaptation-interval" value="10"/>
+</vType>
+</root>
