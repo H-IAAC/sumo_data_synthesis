@@ -1,5 +1,79 @@
-<?xml version='1.0' encoding='UTF-8'?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+<!-- BEGIN - LLM Generated trips -->
+<vTypeDistribution id="normal">
+	<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.2" accel="1.6" decel="2.37" emergencyDecel="4.95" startupDelay="1.0" tau="2.83" maxSpeed="27.48" speedFactor="0.73" ccoolness="0.58" sigmaleader="0.14" sigmagap="0.32" sigmaerror="0.08" jerkmax="2.99" epsilonacc="0.13" taccmax="1.94" lcStrategic="0.72" lcCooperative="0.73" lcSpeedGain="0.32" lcKeepRight="0.85" lcOvertakeRight="0.16" lcSpeedGainLookahead="2.17" lcOvertakeDeltaSpeedFactor="0.24" lcPushy="0.12" lcAssertive="1.08" lcImpatience="0.1" lcTimeToImpatience="6.15" lcLaneDiscipline="0.84" lcSigma="0.24" lcAccelLat="0.83" probability="0.04641732364757056">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+	<vType id="v_normal1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.87" accel="1.39" decel="1.95" emergencyDecel="5.42" startupDelay="1.07" tau="2.75" maxSpeed="29.1" speedFactor="0.72" ccoolness="0.56" sigmaleader="0.29" sigmagap="0.29" sigmaerror="0.09" jerkmax="2.68" epsilonacc="0.26" taccmax="2.04" lcStrategic="0.79" lcCooperative="0.64" lcSpeedGain="0.21" lcKeepRight="0.9" lcOvertakeRight="0.08" lcSpeedGainLookahead="3.12" lcOvertakeDeltaSpeedFactor="0.28" lcPushy="-0.0" lcAssertive="1.35" lcImpatience="0.13" lcTimeToImpatience="8.17" lcLaneDiscipline="0.89" lcSigma="0.18" lcAccelLat="0.64" probability="0.16224861687491343">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+	<vType id="v_normal2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.18" accel="1.11" decel="2.0" emergencyDecel="5.0" startupDelay="1.71" tau="2.28" maxSpeed="28.27" speedFactor="0.72" ccoolness="0.61" sigmaleader="0.27" sigmagap="0.27" sigmaerror="0.13" jerkmax="2.48" epsilonacc="0.17" taccmax="2.4" lcStrategic="0.88" lcCooperative="0.65" lcSpeedGain="0.33" lcKeepRight="0.93" lcOvertakeRight="0.08" lcSpeedGainLookahead="3.0" lcOvertakeDeltaSpeedFactor="0.25" lcPushy="0.14" lcAssertive="1.16" lcImpatience="0.09" lcTimeToImpatience="7.99" lcLaneDiscipline="0.94" lcSigma="0.19" lcAccelLat="0.9" probability="0.1499349157808842">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+	<vType id="v_normal3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="3.29" accel="1.5" decel="1.77" emergencyDecel="5.27" startupDelay="1.4" tau="2.36" maxSpeed="29.31" speedFactor="0.76" ccoolness="0.49" sigmaleader="0.16" sigmagap="0.27" sigmaerror="0.12" jerkmax="2.22" epsilonacc="0.18" taccmax="1.87" lcStrategic="0.9" lcCooperative="0.72" lcSpeedGain="0.47" lcKeepRight="0.95" lcOvertakeRight="0.06" lcSpeedGainLookahead="3.48" lcOvertakeDeltaSpeedFactor="0.17" lcPushy="0.1" lcAssertive="1.56" lcImpatience="0.1" lcTimeToImpatience="5.21" lcLaneDiscipline="0.95" lcSigma="0.2" lcAccelLat="0.64" probability="0.13805056189487722">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+	<vType id="v_normal4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.57" accel="1.67" decel="1.97" emergencyDecel="4.9" startupDelay="1.55" tau="1.78" maxSpeed="30.84" speedFactor="0.79" ccoolness="0.48" sigmaleader="0.21" sigmagap="0.3" sigmaerror="0.1" jerkmax="2.37" epsilonacc="0.2" taccmax="1.48" lcStrategic="0.64" lcCooperative="0.68" lcSpeedGain="0.32" lcKeepRight="0.92" lcOvertakeRight="0.12" lcSpeedGainLookahead="3.31" lcOvertakeDeltaSpeedFactor="0.19" lcPushy="0.14" lcAssertive="1.32" lcImpatience="0.08" lcTimeToImpatience="8.03" lcLaneDiscipline="0.89" lcSigma="0.17" lcAccelLat="0.71" probability="0.5033485818017546">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+</vTypeDistribution>
+<vType id="veh_passenger" vClass="passenger" carFollowModel="IDM"/>
+<!-- Trips -->
+<trip id="veh_segunda" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa72508815#1" duration="14400"/>
+	<stop parkingArea="pa89478571#7" duration="7200"/>
+	<stop parkingArea="paFEEC" duration="7200"/>
+	<stop parkingArea="pa75679307#2" duration="7200"/>
+</trip>
+<trip id="veh_terca" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa72508815#1" duration="14400"/>
+	<stop parkingArea="pa75701374#4" duration="7200"/>
+	<stop parkingArea="pa75679307#2" duration="14400"/>
+</trip>
+<trip id="veh_quarta" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa72508815#1" duration="14400"/>
+	<stop parkingArea="pa89478571#7" duration="10800"/>
+	<stop parkingArea="paFEEC" duration="7200"/>
+	<stop parkingArea="pa75679307#2" duration="3600"/>
+</trip>
+<trip id="veh_quinta" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa72508815#1" duration="14400"/>
+	<stop parkingArea="pa75701374#4" duration="10800"/>
+	<stop parkingArea="pa75679307#2" duration="10800"/>
+</trip>
+<trip id="veh_sexta" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa72508815#1" duration="7200"/>
+	<stop parkingArea="pa75679307#1" duration="7200"/>
+</trip>
+<trip id="veh_sabado" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa89478571#7" duration="7200"/>
+</trip>
+<trip id="veh_domingo" type="veh_passenger" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa75679316#2" duration="3600"/>
+	<stop parkingArea="pa535558321#1" duration="3600"/>
+</trip>
+
+
+ <!-- END - LLM Generated trips -->
+
+<!-- BEGIN - Random Trips -->
+
+
+<!-- END - LLM Generated trips -->
+
+<!-- BEGIN - Random Trips -->
+
     <vehicle id="0" depart="0.00" type="v_normal3">
         <route edges="70200198#5 -70200198#5 -70200198#4 -70200198#3 -70200198#2 -70200198#0 147379108#4 890586228 70056689#16 70056689#17 70056689#18 70056689#19 70056689#20 183876535#7 890063337#0 539685790#1 563505747#2 563505747#3 890020478#1 890076350 563505743#0 563505743#1 563505743#2 -147419826#2 -147419826#1 -147419826#0" />
     </vehicle>
@@ -276,4 +350,5 @@
     <vehicle id="95" depart="85500.00" type="v_normal1">
         <route edges="386834059#5 386834059#7 841305892 535558322#0 535558322#1 535558320#0 535558320#1 535558320#2 535558320#3 535558320#4 535558320#5 535558320#6 535558320#7 535558320#8 535558320#9 535558320#10 447326318 72508818 -447326319#4 -447326319#3 -447326319#2 -447326319#1 -447326319#0 183876531#0 183876531#1 183876531#2 183876531#3 183876531#4 183876531#6 183876531#7 75679292#2 890559265#0 890559265#1 890559265#2 890559265#3 75679284#0 75679284#1 693637327#1 693637327#2 889999537#0 889999537#1 89478571#1 70056689#0 70056689#1 70056689#2 70056689#3 70056689#4 70056689#5 70056689#6 70056689#7 70056689#8 70056689#9 70056689#10 70056689#11 70056689#12 70056689#13 70056689#14 70056689#16 70056689#17 70056689#18 70056689#19 70056689#20 183876535#7 890063337#0 539685790#1 563505747#2 563505747#3 890020478#1 890076350 -890076349#3 -890076349#2 -890076349#0" />
     </vehicle>
-</routes>
+</routes><!-- END - Random Trips -->
+
