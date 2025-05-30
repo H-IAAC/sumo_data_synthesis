@@ -10,6 +10,6 @@
 	<param key="device.rerouting.adaptation-steps" value="18" />
 	<param key="device.rerouting.adaptation-interval" value="10" />
 </vType>
-<trip id="veh0_normal" type="normal" depart="0" from="28308066" to="-125136020">
+<trip id="veh0_normal" type="normal" depart="0" from="397271889" to="1075573146">
 </trip>
 </routes>
