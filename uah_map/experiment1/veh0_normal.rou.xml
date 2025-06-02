@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <routes>
-<vType id="normal" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="31.4" accel="3.0" decel="5.0" speedFactor="0.8" emergencyDecel="10.0" vClass="passenger">
+<vType id="aggressive" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="19.444444444444443" accel="3.0" decel="5.0" speedFactor="1.2" emergencyDecel="10.0" vClass="passenger">
 	<param key="device.rerouting.probability" value="1.0" />
 	<param key="device.rerouting.adaptation-steps" value="18" />
 	<param key="device.rerouting.adaptation-interval" value="10" />
 </vType>
-<vType id="aggressive" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="36.7" accel="2.5" decel="4.5" speedFactor="0.9" emergencyDecel="9.0" vClass="passenger">
+<vType id="normal" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="13.88888888888889" accel="2.5" decel="4.5" speedFactor="1.0" emergencyDecel="9.0" vClass="passenger">
 	<param key="device.rerouting.probability" value="1.0" />
 	<param key="device.rerouting.adaptation-steps" value="18" />
 	<param key="device.rerouting.adaptation-interval" value="10" />
 </vType>
-<trip id="veh0_normal" type="normal" depart="0" from="397271889" to="1075573146">
+<trip id="veh0_normal" type="normal" depart="0" from="28308066" to="-125136020">
 </trip>
 </routes>
