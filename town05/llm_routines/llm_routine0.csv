@@ -1,18 +1,18 @@
 time,location,activity
 7,home,wake up
-8,school,drop off kids
+8,school,study
 9,gym,morning workout
-10,university,lectures
-11,cafe,lunch
-12,work,office work
-13,bar,afternoon drink
-14,gym,afternoon workout
-15,cafe,coffee break
-16,school,pick up kids
-17,restaurant,dinner
-18,theater,movie night
-19,bar,night out
-20,gym,evening workout
-21,home,reading
-22,cafe,nightcap
-23,home,bedtime
+10,work,meetings
+11,home,lunch
+12,university,lectures
+13,cafe,coffee break
+14,bar,afternoon drink
+15,theater,watch a film
+16,school,pick up kids from school
+17,gym,evening workout
+18,bar,happy hour
+19,theater,second show
+20,cafe,midnight snack
+21,home,get ready for bed
+22,home,wind down
+23,home,sleep

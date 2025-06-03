@@ -2,92 +2,99 @@
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 
 
-<vType id="aggressive" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="19.444444444444443" accel="3.0" decel="5.0" speedFactor="1.2" emergencyDecel="10.0" vClass="passenger">
-	<param key="device.rerouting.probability" value="1.0" />
-	<param key="device.rerouting.adaptation-steps" value="18" />
-	<param key="device.rerouting.adaptation-interval" value="10" />
-</vType>
-<vType id="normal" carFollowModel="EIDM" laneChangeModel="SL2015" maxSpeed="13.88888888888889" accel="2.5" decel="4.5" speedFactor="1.0" emergencyDecel="9.0" vClass="passenger">
-	<param key="device.rerouting.probability" value="1.0" />
-	<param key="device.rerouting.adaptation-steps" value="18" />
-	<param key="device.rerouting.adaptation-interval" value="10" />
-</vType>
-<trip id="veh_carla0" type="normal" depart="0" from="25.0.00" to="25.0.00">
+<vType id="v_aggressive4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.57" accel="3.55" decel="4.69" emergencyDecel="7.14" startupDelay="0.88" tau="2.46" maxSpeed="32.15" speedFactor="0.78" ccoolness="0.86" sigmaleader="0.45" sigmagap="0.63" sigmaerror="0.15" jerkmax="4.83" epsilonacc="2.0" taccmax="0.79" lcStrategic="1.79" lcCooperative="0.36" lcSpeedGain="2.25" lcKeepRight="1.0" lcOvertakeRight="0.62" lcSpeedGainLookahead="3.32" lcOvertakeDeltaSpeedFactor="0.76" lcPushy="0.75" lcAssertive="3.97" lcImpatience="0.86" lcTimeToImpatience="9.72" lcLaneDiscipline="1.12" lcSigma="0.18" lcAccelLat="2.34" probability="0.20940912278152">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+<vType id="v_aggressive3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.63" accel="4.24" decel="5.1" emergencyDecel="6.9" startupDelay="1.09" tau="2.62" maxSpeed="37.77" speedFactor="0.75" ccoolness="0.86" sigmaleader="0.54" sigmagap="0.58" sigmaerror="0.13" jerkmax="4.93" epsilonacc="2.57" taccmax="1.22" lcStrategic="2.48" lcCooperative="0.42" lcSpeedGain="2.52" lcKeepRight="0.73" lcOvertakeRight="0.72" lcSpeedGainLookahead="3.71" lcOvertakeDeltaSpeedFactor="0.72" lcPushy="0.69" lcAssertive="4.15" lcImpatience="0.92" lcTimeToImpatience="8.39" lcLaneDiscipline="0.27" lcSigma="0.14" lcAccelLat="2.42" probability="0.14059534287634903">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_aggressive2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="0.92" accel="4.31" decel="4.29" emergencyDecel="7.15" startupDelay="0.88" tau="2.35" maxSpeed="30.96" speedFactor="0.71" ccoolness="0.79" sigmaleader="0.52" sigmagap="0.61" sigmaerror="0.12" jerkmax="5.25" epsilonacc="2.2" taccmax="1.17" lcStrategic="2.85" lcCooperative="0.5" lcSpeedGain="2.58" lcKeepRight="1.14" lcOvertakeRight="0.7" lcSpeedGainLookahead="3.31" lcOvertakeDeltaSpeedFactor="0.64" lcPushy="0.66" lcAssertive="4.22" lcImpatience="0.88" lcTimeToImpatience="7.0" lcLaneDiscipline="0.87" lcSigma="0.14" lcAccelLat="2.64" probability="0.2375273562005748">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_aggressive1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.48" accel="3.09" decel="4.14" emergencyDecel="6.45" startupDelay="0.75" tau="2.99" maxSpeed="35.88" speedFactor="0.72" ccoolness="0.86" sigmaleader="0.52" sigmagap="0.64" sigmaerror="0.11" jerkmax="5.19" epsilonacc="1.82" taccmax="1.14" lcStrategic="1.65" lcCooperative="0.43" lcSpeedGain="2.31" lcKeepRight="1.28" lcOvertakeRight="0.8" lcSpeedGainLookahead="2.65" lcOvertakeDeltaSpeedFactor="0.74" lcPushy="0.69" lcAssertive="3.29" lcImpatience="0.87" lcTimeToImpatience="8.87" lcLaneDiscipline="1.58" lcSigma="0.14" lcAccelLat="2.35" probability="0.06961436015593749">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_aggressive0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.68" accel="4.6" decel="4.72" emergencyDecel="6.52" startupDelay="1.07" tau="2.47" maxSpeed="35.43" speedFactor="0.77" ccoolness="0.79" sigmaleader="0.42" sigmagap="0.62" sigmaerror="0.14" jerkmax="4.98" epsilonacc="1.49" taccmax="0.91" lcStrategic="2.87" lcCooperative="0.4" lcSpeedGain="2.55" lcKeepRight="0.95" lcOvertakeRight="0.68" lcSpeedGainLookahead="2.99" lcOvertakeDeltaSpeedFactor="0.72" lcPushy="0.68" lcAssertive="3.76" lcImpatience="0.9" lcTimeToImpatience="6.89" lcLaneDiscipline="1.22" lcSigma="0.16" lcAccelLat="2.25" probability="0.3428538179856187">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_normal4" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="1.99" accel="2.02" decel="2.33" emergencyDecel="4.71" startupDelay="1.48" tau="3.05" maxSpeed="22.14" speedFactor="0.7" ccoolness="0.28" sigmaleader="0.14" sigmagap="0.31" sigmaerror="0.08" jerkmax="3.79" epsilonacc="0.86" taccmax="1.94" lcStrategic="0.56" lcCooperative="0.57" lcSpeedGain="0.69" lcKeepRight="1.45" lcOvertakeRight="0.21" lcSpeedGainLookahead="1.51" lcOvertakeDeltaSpeedFactor="0.29" lcPushy="0.15" lcAssertive="1.56" lcImpatience="0.11" lcTimeToImpatience="17.87" lcLaneDiscipline="1.48" lcSigma="0.06" lcAccelLat="0.71" probability="0.41653412525899647">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+<vType id="v_normal3" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.43" accel="2.18" decel="2.73" emergencyDecel="4.99" startupDelay="1.27" tau="3.05" maxSpeed="22.88" speedFactor="0.7" ccoolness="0.4" sigmaleader="0.23" sigmagap="0.39" sigmaerror="0.07" jerkmax="3.05" epsilonacc="0.72" taccmax="1.66" lcStrategic="0.66" lcCooperative="0.77" lcSpeedGain="0.61" lcKeepRight="1.31" lcOvertakeRight="0.22" lcSpeedGainLookahead="1.76" lcOvertakeDeltaSpeedFactor="0.35" lcPushy="0.16" lcAssertive="1.68" lcImpatience="0.07" lcTimeToImpatience="10.88" lcLaneDiscipline="1.16" lcSigma="0.08" lcAccelLat="0.89" probability="0.07326018990382907">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_normal2" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.16" accel="1.76" decel="2.23" emergencyDecel="4.52" startupDelay="1.64" tau="2.41" maxSpeed="24.17" speedFactor="0.7" ccoolness="0.3" sigmaleader="0.13" sigmagap="0.25" sigmaerror="0.09" jerkmax="3.04" epsilonacc="0.88" taccmax="1.48" lcStrategic="0.7" lcCooperative="0.52" lcSpeedGain="0.81" lcKeepRight="1.19" lcOvertakeRight="0.24" lcSpeedGainLookahead="1.17" lcOvertakeDeltaSpeedFactor="0.37" lcPushy="0.1" lcAssertive="1.97" lcImpatience="0.09" lcTimeToImpatience="16.98" lcLaneDiscipline="0.88" lcSigma="0.09" lcAccelLat="0.84" probability="0.03648846259511667">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_normal1" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.53" accel="1.54" decel="2.11" emergencyDecel="5.29" startupDelay="1.35" tau="3.13" maxSpeed="23.72" speedFactor="0.71" ccoolness="0.38" sigmaleader="0.25" sigmagap="0.22" sigmaerror="0.07" jerkmax="2.79" epsilonacc="0.77" taccmax="1.6" lcStrategic="0.83" lcCooperative="0.7" lcSpeedGain="0.78" lcKeepRight="1.38" lcOvertakeRight="0.21" lcSpeedGainLookahead="1.27" lcOvertakeDeltaSpeedFactor="0.33" lcPushy="0.16" lcAssertive="1.79" lcImpatience="0.01" lcTimeToImpatience="14.86" lcLaneDiscipline="1.7" lcSigma="0.07" lcAccelLat="0.64" probability="0.13000222488276228">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" minGap="2.35" accel="2.26" decel="2.52" emergencyDecel="4.63" startupDelay="1.31" tau="2.45" maxSpeed="27.83" speedFactor="0.65" ccoolness="0.3" sigmaleader="0.22" sigmagap="0.28" sigmaerror="0.06" jerkmax="3.88" epsilonacc="0.75" taccmax="2.17" lcStrategic="0.67" lcCooperative="0.61" lcSpeedGain="0.69" lcKeepRight="1.43" lcOvertakeRight="0.17" lcSpeedGainLookahead="1.5" lcOvertakeDeltaSpeedFactor="0.32" lcPushy="0.21" lcAssertive="1.6" lcImpatience="0.1" lcTimeToImpatience="5.45" lcLaneDiscipline="1.64" lcSigma="0.08" lcAccelLat="0.68" probability="0.3437149973592955">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+	<trip id="veh0" type="v_aggressive3" depart="0" from="25.0.00" to="25.0.00">
 	<stop edge="-7.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="-52.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="51.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
-	<stop edge="-7.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
-	<stop edge="35.0.00" duration="10" />
-	<stop edge="51.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
-</trip>
-<trip id="veh_carla1" type="normal" depart="0" from="25.0.00" to="25.0.00">
 	<stop edge="-43.0.00" duration="10" />
 	<stop edge="25.0.00" duration="20" />
-	<stop edge="-30.0.00" duration="10" />
 	<stop edge="-52.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-7.0.00" duration="10" />
 	<stop edge="-30.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
-	<stop edge="35.0.00" duration="10" />
 	<stop edge="51.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
-</trip>
-<trip id="veh_carla2" type="normal" depart="0" from="25.0.00" to="25.0.00">
-	<stop edge="-43.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-7.0.00" duration="10" />
-	<stop edge="25.0.00" duration="40" />
-	<stop edge="-52.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
+	<stop edge="35.0.00" duration="10" />
 	<stop edge="-7.0.00" duration="10" />
 	<stop edge="-43.0.00" duration="10" />
 	<stop edge="51.0.00" duration="10" />
 	<stop edge="35.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
 	<stop edge="-30.0.00" duration="10" />
 </trip>
-<trip id="veh_carla3" type="normal" depart="0" from="25.0.00" to="25.0.00">
+<trip id="veh1" type="v_normal2" depart="0" from="25.0.00" to="25.0.00">
+	<stop edge="-43.0.00" duration="10" />
+	<stop edge="-7.0.00" duration="10" />
 	<stop edge="-30.0.00" duration="10" />
 	<stop edge="-52.0.00" duration="10" />
+	<stop edge="25.0.00" duration="10" />
 	<stop edge="-43.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
+	<stop edge="25.0.00" duration="10" />
+	<stop edge="51.0.00" duration="10" />
+	<stop edge="35.0.00" duration="10" />
 	<stop edge="-7.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="51.0.00" duration="10" />
-	<stop edge="35.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
-	<stop edge="-43.0.00" duration="10" />
 	<stop edge="-30.0.00" duration="10" />
-	<stop edge="25.0.00" duration="10" />
+	<stop edge="-52.0.00" duration="10" />
 	<stop edge="51.0.00" duration="10" />
-	<stop edge="35.0.00" duration="10" />
 </trip>
-<trip id="veh_carla4" type="normal" depart="0" from="25.0.00" to="25.0.00">
+<trip id="veh2" type="v_aggressive3" depart="0" from="25.0.00" to="25.0.00">
 	<stop edge="-7.0.00" duration="10" />
 	<stop edge="-43.0.00" duration="10" />
+	<stop edge="25.0.00" duration="10" />
+	<stop edge="-30.0.00" duration="10" />
 	<stop edge="-52.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
 	<stop edge="25.0.00" duration="10" />
 	<stop edge="-43.0.00" duration="10" />
 	<stop edge="25.0.00" duration="10" />
 	<stop edge="-7.0.00" duration="10" />
-	<stop edge="-30.0.00" duration="10" />
 	<stop edge="51.0.00" duration="10" />
 	<stop edge="35.0.00" duration="10" />
-	<stop edge="-44.0.00" duration="10" />
+	<stop edge="-30.0.00" duration="10" />
+	<stop edge="-52.0.00" duration="10" />
 	<stop edge="51.0.00" duration="10" />
 </trip>
 </routes>

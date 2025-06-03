@@ -3,7 +3,7 @@
 
     <input>
         <net-file value="osm.net.xml" />
-        <route-files value="experiment1/veh_carla4_aggressive.rou.xml" />
+        <route-files value="merged.rou.alt.xml" />
     <additional-files value="park.add.xml, pa_rerouter.xml" /></input>
 
     <gui_only>
@@ -19,8 +19,8 @@
     </parameters>
 
     <time>
-        <step-length value="0.1" />
-        <end value="1728000.0" />
+        <step-length value="0.01" />
+        <end value="" />
     </time>
 
 </configuration>
