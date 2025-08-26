@@ -1,0 +1,9 @@
+<root>
+<vTypeDistribution id="normal">
+	<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" vClass="passenger" probability="1.0">
+		<param key="device.rerouting.probability" value="1.0"/>
+		<param key="device.rerouting.adaptation-steps" value="18"/>
+		<param key="device.rerouting.adaptation-interval" value="10"/>
+	</vType>
+</vTypeDistribution>
+</root>

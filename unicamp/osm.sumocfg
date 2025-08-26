@@ -3,7 +3,7 @@
 
     <input>
         <net-file value="osm.net.xml.gz" />
-        <route-files value="merged.rou.alt.xml" />
+        <route-files value="randtrips_pedestrians.rou.xml, merged.rou.alt.xml" />
         <additional-files value="park.add.xml, pa_rerouter.xml" />
     </input>
 
@@ -32,4 +32,4 @@
         <gui-settings-file value="osm.view.xml" />
     </gui_only>
 
-<time><step-length value="0.01" /><end value="1728000.0" /></time></configuration>
+<time><step-length value="0.1" /><end value="864000.0" /></time></configuration>

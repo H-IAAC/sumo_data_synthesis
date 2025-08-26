@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+
+<vType id="v_normal0" carFollowModel="EIDM" laneChangeModel="SL2015" vClass="passenger" probability="1.0">
+		<param key="device.rerouting.probability" value="1.0" />
+		<param key="device.rerouting.adaptation-steps" value="18" />
+		<param key="device.rerouting.adaptation-interval" value="10" />
+	</vType>
+<trip id="pizza" type="v_normal0" depart="0" from="-72641085#1" to="-72641085#1">
+	<stop parkingArea="pa75679307#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679307#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa-183876531#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75701376#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679312#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679316#2" duration="300" />
+	<stop parkingArea="pa1388130338#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa693637406#7" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679328#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679316#2" duration="300" />
+	<stop parkingArea="pa89478571#7" duration="600" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa237036477#16" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa535558321#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa72508815#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679337#1" duration="300" />
+	<stop parkingArea="pa75679335#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa-183876531#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679328#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679312#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679337#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679312#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa535558321#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679307#2" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679307#1" duration="300" />
+	<stop parkingArea="pa-72641085#1" duration="300" />
+	<stop parkingArea="pa75679335#1" duration="300" />
+	<stop parkingArea="pa77674920#0" duration="1200" />
+</trip>
+</routes>

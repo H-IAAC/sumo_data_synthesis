@@ -5,7 +5,7 @@ from groq import Groq
 from tqdm import tqdm
 
 client = Groq(
-    api_key = os.getenv("GROQ_API_KEY"),
+    api_key=os.getenv("GROQ_API_KEY"),
 )
 
 
@@ -20,9 +20,11 @@ def getResponse(message):
         }
     ]
 
-    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192")
+    chat_completion = client.chat.completions.create(
+        messages=message, model="llama3-8b-8192")
 
     return chat_completion.choices[0].message.content
+
 
 def getResponse_trip(student_info, places):
     # Generate individual responses for the trips
@@ -33,7 +35,7 @@ def getResponse_trip(student_info, places):
     shopping = places['shopping']
     sports = places['sports']
 
-    instructions_content = (f"Plan the information of the following student: {student_info}." 
+    instructions_content = (f"Plan the information of the following student: {student_info}."
                             )
     message = [
         {
@@ -52,9 +54,11 @@ def getResponse_trip(student_info, places):
             "content": instructions_content,
         }
     ]
-    chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=1, response_format={"type": "json_object"})
+    chat_completion = client.chat.completions.create(
+        messages=message, model="llama3-8b-8192", temperature=1, response_format={"type": "json_object"})
 
     return chat_completion.choices[0].message.content
+
 
 def responseCheck(response, total_locations):
     # Checks if the response from the LLM makes sense
@@ -72,6 +76,7 @@ def responseCheck(response, total_locations):
             print("Error: The response is missing a key")
             return False
     return True
+
 
 def generate_response_trips(student_info, places, number_of_trips=5):
     # Student_info with informations about the student
@@ -98,10 +103,11 @@ def generate_response_trips(student_info, places, number_of_trips=5):
 
     return responses
 
+
 def generate_range_parameters(parameters, styles):
     # Generates the range of parameters for the vehicle types. Used in vehParameters.py
 
-    instructions_content = (f"Give the range of values for the following styles: {styles}." 
+    instructions_content = (f"Give the range of values for the following styles: {styles}."
                             )
     message = [
         {
@@ -114,7 +120,8 @@ def generate_range_parameters(parameters, styles):
         }
     ]
     try:
-        chat_completion = client.chat.completions.create(messages=message, model="llama3-8b-8192", temperature=0.5, response_format={"type": "json_object"})
+        chat_completion = client.chat.completions.create(
+            messages=message, model="llama3-8b-8192", temperature=0.5, response_format={"type": "json_object"})
 
     except Exception as e:
         print(f"Error generating response {e}. Trying a new one.")

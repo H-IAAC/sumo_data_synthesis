@@ -1,0 +1,77 @@
+{
+   "7": {"location": "home", "activity": "wake up"},
+   
+   "8": {"location": "Instituto de Computação", "activity": "delivery"},
+   "9": {"location": "home", "activity": "wake up"},
+
+   "10": {"location": "Instituto de Filosofia e Ciências Humanas", "activity": "delivery"},
+   "11": {"location": "home", "activity": "wake up"},
+
+   "12": {"location": "Instituto de Geociências", "activity": "delivery"},
+   "13": {"location": "home", "activity": "wake up"},
+   
+   "14": {"location": "Faculdade de Engenharia Agrícola", "activity": "delivery"},
+   "15": {"location": "home", "activity": "wake up"},
+
+   "16": {"location": "Instituto de Artes", "activity": "delivery"},
+   "17": {"location": "home", "activity": "wake up"},
+
+   "18": {"location": "Ginásio Multidisciplinar", "activity": "delivery"},
+   "19": {"location": "Ciclo Básico II", "activity": "delivery"},
+   "20": {"location": "home", "activity": "wake up"},
+
+   "21": {"location": "Faculdade de Engenharia Elétrica e de Computação", "activity": "delivery"},
+   "22": {"location": "home", "activity": "wake up"},
+
+   "23": {"location": "Instituto de Biologia", "activity": "delivery"},
+   "24": {"location": "home", "activity": "wake up"},
+
+   "25": {"location": "Ginásio Multidisciplinar", "activity": "delivery"},
+   "26": {"location": "Restaurante Universitário", "activity": "lunch"},
+   "27": {"location": "Restaurante Universitário", "activity": "lunch"},
+   "28": {"location": "home", "activity": "wake up"},
+
+   "29": {"location": "Faculdade de Engenharia Civil", "activity": "delivery"},
+   "30": {"location": "home", "activity": "wake up"},
+
+   "31": {"location": "Museu Exploratório de Ciências", "activity": "delivery"},
+   "32": {"location": "home", "activity": "wake up"},
+
+   "33": {"location": "Ciclo Básico I", "activity": "delivery"},
+   "34": {"location": "home", "activity": "wake up"},
+
+   "35": {"location": "Faculdade de Educação", "activity": "delivery"},
+   "36": {"location": "Instituto de Física Gleb Wataghin", "activity": "delivery"},
+   "37": {"location": "home", "activity": "wake up"},
+
+   "38": {"location": "Instituto de Geociências", "activity": "delivery"},
+   "39": {"location": "home", "activity": "wake up"},
+
+   "40": {"location": "Instituto de Biologia", "activity": "delivery"},
+   "41": {"location": "home", "activity": "wake up"},
+   
+   "42": {"location": "Instituto de Estudos da Linguagem", "activity": "delivery"},
+   "43": {"location": "home", "activity": "wake up"},
+
+   "44": {"location": "Instituto de Economia", "activity": "practice sports"},
+   "45": {"location": "home", "activity": "wake up"},
+
+   "46": {"location": "Instituto de Artes", "activity": "practice sports"},
+   "47": {"location": "home", "activity": "wake up"},
+
+   "48": {"location": "Museu Exploratório de Ciências", "activity": "practice sports"},
+   "49": {"location": "home", "activity": "wake up"},
+
+   "50": {"location": "Instituto de Computação", "activity": "practice sports"},
+   "51": {"location": "home", "activity": "wake up"},
+
+   "52": {"location": "Instituto de Filosofia e Ciências Humanas", "activity": "practice sports"},
+   "53": {"location": "home", "activity": "wake up"},
+
+   "54": {"location": "Instituto de Física Gleb Wataghin", "activity": "practice sports"},   
+   "55": {"location": "Restaurante Acadêmico", "activity": "practice sports"},
+   "56": {"location": "Restaurante Acadêmico", "activity": "practice sports"},
+   "57": {"location": "Restaurante Acadêmico", "activity": "practice sports"},
+   "58": {"location": "Restaurante Acadêmico", "activity": "practice sports"},
+   "59": {"location": "home", "activity": "rest"}
+}

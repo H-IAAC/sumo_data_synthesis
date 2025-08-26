@@ -1,0 +1,29 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: sumo_data_synthesis
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Renan Matheus
+    family-names: da Silva Florencio
+    email: r244808@dac.unicamp.br
+    orcid: 'https://orcid.org/0009-0003-0455-5951'
+    affiliation: FEEC - UNICAMP
+  - given-names: Paula
+    family-names: Dornhofer Paro Costa
+    email: paulad@unicamp.br
+    affiliation: FEEC - UNICAMP
+    orcid: 'https://orcid.org/0009-0003-0455-5951'
+repository-code: 'https://github.com/H-IAAC/sumo_data_synthesis'
+abstract: Repo for trying out SUMO.
+keywords:
+  - python
+  - sumo
+  - data-synthesis
+  - routine-generator
+  - traffic-simulation
+license: LGPL-3.0
