@@ -1,6 +1,8 @@
 
 # Inertial Data Synthesis of Drivers with Mutiple Behavioral Patterns
 
+This repository provides workflow for generating, customizing, and simulating urban mobility scenarios in SUMO, including automated map creation from OpenStreetMap, parking area generation, LLM-assisted routine creation and post-simulation data extraction, allowing users to get SUMO data for different geographic areas and analyze vehicle behavior across varied mobility patterns.
+
 This project was developed as part of the Cognitive Architectures research line from 
 the Hub for Artificial Intelligence and Cognitive Architectures (H.IAAC) of the State University of Campinas (UNICAMP).
 See more projects from the group [here](https://github.com/brgsil/RepoOrganizer).
